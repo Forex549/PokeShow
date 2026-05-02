@@ -13,7 +13,7 @@ class Pokemon:
 
     @property
     def atk(self): return self.stats["atk"]
-
+    
     @property
     def spa(self): return self.stats["spa"]
 
