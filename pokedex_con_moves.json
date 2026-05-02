@@ -1,0 +1,242 @@
+{
+  "gengar": {
+    "num": 94,
+    "name": "Gengar",
+    "types": ["Ghost", "Poison"],
+    "baseStats": { "hp": 60, "atk": 65, "def": 60, "spa": 130, "spd": 75, "spe": 110 },
+    "abilities": { "0": "Cursed Body" },
+    "moves": ["Shadow Ball","Sludge Bomb","Focus Blast","Thunderbolt","Dark Pulse","Psychic","Energy Ball","Dazzling Gleam"]
+  },
+  "mewtwo": {
+    "num": 150,
+    "name": "Mewtwo",
+    "types": ["Psychic"],
+    "baseStats": { "hp": 106, "atk": 110, "def": 90, "spa": 154, "spd": 90, "spe": 130 },
+    "abilities": { "0": "Pressure", "H": "Unnerve" },
+    "moves": ["Psystrike","Ice Beam","Aura Sphere","Ice Punch","Psycho Cut","Shadow Ball","Flamethrower","Thunderbolt"]
+  },
+  "articuno": {
+    "num": 144,
+    "name": "Articuno",
+    "types": ["Ice","Flying"],
+    "baseStats": { "hp": 90, "atk": 85, "def": 100, "spa": 95, "spd": 125, "spe": 85 },
+    "abilities": { "0": "Pressure", "H": "Snow Cloak" },
+    "moves": ["Freeze-Dry","Hurricane","Ice Beam","Air Slash","Blizzard","U-turn","Ancient Power","Icy Wind"]
+  },
+  "charizard": {
+    "num": 6,
+    "name": "Charizard",
+    "types": ["Fire","Flying"],
+    "baseStats": { "hp": 78, "atk": 84, "def": 78, "spa": 109, "spd": 85, "spe": 100 },
+    "abilities": { "0": "Blaze", "H": "Solar Power" },
+    "moves": ["Flamethrower","Air Slash","Dragon Pulse","Solar Beam","Fire Blast","Focus Blast","Heat Wave","Overheat"]
+  },
+  "snorlax": {
+    "num": 143,
+    "name": "Snorlax",
+    "types": ["Normal"],
+    "baseStats": { "hp": 160, "atk": 110, "def": 65, "spa": 65, "spd": 110, "spe": 30 },
+    "abilities": { "0": "Immunity", "1": "Thick Fat", "H": "Gluttony" },
+    "moves": ["Body Slam","Earthquake","Crunch","Heavy Slam","Fire Punch","Ice Punch","Thunder Punch","Rock Slide"]
+  },
+  "typhlosion": {
+    "num": 157,
+    "name": "Typhlosion",
+    "types": ["Fire"],
+    "baseStats": { "hp": 78, "atk": 84, "def": 78, "spa": 109, "spd": 85, "spe": 100 },
+    "abilities": { "0": "Blaze", "H": "Flash Fire" },
+    "moves": ["Eruption","Flamethrower","Focus Blast","Solar Beam","Extrasensory","Scorching Sands","Fire Blast","Overheat"]
+  },
+  "tyranitar": {
+    "num": 248,
+    "name": "Tyranitar",
+    "types": ["Rock","Dark"],
+    "baseStats": { "hp": 100, "atk": 134, "def": 110, "spa": 95, "spd": 100, "spe": 61 },
+    "abilities": { "0": "Sand Stream", "H": "Unnerve" },
+    "moves": ["Stone Edge","Crunch","Earthquake","Ice Punch","Fire Blast","Thunder Punch","Rock Slide","Dark Pulse"]
+  },
+  "scizor": {
+    "num": 212,
+    "name": "Scizor",
+    "types": ["Bug","Steel"],
+    "baseStats": { "hp": 70, "atk": 130, "def": 100, "spa": 55, "spd": 80, "spe": 65 },
+    "abilities": { "0": "Swarm", "1": "Technician", "H": "Light Metal" },
+    "moves": ["Bullet Punch","U-turn","Knock Off","Superpower","Bug Bite","Iron Head","X-Scissor","Dual Wingbeat"]
+  },
+  "sceptile": {
+    "num": 254,
+    "name": "Sceptile",
+    "types": ["Grass"],
+    "baseStats": { "hp": 70, "atk": 85, "def": 65, "spa": 105, "spd": 85, "spe": 120 },
+    "abilities": { "0": "Overgrow", "H": "Unburden" },
+    "moves": ["Leaf Storm","Dragon Pulse","Focus Blast","Giga Drain","Earthquake","Leaf Blade","Energy Ball","Dragon Claw"]
+  },
+  "swampert": {
+    "num": 260,
+    "name": "Swampert",
+    "types": ["Water","Ground"],
+    "baseStats": { "hp": 100, "atk": 110, "def": 90, "spa": 85, "spd": 90, "spe": 60 },
+    "abilities": { "0": "Torrent", "H": "Damp" },
+    "moves": ["Earthquake","Waterfall","Ice Punch","Flip Turn","Scald","Liquidation","Rock Slide","Hammer Arm"]
+  },
+  "metagross": {
+    "num": 376,
+    "name": "Metagross",
+    "types": ["Steel","Psychic"],
+    "baseStats": { "hp": 80, "atk": 135, "def": 130, "spa": 95, "spd": 90, "spe": 70 },
+    "abilities": { "0": "Clear Body", "H": "Light Metal" },
+    "moves": ["Meteor Mash","Zen Headbutt","Earthquake","Bullet Punch","Ice Punch","Thunder Punch","Hammer Arm","Psychic"]
+  },
+  "salamence": {
+    "num": 373,
+    "name": "Salamence",
+    "types": ["Dragon","Flying"],
+    "baseStats": { "hp": 95, "atk": 135, "def": 80, "spa": 110, "spd": 80, "spe": 100 },
+    "abilities": { "0": "Intimidate", "H": "Moxie" },
+    "moves": ["Outrage","Earthquake","Dual Wingbeat","Fire Blast","Draco Meteor","Dragon Claw","Fly","Hydro Pump"]
+  },
+  "infernape": {
+    "num": 392,
+    "name": "Infernape",
+    "types": ["Fire","Fighting"],
+    "baseStats": { "hp": 76, "atk": 104, "def": 71, "spa": 104, "spd": 71, "spe": 108 },
+    "abilities": { "0": "Blaze", "H": "Iron Fist" },
+    "moves": ["Close Combat","Flamethrower","U-turn","Mach Punch","Grass Knot","Fire Blast","Stone Edge","Thunder Punch"]
+  },
+  "garchomp": {
+    "num": 445,
+    "name": "Garchomp",
+    "types": ["Dragon","Ground"],
+    "baseStats": { "hp": 108, "atk": 130, "def": 95, "spa": 80, "spd": 85, "spe": 102 },
+    "abilities": { "0": "Sand Veil", "H": "Rough Skin" },
+    "moves": ["Earthquake","Dragon Claw","Stone Edge","Fire Fang","Outrage","Poison Jab","Crunch","Iron Head"]
+  },
+  "lucario": {
+    "num": 448,
+    "name": "Lucario",
+    "types": ["Fighting","Steel"],
+    "baseStats": { "hp": 70, "atk": 110, "def": 70, "spa": 115, "spd": 70, "spe": 90 },
+    "abilities": { "0": "Steadfast", "1": "Inner Focus", "H": "Justified" },
+    "moves": ["Close Combat","Extreme Speed","Bullet Punch","Aura Sphere","Flash Cannon","Dark Pulse","Meteor Mash","Ice Punch"]
+  },
+  "mamoswine": {
+    "num": 473,
+    "name": "Mamoswine",
+    "types": ["Ice","Ground"],
+    "baseStats": { "hp": 110, "atk": 130, "def": 80, "spa": 70, "spd": 60, "spe": 80 },
+    "abilities": { "0": "Oblivious", "1": "Snow Cloak", "H": "Thick Fat" },
+    "moves": ["Earthquake","Icicle Crash","Ice Shard","Knock Off","Stone Edge","Superpower","Iron Head","Bulldoze"]
+  },
+  "excadrill": {
+    "num": 530,
+    "name": "Excadrill",
+    "types": ["Ground","Steel"],
+    "baseStats": { "hp": 110, "atk": 135, "def": 60, "spa": 50, "spd": 65, "spe": 88 },
+    "abilities": { "0": "Sand Rush", "1": "Sand Force", "H": "Mold Breaker" },
+    "moves": ["Earthquake","Iron Head","Rapid Spin","Rock Slide","Drill Run","Poison Jab","X-Scissor","Brick Break"]
+  },
+  "volcarona": {
+    "num": 637,
+    "name": "Volcarona",
+    "types": ["Bug","Fire"],
+    "baseStats": { "hp": 85, "atk": 60, "def": 65, "spa": 135, "spd": 105, "spe": 100 },
+    "abilities": { "0": "Flame Body", "H": "Swarm" },
+    "moves": ["Fiery Dance","Bug Buzz","Giga Drain","Psychic","Flamethrower","Fire Blast","Heat Wave","Solar Beam"]
+  },
+  "haxorus": {
+    "num": 612,
+    "name": "Haxorus",
+    "types": ["Dragon"],
+    "baseStats": { "hp": 76, "atk": 147, "def": 90, "spa": 60, "spd": 70, "spe": 97 },
+    "abilities": { "0": "Rivalry", "1": "Mold Breaker", "H": "Unnerve" },
+    "moves": ["Outrage","Earthquake","Poison Jab","Close Combat","Iron Tail","Dragon Claw","Aqua Tail","Stone Edge"]
+  },
+  "greninja": {
+    "num": 658,
+    "name": "Greninja",
+    "types": ["Water","Dark"],
+    "baseStats": { "hp": 72, "atk": 95, "def": 67, "spa": 103, "spd": 71, "spe": 122 },
+    "abilities": { "0": "Torrent", "H": "Protean", "S": "Battle Bond" },
+    "moves": ["Hydro Pump","Ice Beam","Dark Pulse","U-turn","Extrasensory","Grass Knot","Surf","Water Shuriken"]
+  },
+  "hoopa": {
+    "num": 720,
+    "name": "Hoopa",
+    "types": ["Psychic","Ghost"],
+    "baseStats": { "hp": 80, "atk": 110, "def": 60, "spa": 150, "spd": 130, "spe": 70 },
+    "abilities": { "0": "Magician" },
+    "moves": ["Hyperspace Fury","Psychic","Dark Pulse","Focus Blast","Thunderbolt","Shadow Ball","Energy Ball","Psyshock"]
+  },
+  "sylveon": {
+    "num": 700,
+    "name": "Sylveon",
+    "types": ["Fairy"],
+    "baseStats": { "hp": 95, "atk": 65, "def": 65, "spa": 110, "spd": 130, "spe": 60 },
+    "abilities": { "0": "Cute Charm", "H": "Pixilate" },
+    "moves": ["Hyper Voice","Mystical Fire","Shadow Ball","Moonblast","Psyshock","Swift","Draining Kiss","Stored Power"]
+  },
+  "decidueye": {
+    "num": 724,
+    "name": "Decidueye",
+    "types": ["Grass","Ghost"],
+    "baseStats": { "hp": 78, "atk": 107, "def": 75, "spa": 100, "spd": 100, "spe": 70 },
+    "abilities": { "0": "Overgrow", "H": "Long Reach" },
+    "moves": ["Spirit Shackle","Leaf Blade","Shadow Sneak","U-turn","Brave Bird","Leaf Storm","Dark Pulse","Energy Ball"]
+  },
+  "lycanroc": {
+    "num": 745,
+    "name": "Lycanroc",
+    "types": ["Rock"],
+    "baseStats": { "hp": 75, "atk": 115, "def": 65, "spa": 55, "spd": 65, "spe": 112 },
+    "abilities": { "0": "Keen Eye", "1": "Sand Rush", "H": "Steadfast" },
+    "moves": ["Stone Edge","Accelerock","Close Combat","Crunch","Play Rough","Psychic Fangs","Rock Slide","Fire Fang"]
+  },
+  "zeraora": {
+    "num": 807,
+    "name": "Zeraora",
+    "types": ["Electric"],
+    "baseStats": { "hp": 88, "atk": 112, "def": 75, "spa": 102, "spd": 80, "spe": 143 },
+    "abilities": { "0": "Volt Absorb" },
+    "moves": ["Plasma Fists","Close Combat","Knock Off","Volt Switch","Play Rough","Thunderbolt","Grass Knot","Wild Charge"]
+  },
+  "rillaboom": {
+    "num": 812,
+    "name": "Rillaboom",
+    "types": ["Grass"],
+    "baseStats": { "hp": 100, "atk": 125, "def": 90, "spa": 60, "spd": 70, "spe": 85 },
+    "abilities": { "0": "Overgrow", "H": "Grassy Surge" },
+    "moves": ["Grassy Glide","Wood Hammer","Knock Off","U-turn","Drain Punch","High Horsepower","Earthquake","Hammer Arm"]
+  },
+  "dragapult": {
+    "num": 887,
+    "name": "Dragapult",
+    "types": ["Dragon","Ghost"],
+    "baseStats": { "hp": 88, "atk": 120, "def": 75, "spa": 100, "spd": 75, "spe": 142 },
+    "abilities": { "0": "Clear Body", "1": "Infiltrator", "H": "Cursed Body" },
+    "moves": ["Dragon Darts","Shadow Ball","U-turn","Flamethrower","Draco Meteor","Thunderbolt","Dragon Pulse","Hex"]
+  },
+  "tinkaton": {
+    "num": 959,
+    "name": "Tinkaton",
+    "types": ["Fairy","Steel"],
+    "baseStats": { "hp": 85, "atk": 75, "def": 77, "spa": 70, "spd": 105, "spe": 94 },
+    "abilities": { "0": "Mold Breaker", "1": "Own Tempo", "H": "Pickpocket" },
+    "moves": ["Gigaton Hammer","Play Rough","Knock Off","Fake Out","Iron Head","Brick Break","Rock Slide","Flash Cannon"]
+  },
+  "ceruledge": {
+    "num": 937,
+    "name": "Ceruledge",
+    "types": ["Fire","Ghost"],
+    "baseStats": { "hp": 75, "atk": 125, "def": 80, "spa": 60, "spd": 100, "spe": 85 },
+    "abilities": { "0": "Flash Fire", "H": "Weak Armor" },
+    "moves": ["Bitter Blade","Shadow Sneak","Close Combat","Flame Charge","Flare Blitz","Shadow Claw","Iron Head","Psycho Cut"]
+  },
+  "baxcalibur": {
+    "num": 998,
+    "name": "Baxcalibur",
+    "types": ["Dragon","Ice"],
+    "baseStats": { "hp": 115, "atk": 145, "def": 92, "spa": 75, "spd": 86, "spe": 87 },
+    "abilities": { "0": "Thermal Exchange", "H": "Ice Body" },
+    "moves": ["Glaive Rush","Ice Shard","Earthquake","Icicle Crash","Crunch","Dragon Claw","Outrage","Iron Head"]
+  }
+}
