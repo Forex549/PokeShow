@@ -1,5 +1,6 @@
 import json
 import random
+import copy
 
 class Pokemon:
     def __init__(self, name, data):
@@ -133,11 +134,7 @@ def choose_best_move(my_poke, enemy_poke):
             continue
 
         # copiar enemigo
-        enemy_copy = Pokemon(enemy_poke.name, {
-            "types": enemy_poke.types,
-            "baseStats": enemy_poke.stats,
-            "moves": enemy_poke.moves
-        })
+        enemy_copy = copy.deepcopy(enemy_poke)
         enemy_copy.hp = enemy_poke.hp
 
         # velocidad: simular si enemigo pega primero
@@ -155,7 +152,7 @@ def choose_best_move(my_poke, enemy_poke):
         if score > best_score:
             best_score = score
             best_move = move_name
-
+    print(f"[DEBUG] Enemy move {move_name} does {dmg}")
     return best_move
 
 def get_move_data(move_name):
