@@ -8,6 +8,12 @@ from src.engine.logic.damage_calc import calculate_damage
 from src.engine.logic.heuristic import choose_best_move
 from src.engine.models.movimientos import Movimiento
 from src.engine.models.pokemon import Pokemon
+from src.api.services.storage import (
+    add_user_battle,
+    get_battle_state as load_battle_state,
+    get_user,
+    save_battle_state,
+)
 
 
 DATA_DIR = Path(__file__).resolve().parents[3] / "data"
@@ -22,6 +28,7 @@ with open(DATA_DIR / "pokedex_con_moves.json") as file:
 @dataclass
 class BattleState:
     battle_id: str
+    user_id: str
     player: Pokemon
     enemy: Pokemon
     logs: List[str]
@@ -80,6 +87,7 @@ def _execute_turn(player: Pokemon, enemy: Pokemon, player_move_name: str, enemy_
 def _build_state(battle: BattleState) -> Dict[str, object]:
     return {
         "battle_id": battle.battle_id,
+        "user_id": battle.user_id,
         "player": {
             "name": battle.player.name,
             "hp": battle.player.hp,
@@ -100,13 +108,44 @@ def _build_state(battle: BattleState) -> Dict[str, object]:
     }
 
 
-def start_battle(player_name: str, enemy_name: Optional[str]) -> Dict[str, object]:
+def _pokemon_from_state(state: Dict[str, object]) -> Pokemon:
+    name = str(state.get("name", ""))
+    pokemon = _get_pokemon(name)
+    pokemon.hp = int(state.get("hp", pokemon.hp))
+    pokemon.max_hp = int(state.get("max_hp", pokemon.max_hp))
+    pokemon.moves = list(state.get("moves", pokemon.moves))
+    pokemon.types = list(state.get("types", pokemon.types))
+    return pokemon
+
+
+def _restore_battle(battle_id: str) -> BattleState:
+    stored = load_battle_state(battle_id)
+    state = stored.get("state", {})
+    player_state = state.get("player", {})
+    enemy_state = state.get("enemy", {})
+
+    battle = BattleState(
+        battle_id=battle_id,
+        user_id=str(stored.get("user_id", "")),
+        player=_pokemon_from_state(player_state),
+        enemy=_pokemon_from_state(enemy_state),
+        logs=list(state.get("logs", [])),
+        finished=bool(state.get("finished", False)),
+        winner=state.get("winner"),
+    )
+    BATTLES[battle_id] = battle
+    return battle
+
+
+def start_battle(user_id: str, player_name: str, enemy_name: Optional[str]) -> Dict[str, object]:
+    get_user(user_id)
     player = _get_pokemon(player_name)
     enemy = _get_pokemon(enemy_name) if enemy_name else _get_pokemon("mewtwo")
 
     battle_id = str(uuid4())
     battle = BattleState(
         battle_id=battle_id,
+        user_id=user_id,
         player=player,
         enemy=enemy,
         logs=[f"Inicia {player.name} vs {enemy.name}"],
@@ -114,17 +153,22 @@ def start_battle(player_name: str, enemy_name: Optional[str]) -> Dict[str, objec
         winner=None,
     )
     BATTLES[battle_id] = battle
-    return _build_state(battle)
+    state = _build_state(battle)
+    save_battle_state(battle_id, user_id, state)
+    add_user_battle(user_id, battle_id)
+    return state
 
 
 def play_turn(battle_id: str, player_move: str) -> Dict[str, object]:
-    if battle_id not in BATTLES:
-        raise KeyError(battle_id)
+    battle = BATTLES.get(battle_id)
+    if battle is None:
+        battle = _restore_battle(battle_id)
 
-    battle = BATTLES[battle_id]
     if battle.finished:
         battle.logs.append("La batalla ya termino.")
-        return _build_state(battle)
+        state = _build_state(battle)
+        save_battle_state(battle_id, battle.user_id, state)
+        return state
 
     if player_move not in battle.player.moves:
         raise ValueError("Movimiento invalido")
@@ -141,4 +185,13 @@ def play_turn(battle_id: str, player_move: str) -> Dict[str, object]:
         else:
             battle.winner = "Empate"
 
+    state = _build_state(battle)
+    save_battle_state(battle_id, battle.user_id, state)
+    return state
+
+
+def get_battle_state(battle_id: str) -> Dict[str, object]:
+    battle = BATTLES.get(battle_id)
+    if battle is None:
+        battle = _restore_battle(battle_id)
     return _build_state(battle)

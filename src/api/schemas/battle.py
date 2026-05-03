@@ -4,6 +4,7 @@ from pydantic import BaseModel
 
 
 class StartBattleRequest(BaseModel):
+    user_id: str
     player_pokemon: str
     enemy_pokemon: Optional[str] = None
 
@@ -23,6 +24,7 @@ class BattlePokemonState(BaseModel):
 
 class BattleStateResponse(BaseModel):
     battle_id: str
+    user_id: str
     player: BattlePokemonState
     enemy: BattlePokemonState
     logs: List[str]
