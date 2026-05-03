@@ -1,3 +1,5 @@
+import random
+
 from ..models.pokemon import Pokemon
 from ..models.movimientos import Movimiento
 
@@ -102,11 +104,10 @@ def get_effectiveness(move_type: str, defender_types: list[str]) -> float:
             multiplier *= TYPE_CHART[move_type][t]
     return multiplier
 
-def calculate_damage(attacker: Pokemon, defender: Pokemon, move: Movimiento) -> int:
+def calculate_damage(attacker: Pokemon, defender: Pokemon, move: Movimiento) -> tuple[int, bool]:
     if move.category not in ["Physical", "Special"]:
-        return 0
+        return 0, False
 
-    # USANDO TUS PROPIEDADES: atk, spa, defense, spd
     if move.category == "Physical":
         atk_val = attacker.atk
         def_val = defender.defense
@@ -114,23 +115,26 @@ def calculate_damage(attacker: Pokemon, defender: Pokemon, move: Movimiento) -> 
         atk_val = attacker.spa
         def_val = defender.spd
 
-    # Tu fórmula original de la demo
     base_dmg = ((2 * 50 / 5 + 2) * move.power * (atk_val / def_val)) / 50 + 2
 
-    # STAB (Same Type Attack Bonus)
     stab = 1.5 if move.type in attacker.types else 1.0
-    
-    #print("-----")
-    #print("MOVIMIENTO ANALIZADO",move)
-    # Efectividad elemental
+    print("-----")
+    print("MOVIMIENTO ANALIZADO", move)
     eff = get_effectiveness(move.type, defender.types)
-    #print("MULTIPLICADOR:",eff)
-    #print("STABB",stab)
-    
+    print("MULTIPLICADOR:", eff)
+    print("STAB:", stab)
 
-    final_damage = base_dmg * stab * eff
-    #print("FINAL DAMAGE: ",final_damage)
-    #print("-----")
-    if eff == 0: 
-        return 0
-    return max(1, int(final_damage))
+    if eff == 0:
+        return 0, False
+
+    # Golpe crítico: 10% de probabilidad
+    is_crit = random.random() < 0.10
+    crit_multiplier = (2 * attacker.level + 5) / (attacker.level + 5) if is_crit else 1.0
+
+    print("CRIT MULTIPLIER:", crit_multiplier)
+
+    final_damage = base_dmg * stab * eff * crit_multiplier
+    print("FINAL DAMAGE:", final_damage)
+    print("-----")
+
+    return max(1, int(final_damage)), is_crit

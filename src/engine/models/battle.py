@@ -1,3 +1,4 @@
+import random
 from collections.abc import Callable
 from typing import Optional
 
@@ -23,14 +24,21 @@ class Battle:
         if move2 is not None:
             ataques.append((poke2, move2, poke1))
 
-        # Ordenar por velocidad descendente
-        ataques.sort(key=lambda x: x[0].spe, reverse=True)
+        # Priority primero, luego velocidad (ambos descendentes)
+        ataques.sort(key=lambda x: (x[1].priority, x[0].spe), reverse=True)
 
         for atacante, movimiento, defensor in ataques:
             if atacante.hp <= 0:
                 continue
 
-            dmg: int = calculate_damage(atacante, defensor, movimiento)
+            # Accuracy: si el movimiento falla, saltar
+            if random.randint(1, 100) > movimiento.accuracy:
+                print(f"» {atacante.name} usó {movimiento.name}... ¡pero falló!")
+                continue
+
+            dmg, is_crit = calculate_damage(atacante, defensor, movimiento)
+            if is_crit:
+                print("¡Golpe crítico!")
             defensor.hp -= dmg
             print(f"» {atacante.name} usó {movimiento.name}! Hizo {dmg} de daño.")
 

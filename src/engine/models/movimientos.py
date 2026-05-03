@@ -1,3 +1,6 @@
+from random import random
+
+
 class Movimiento:
     def __init__(self, data: dict):
         """
@@ -37,3 +40,5 @@ class Movimiento:
         
     def setDisabled(self) -> None:
         self.available = False
+
+    

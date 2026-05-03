@@ -87,3 +87,5 @@ class Pokemon:
         
         if self._status_turns == 0:
             self._status = "No State"
+
+    
