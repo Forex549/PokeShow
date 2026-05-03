@@ -12,36 +12,102 @@ with open(os.path.join(BASE_DIR, "data", "moves-data.json")) as f:
 with open(os.path.join(BASE_DIR, "data", "pokedex_con_moves.json")) as f:
     pokedex = json.load(f)
 
+
+def mostrar_equipo(entrenador: Entrenador):
+    print(f"\nEquipo de {entrenador.name}:")
+    for i, p in enumerate(entrenador.pokemones):
+        estado = f"{p.hp}/{p.max_hp} HP" if p.hp > 0 else "DEBILITADO"
+        activo = " ← activo" if i == entrenador.current_pokemon_index else ""
+        print(f"  {i+1}. {p.name} — {estado}{activo}")
+
+
+def seleccionar_pokemon(entrenador: Entrenador, forzado: bool = False) -> bool:
+    """Muestra el equipo y pide al jugador que elija un Pokémon.
+    Retorna True si el cambio se realizó, False si el jugador canceló (solo en cambio voluntario).
+    """
+    mostrar_equipo(entrenador)
+    while True:
+        try:
+            idx = int(input("Elige un Pokémon (número): ")) - 1
+            if not (0 <= idx < len(entrenador.pokemones)):
+                print("Número fuera de rango.")
+                continue
+            if entrenador.pokemones[idx].hp <= 0:
+                print(f"{entrenador.pokemones[idx].name} está debilitado.")
+                continue
+            if idx == entrenador.current_pokemon_index:
+                if forzado:
+                    print("Ese Pokémon ya está en batalla, elige otro.")
+                    continue
+                else:
+                    print("Ese Pokémon ya está en batalla.")
+                    return False
+            entrenador.switch_pokemon(idx)
+            print(f"¡{entrenador.name} envió a {entrenador.get_current_pokemon().name}!")
+            return True
+        except ValueError:
+            print("Entrada no válida.")
+
+
 # Definimos la estrategia del Jugador (Humano)
 def estrategia_humano(entrenador: Entrenador, rival: Entrenador):
     poke = entrenador.get_current_pokemon()
+
+    # Cambio forzado si el Pokémon actual está debilitado
+    if poke.hp <= 0:
+        print(f"\n¡{poke.name} se ha debilitado! Elige tu siguiente Pokémon.")
+        seleccionar_pokemon(entrenador, forzado=True)
+        return None
+
     print(f"\nTurno de {entrenador.name}. Pokémon: {poke.name}")
-    
-    # Mostrar movimientos disponibles
     for i, move in enumerate(poke.moves):
         print(f"{i+1}. {move.name}")
-    print("5. Cambiar Pokémon")  
-    print("6. Rendirse")  
-    # Capturar elección
-    try:
-        choice = int(input("Selecciona un ataque (1-6): ")) - 1
-        return poke.moves[choice]
-    except (ValueError, IndexError):
-        print("Selección no válida. Usando el primer movimiento.")
-        return poke.moves[0]
+    print("5. Cambiar Pokémon")
+    print("6. Rendirse")
+
+    while True:
+        try:
+            choice = int(input("Selecciona una acción (1-6): ")) - 1
+            if choice == 4:  # Cambiar Pokémon
+                if seleccionar_pokemon(entrenador):
+                    return None  # Pierde el turno de ataque
+                # Si no cambió (mismo Pokémon), re-preguntar
+            elif 0 <= choice < len(poke.moves):
+                return poke.moves[choice]
+            else:
+                print("Selección no válida.")
+        except ValueError:
+            print("Selección no válida.")
+
 
 # Definimos la estrategia de la IA
 def estrategia_ia(entrenador: Entrenador, rival: Entrenador):
-    # Usamos funcion heurística para elegir el mejor movimiento
-    # Le pasamos el pokemon actual de la IA y el del jugador
+    poke = entrenador.get_current_pokemon()
+
+    # Auto-cambio si el Pokémon actual está debilitado
+    if poke.hp <= 0:
+        for i, p in enumerate(entrenador.pokemones):
+            if p.hp > 0:
+                entrenador.switch_pokemon(i)
+                print(f"¡{entrenador.name} envió a {entrenador.get_current_pokemon().name}!")
+                return None
+
     return choose_best_move(entrenador.get_current_pokemon(), rival.get_current_pokemon())
 
-def main():
-    poke_p1 = Pokemon("hoopa", pokedex["hoopa"], moves_db)
-    poke_p2 = Pokemon("mewtwo", pokedex["mewtwo"], moves_db)
 
-    jugador = Entrenador("Giancarlo", [poke_p1])
-    rival_ia = Entrenador("IA_Master", [poke_p2])
+def main():
+    jugador = Entrenador("Topollillo", [
+        Pokemon("hoopa", pokedex["hoopa"], moves_db),
+        Pokemon("gengar", pokedex["gengar"], moves_db),
+        Pokemon("charizard", pokedex["charizard"], moves_db),
+        Pokemon("snorlax", pokedex["snorlax"], moves_db),
+    ])
+    rival_ia = Entrenador("Sobrevilla", [
+        Pokemon("mewtwo", pokedex["mewtwo"], moves_db),
+        Pokemon("tyranitar", pokedex["tyranitar"], moves_db),
+        Pokemon("typhlosion", pokedex["typhlosion"], moves_db),
+        Pokemon("articuno", pokedex["articuno"], moves_db),
+    ])
 
     batalla = Battle(jugador, rival_ia)
 

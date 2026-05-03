@@ -11,25 +11,29 @@ class Battle:
         self.entrenador1 = entrenador1
         self.entrenador2 = entrenador2
         self.turno = 0  # 0 para entrenador1, 1 para entrenador2
-    
-    def ejecutar_turno(self, move1, move2):
+
+    def ejecutar_turno(self, move1: Optional[Movimiento], move2: Optional[Movimiento]):
         poke1 = self.entrenador1.get_current_pokemon()
         poke2 = self.entrenador2.get_current_pokemon()
 
-        # Determinar orden por velocidad
-        if poke1.spe >= poke2.spe:
-            order = [(poke1, move1, poke2), (poke2, move2, poke1)]
-        else:
-            order = [(poke2, move2, poke1), (poke1, move1, poke2)]
+        # None indica cambio de Pokémon: ese entrenador no ataca este turno
+        ataques = []
+        if move1 is not None:
+            ataques.append((poke1, move1, poke2))
+        if move2 is not None:
+            ataques.append((poke2, move2, poke1))
 
-        for atacante, movimiento, defensor in order:
-            if atacante.hp <= 0: 
+        # Ordenar por velocidad descendente
+        ataques.sort(key=lambda x: x[0].spe, reverse=True)
+
+        for atacante, movimiento, defensor in ataques:
+            if atacante.hp <= 0:
                 continue
-            
+
             dmg: int = calculate_damage(atacante, defensor, movimiento)
             defensor.hp -= dmg
             print(f"» {atacante.name} usó {movimiento.name}! Hizo {dmg} de daño.")
-            
+
             if defensor.hp <= 0:
                 print(f"¡{defensor.name} se ha debilitado!")
                 break
@@ -51,9 +55,9 @@ class Battle:
         print(f"{self.entrenador2.name} - {poke2.name}: {poke2.hp}/{poke2.max_hp} HP")
         
     def start_battle(
-        self, 
-        strategy_p1: Callable[[Entrenador, Entrenador], Movimiento], 
-        strategy_p2: Callable[[Entrenador, Entrenador], Movimiento]
+        self,
+        strategy_p1: Callable[[Entrenador, Entrenador], Optional[Movimiento]],
+        strategy_p2: Callable[[Entrenador, Entrenador], Optional[Movimiento]],
     ) -> None:
         """
         Ejecuta el bucle principal de la batalla.
@@ -71,8 +75,8 @@ class Battle:
             
             try:
                 # Invocamos las estrategias tipadas
-                move1: Movimiento = strategy_p1(self.entrenador1, self.entrenador2)
-                move2: Movimiento = strategy_p2(self.entrenador2, self.entrenador1)
+                move1: Optional[Movimiento] = strategy_p1(self.entrenador1, self.entrenador2)
+                move2: Optional[Movimiento] = strategy_p2(self.entrenador2, self.entrenador1)
                 
                 self.ejecutar_turno(move1, move2)
                 
