@@ -4,6 +4,7 @@ from src.engine.models.pokemon import Pokemon
 from src.engine.models.entrenador import Entrenador
 from src.engine.models.battle import Battle
 from src.engine.logic.heuristic import choose_best_move
+from src.engine.logic.heuristic import chose_random_move
 
 # Carga de datos de Pokemon y movimientos
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -96,25 +97,91 @@ def estrategia_ia(entrenador: Entrenador, rival: Entrenador):
 
 
 def main():
-    jugador = Entrenador("Topollillo", [
-        Pokemon("hoopa", pokedex["hoopa"], moves_db),
-        Pokemon("gengar", pokedex["gengar"], moves_db),
-        Pokemon("charizard", pokedex["charizard"], moves_db),
-        Pokemon("snorlax", pokedex["snorlax"], moves_db),
-    ])
-    rival_ia = Entrenador("Sobrevilla", [
-        Pokemon("mewtwo", pokedex["mewtwo"], moves_db),
-        Pokemon("tyranitar", pokedex["tyranitar"], moves_db),
-        Pokemon("typhlosion", pokedex["typhlosion"], moves_db),
-        Pokemon("articuno", pokedex["articuno"], moves_db),
-    ])
-
-    batalla = Battle(jugador, rival_ia)
-
-    # Ejecución de la batalla
-    # Pasamos las funciones de estrategia como parámetros
-    # Estrategia -> se refiere que es lo que hace cada jugador en su turno para elegir su movimiento
-    batalla.start_battle(estrategia_humano, estrategia_ia)
+    # Menu de selección de modo
+    print("Selecciona el modo de juego:")
+    print("1. Humano vs IA")
+    print("2. IA vs IA")
+    print("3. Humano vs Humano")
+    
+    while True:
+        try:
+            modo = int(input("Elige un modo (1-3): "))
+            if modo not in [1, 2, 3]:
+                print("Selección no válida.")
+                continue
+            break
+        except ValueError:
+            print("Entrada no válida.")
+    
+    # Funcion auxiliar para seleccionar bot ia
+    def seleccionar_bot_ia(nombre_ia: str):
+        print(f"\nSelecciona el bot para {nombre_ia}:")
+        print("1. Aleatorio")
+        print("2. Mejor opción")
+        while True:
+            try:
+                bot = int(input("Elige un bot (1-2): "))
+                if bot == 1:
+                    
+                    return chose_random_move
+                elif bot == 2:
+                    
+                    return choose_best_move
+                else:
+                    print("Selección no válida.")
+                    continue
+            except ValueError:
+                print("Entrada no válida.")
+    
+    # Configurar entrenadores y estrategias según el modo
+    if modo == 1:  # Humano vs IA
+        estrategia_rival = seleccionar_bot_ia("la IA rival")
+        estrategia_jugador = estrategia_humano
+        jugador = Entrenador("Topollillo", [
+            Pokemon("hoopa", pokedex["hoopa"], moves_db),
+            Pokemon("gengar", pokedex["gengar"], moves_db),
+            Pokemon("charizard", pokedex["charizard"], moves_db),
+            Pokemon("snorlax", pokedex["snorlax"], moves_db),
+        ])
+        rival = Entrenador("Sobrevilla", [
+            Pokemon("mewtwo", pokedex["mewtwo"], moves_db),
+            Pokemon("tyranitar", pokedex["tyranitar"], moves_db),
+            Pokemon("typhlosion", pokedex["typhlosion"], moves_db),
+            Pokemon("articuno", pokedex["articuno"], moves_db),
+        ])
+    elif modo == 2:  # IA vs IA
+        estrategia_jugador = seleccionar_bot_ia("IA1")
+        estrategia_rival = seleccionar_bot_ia("IA2")
+        jugador = Entrenador("IA1", [
+            Pokemon("hoopa", pokedex["hoopa"], moves_db),
+            Pokemon("gengar", pokedex["gengar"], moves_db),
+            Pokemon("charizard", pokedex["charizard"], moves_db),
+            Pokemon("snorlax", pokedex["snorlax"], moves_db),
+        ])
+        rival = Entrenador("IA2", [
+            Pokemon("mewtwo", pokedex["mewtwo"], moves_db),
+            Pokemon("tyranitar", pokedex["tyranitar"], moves_db),
+            Pokemon("typhlosion", pokedex["typhlosion"], moves_db),
+            Pokemon("articuno", pokedex["articuno"], moves_db),
+        ])
+    elif modo == 3:  # Humano vs Humano
+        estrategia_jugador = estrategia_humano
+        estrategia_rival = estrategia_humano
+        jugador = Entrenador("Jugador1", [
+            Pokemon("hoopa", pokedex["hoopa"], moves_db),
+            Pokemon("gengar", pokedex["gengar"], moves_db),
+            Pokemon("charizard", pokedex["charizard"], moves_db),
+            Pokemon("snorlax", pokedex["snorlax"], moves_db),
+        ])
+        rival = Entrenador("Jugador2", [
+            Pokemon("mewtwo", pokedex["mewtwo"], moves_db),
+            Pokemon("tyranitar", pokedex["tyranitar"], moves_db),
+            Pokemon("typhlosion", pokedex["typhlosion"], moves_db),
+            Pokemon("articuno", pokedex["articuno"], moves_db),
+        ])
+    
+    batalla = Battle(jugador, rival)
+    batalla.start_battle(estrategia_jugador, estrategia_rival)
 
 if __name__ == "__main__":
     main()
