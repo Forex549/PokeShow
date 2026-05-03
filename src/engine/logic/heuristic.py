@@ -1,3 +1,6 @@
+from random import random
+from typing import Optional
+
 from ..models.pokemon import Pokemon
 from ..models.movimientos import Movimiento
 from .damage_calc import calculate_damage
@@ -13,3 +16,6 @@ def choose_best_move(my_poke: Pokemon, enemy_poke: Pokemon) -> Movimiento:
             best_move = move
 
     return best_move
+
+def chose_random_move(my_poke: Pokemon) -> Optional[Movimiento]:
+    return 1
