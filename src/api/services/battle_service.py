@@ -48,21 +48,26 @@ def _get_pokemon(name: str) -> Pokemon:
     if poke_id not in POKEDEX_DB:
         raise KeyError(poke_id)
     data = POKEDEX_DB[poke_id]
-    return Pokemon(data.get("name", poke_id), data)
+    return Pokemon(data.get("name", poke_id), data, MOVES_DB)
 
 
 def _get_move_obj(name: str) -> Movimiento:
     move_id = _normalize_id(name)
     if move_id not in MOVES_DB:
         raise KeyError(move_id)
-    return Movimiento(move_id, MOVES_DB[move_id])
+    return Movimiento(data=MOVES_DB[move_id])
 
 
-def _execute_turn(player: Pokemon, enemy: Pokemon, player_move_name: str, enemy_move_name: str) -> List[str]:
+def _find_move(pokemon: Pokemon, move_name: str) -> Movimiento:
+    move_id = _normalize_id(move_name)
+    for move in pokemon.moves:
+        if _normalize_id(move.name) == move_id:
+            return move
+    raise ValueError("Movimiento invalido")
+
+
+def _execute_turn(player: Pokemon, enemy: Pokemon, player_move: Movimiento, enemy_move: Movimiento) -> List[str]:
     logs: List[str] = []
-
-    player_move = _get_move_obj(player_move_name)
-    enemy_move = _get_move_obj(enemy_move_name)
 
     if player.spe >= enemy.spe:
         order = [(player, player_move, enemy), (enemy, enemy_move, player)]
@@ -93,14 +98,14 @@ def _build_state(battle: BattleState) -> Dict[str, object]:
             "hp": battle.player.hp,
             "max_hp": battle.player.max_hp,
             "types": list(battle.player.types),
-            "moves": list(battle.player.moves),
+            "moves": [move.name for move in battle.player.moves],
         },
         "enemy": {
             "name": battle.enemy.name,
             "hp": battle.enemy.hp,
             "max_hp": battle.enemy.max_hp,
             "types": list(battle.enemy.types),
-            "moves": list(battle.enemy.moves),
+            "moves": [move.name for move in battle.enemy.moves],
         },
         "logs": list(battle.logs),
         "finished": battle.finished,
@@ -113,7 +118,9 @@ def _pokemon_from_state(state: Dict[str, object]) -> Pokemon:
     pokemon = _get_pokemon(name)
     pokemon.hp = int(state.get("hp", pokemon.hp))
     pokemon.max_hp = int(state.get("max_hp", pokemon.max_hp))
-    pokemon.moves = list(state.get("moves", pokemon.moves))
+    stored_moves = list(state.get("moves", []))
+    if stored_moves:
+        pokemon.moves = [_get_move_obj(move_name) for move_name in stored_moves]
     pokemon.types = list(state.get("types", pokemon.types))
     return pokemon
 
@@ -170,11 +177,9 @@ def play_turn(battle_id: str, player_move: str) -> Dict[str, object]:
         save_battle_state(battle_id, battle.user_id, state)
         return state
 
-    if player_move not in battle.player.moves:
-        raise ValueError("Movimiento invalido")
-
-    enemy_move = choose_best_move(battle.enemy, battle.player, MOVES_DB)
-    battle.logs.extend(_execute_turn(battle.player, battle.enemy, player_move, enemy_move))
+    player_move_obj = _find_move(battle.player, player_move)
+    enemy_move_obj = choose_best_move(battle.enemy, battle.player)
+    battle.logs.extend(_execute_turn(battle.player, battle.enemy, player_move_obj, enemy_move_obj))
 
     if battle.player.hp <= 0 or battle.enemy.hp <= 0:
         battle.finished = True

@@ -1,7 +1,6 @@
 import json
 import os
 from src.engine.models.pokemon import Pokemon
-from src.engine.models.movimientos import Movimiento
 from src.engine.logic.damage_calc import calculate_damage
 from src.engine.logic.heuristic import choose_best_move
 
@@ -12,13 +11,9 @@ with open(os.path.join(BASE_DIR, "data", "moves-data.json")) as f:
 with open(os.path.join(BASE_DIR, "data", "pokedex_con_moves.json")) as f:
     pokedex = json.load(f)
 
-def get_move_obj(name: str) -> Movimiento:
-    m_id = name.lower().replace(" ", "").replace("-", "")
-    return Movimiento(m_id, moves_db[m_id])
-
-def execute_turn(p1: Pokemon, p2: Pokemon, p1_m_name: str, p2_m_name: str) -> None:
-    m1: Movimiento = get_move_obj(p1_m_name)
-    m2: Movimiento = get_move_obj(p2_m_name)
+def execute_turn(p1: Pokemon, p2: Pokemon, p1_move, p2_move) -> None:
+    m1 = p1_move
+    m2 = p2_move
 
     # Determinar orden por velocidad
     if p1.spe >= p2.spe:
@@ -39,9 +34,9 @@ def execute_turn(p1: Pokemon, p2: Pokemon, p1_m_name: str, p2_m_name: str) -> No
             break
 
 def battle() -> None:
-    # Instanciamos con tus clases originales (Salamence vs Mewtwo)
-    player: Pokemon = Pokemon("salamence", pokedex["salamence"])
-    enemy: Pokemon = Pokemon("mewtwo", pokedex["mewtwo"])
+    # Instanciamos con tus clases actuales (Salamence vs Mewtwo)
+    player: Pokemon = Pokemon("salamence", pokedex["salamence"], moves_db)
+    enemy: Pokemon = Pokemon("mewtwo", pokedex["mewtwo"], moves_db)
     
     print(f"--- INICIA: {player.name.upper()} vs {enemy.name.upper()} ---")
 
@@ -49,16 +44,16 @@ def battle() -> None:
         print(f"\nSTATUS: {player.name}: {player.hp} HP | {enemy.name}: {enemy.hp} HP")
         
         # Mostrar ataques
-        for i, m_name in enumerate(player.moves):
-            print(f"{i+1}. {m_name}")
+        for i, move in enumerate(player.moves):
+            print(f"{i+1}. {move.name}")
         
         choice: int = int(input("Selecciona un ataque (1-4): ")) - 1
-        p_move_name: str = player.moves[choice]
+        p_move = player.moves[choice]
         
-        # IA decide (Ahora recibe correctamente los 3 argumentos)
-        e_move_name: str = choose_best_move(enemy, player, moves_db)
-        
-        execute_turn(player, enemy, p_move_name, e_move_name)
+        # IA decide
+        e_move = choose_best_move(enemy, player)
+
+        execute_turn(player, enemy, p_move, e_move)
 
     print("\n" + "="*20)
     print("¡GANASTE!" if player.hp > 0 else "PERDISTE...")
