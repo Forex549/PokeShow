@@ -35,14 +35,14 @@ def execute_turn(p1: Pokemon, p2: Pokemon, p1_move, p2_move) -> None:
 
 def battle() -> None:
     # Instanciamos con tus clases actuales (Salamence vs Mewtwo)
-    player: Pokemon = Pokemon("salamence", pokedex["salamence"], moves_db)
+    player: Pokemon = Pokemon("zeraora", pokedex["zeraora"], moves_db)
     enemy: Pokemon = Pokemon("mewtwo", pokedex["mewtwo"], moves_db)
     
     print(f"--- INICIA: {player.name.upper()} vs {enemy.name.upper()} ---")
 
     while player.hp > 0 and enemy.hp > 0:
         print(f"\nSTATUS: {player.name}: {player.hp} HP | {enemy.name}: {enemy.hp} HP")
-        
+        print("Movimientos del enemigo: ",enemy.moves)
         # Mostrar ataques
         for i, move in enumerate(player.moves):
             print(f"{i+1}. {move.name}")

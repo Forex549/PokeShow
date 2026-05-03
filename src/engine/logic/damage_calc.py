@@ -120,11 +120,17 @@ def calculate_damage(attacker: Pokemon, defender: Pokemon, move: Movimiento) -> 
     # STAB (Same Type Attack Bonus)
     stab = 1.5 if move.type in attacker.types else 1.0
     
+    print("-----")
+    print("MOVIMIENTO ANALIZADO",move)
     # Efectividad elemental
     eff = get_effectiveness(move.type, defender.types)
+    print("MULTIPLICADOR:",eff)
+    print("STABB",stab)
+    
 
     final_damage = base_dmg * stab * eff
-
+    print("FINAL DAMAGE: ",final_damage)
+    print("-----")
     if eff == 0: 
         return 0
     return max(1, int(final_damage))

@@ -1,15 +1,19 @@
 import random
 from .movimientos import Movimiento
 
+def calculate_hp(base, level=50):
+    return int(((2 * base) * level) / 100 + level + 10)
+
 class Pokemon:
     def __init__(self, name : str, data : dict, data_moves: dict):
         self.name = name
+        self.level = 50
         self.types = data["types"]  # tipo del pokemon
         self.stats = data["baseStats"]
-        self.hp = data["baseStats"]["hp"]
-        self.max_hp = data["baseStats"]["hp"]
+        self.hp = calculate_hp(data["baseStats"]["hp"], self.level)
+        self.max_hp = calculate_hp(data["baseStats"]["hp"], self.level)
         self.names_moves = [move.lower().replace(" ", "").replace("-", "") for move in data["moves"]]  # lista de nombres de movimientos
-        self.moves = [Movimiento(data=data_moves[move_name]) for move_name in self.names_moves]
+        self.moves = [Movimiento(data=data_moves[move_name]) for move_name in random.sample(self.names_moves,4)]
 
         self._status = "No State"    # envenenado, dormido, etc
         self._status_turns = 0   # contador de turnos para efectos de estado 
