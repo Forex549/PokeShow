@@ -1,5 +1,6 @@
 import json
 import os
+import random
 from src.engine.models.pokemon import Pokemon
 from src.engine.models.entrenador import Entrenador
 from src.engine.models.battle import Battle
@@ -95,7 +96,16 @@ def estrategia_ia(entrenador: Entrenador, rival: Entrenador):
 
     return choose_best_move(entrenador.get_current_pokemon(), rival.get_current_pokemon())
 
+def estrategia_random(entrenador: Entrenador, rival: Entrenador):
+    poke = entrenador.get_current_pokemon()
 
+    if poke.hp <= 0:
+        for i, p in enumerate(entrenador.pokemones):
+            if p.hp > 0:
+                entrenador.switch_pokemon(i)
+                print(f"{entrenador.name} envió a {p.name}")
+                return None
+    return random.choice(poke.moves)
 def main():
     # Menu de selección de modo
     print("Selecciona el modo de juego:")
@@ -123,10 +133,10 @@ def main():
                 bot = int(input("Elige un bot (1-2): "))
                 if bot == 1:
                     
-                    return chose_random_move
+                    return estrategia_random
                 elif bot == 2:
                     
-                    return choose_best_move
+                    return estrategia_ia
                 else:
                     print("Selección no válida.")
                     continue
