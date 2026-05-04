@@ -1,4 +1,4 @@
-from random import random
+from random import choice
 from typing import Optional
 
 from ..models.pokemon import Pokemon
@@ -18,4 +18,6 @@ def choose_best_move(my_poke: Pokemon, enemy_poke: Pokemon) -> Movimiento:
     return best_move
 
 def chose_random_move(my_poke: Pokemon) -> Optional[Movimiento]:
-    return 1
+    if not my_poke.available_moves:
+        return None
+    return choice(my_poke.available_moves)

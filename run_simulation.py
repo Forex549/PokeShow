@@ -4,8 +4,7 @@ import random
 from src.engine.models.pokemon import Pokemon
 from src.engine.models.entrenador import Entrenador
 from src.engine.models.battle import Battle
-from src.engine.logic.heuristic import choose_best_move
-from src.engine.logic.heuristic import chose_random_move
+from src.engine.logic.heuristic import choose_best_move, chose_random_move
 
 # Carga de datos de Pokemon y movimientos
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -83,29 +82,29 @@ def estrategia_humano(entrenador: Entrenador, rival: Entrenador):
 
 
 # Definimos la estrategia de la IA
-def estrategia_ia(entrenador: Entrenador, rival: Entrenador):
-    poke = entrenador.get_current_pokemon()
-
-    # Auto-cambio si el Pokémon actual está debilitado
-    if poke.hp <= 0:
-        for i, p in enumerate(entrenador.pokemones):
-            if p.hp > 0:
-                entrenador.switch_pokemon(i)
-                print(f"¡{entrenador.name} envió a {entrenador.get_current_pokemon().name}!")
-                return None
-
-    return choose_best_move(entrenador.get_current_pokemon(), rival.get_current_pokemon())
-
-def estrategia_random(entrenador: Entrenador, rival: Entrenador):
+def estrategia_ia_best_option(entrenador: Entrenador, rival: Entrenador):
     poke = entrenador.get_current_pokemon()
 
     if poke.hp <= 0:
         for i, p in enumerate(entrenador.pokemones):
             if p.hp > 0:
                 entrenador.switch_pokemon(i)
-                print(f"{entrenador.name} envió a {p.name}")
+                print(f"¡{entrenador.name} envió a {p.name}!")
                 return None
-    return random.choice(poke.moves)
+
+    return choose_best_move(poke, rival.get_current_pokemon())
+
+def estrategia_ia_random(entrenador: Entrenador, rival: Entrenador):
+    poke = entrenador.get_current_pokemon()
+
+    if poke.hp <= 0:
+        for i, p in enumerate(entrenador.pokemones):
+            if p.hp > 0:
+                entrenador.switch_pokemon(i)
+                print(f"¡{entrenador.name} envió a {p.name}!")
+                return None
+
+    return chose_random_move(poke)
 def main():
     # Menu de selección de modo
     print("Selecciona el modo de juego:")
@@ -133,10 +132,10 @@ def main():
                 bot = int(input("Elige un bot (1-2): "))
                 if bot == 1:
                     
-                    return estrategia_random
+                    return estrategia_ia_random
                 elif bot == 2:
                     
-                    return estrategia_ia
+                    return estrategia_ia_best_option
                 else:
                     print("Selección no válida.")
                     continue
