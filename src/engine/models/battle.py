@@ -82,6 +82,14 @@ class Battle:
             self.display_status()
             
             try:
+                # 🔥 FORZAR CAMBIOS ANTES DEL TURNO
+                if self.entrenador1.get_current_pokemon().hp <= 0:
+                    strategy_p1(self.entrenador1, self.entrenador2)
+                    continue
+
+                if self.entrenador2.get_current_pokemon().hp <= 0:
+                    strategy_p2(self.entrenador2, self.entrenador1)
+                    continue
                 # Invocamos las estrategias tipadas
                 move1: Optional[Movimiento] = strategy_p1(self.entrenador1, self.entrenador2)
                 move2: Optional[Movimiento] = strategy_p2(self.entrenador2, self.entrenador1)
