@@ -1,4 +1,4284 @@
 {
-  "users": {},
-  "battles": {}
+  "users": {
+    "1049fae5-6569-4f01-9f3e-889058b9a3b7": {
+      "id": "1049fae5-6569-4f01-9f3e-889058b9a3b7",
+      "username": "Esther",
+      "battles": [
+        "c0e3b02c-b3f0-4654-8c5e-49cfd171b447"
+      ],
+      "created_at": "2026-05-07T16:10:02.293767Z"
+    },
+    "a8de03a2-2949-4ddd-b8c7-e8486b0ece3e": {
+      "id": "a8de03a2-2949-4ddd-b8c7-e8486b0ece3e",
+      "username": "Esther",
+      "battles": [
+        "90c48e81-5e76-44c1-bc35-04a5e1e33b2f"
+      ],
+      "created_at": "2026-05-07T16:41:36.055602Z"
+    },
+    "b1ddf74b-e515-44eb-a31b-7e23413a8e27": {
+      "id": "b1ddf74b-e515-44eb-a31b-7e23413a8e27",
+      "username": "Esther",
+      "battles": [
+        "fe27570f-6611-4cf7-b391-42e5a5457eb9"
+      ],
+      "created_at": "2026-05-07T16:41:36.082837Z"
+    },
+    "6c915c15-6737-46ad-9ddc-7883c7c10d8d": {
+      "id": "6c915c15-6737-46ad-9ddc-7883c7c10d8d",
+      "username": "Esther",
+      "battles": [
+        "764931c9-9f36-411f-9de6-71b856c8f15c"
+      ],
+      "created_at": "2026-05-07T16:42:35.779174Z"
+    },
+    "ec6d99dd-dd6f-4d22-ad94-f04fb3fe7bef": {
+      "id": "ec6d99dd-dd6f-4d22-ad94-f04fb3fe7bef",
+      "username": "Esther",
+      "battles": [
+        "92730eaa-8303-49d9-a2ad-0d3228c513cf"
+      ],
+      "created_at": "2026-05-07T16:42:35.790062Z"
+    },
+    "bc66cd66-d33a-4449-bfd4-31b247b043ca": {
+      "id": "bc66cd66-d33a-4449-bfd4-31b247b043ca",
+      "username": "Esther",
+      "battles": [
+        "763f6b2c-9ff3-4fc9-b425-9fc54c661bf1"
+      ],
+      "created_at": "2026-05-07T16:43:41.072555Z"
+    },
+    "597588b5-7a6d-4d28-86e2-f549a6eaf477": {
+      "id": "597588b5-7a6d-4d28-86e2-f549a6eaf477",
+      "username": "Esther",
+      "battles": [
+        "b9ce8fc4-c593-44cc-81b9-2b6af8a17ecd"
+      ],
+      "created_at": "2026-05-07T16:43:41.083062Z"
+    },
+    "4b7a3106-c6b6-4a94-a003-53e072726e53": {
+      "id": "4b7a3106-c6b6-4a94-a003-53e072726e53",
+      "username": "Esther",
+      "battles": [
+        "8d4455ad-2bdd-4d1e-9fbe-cf32fdd441a2"
+      ],
+      "created_at": "2026-05-07T16:43:41.769125Z"
+    },
+    "da157f1c-1abb-40e1-9119-9a8488f57503": {
+      "id": "da157f1c-1abb-40e1-9119-9a8488f57503",
+      "username": "Esther",
+      "battles": [
+        "94606ee8-9b6b-4828-bfed-bdc97ccdc8d4"
+      ],
+      "created_at": "2026-05-07T16:43:41.796109Z"
+    },
+    "4aeceb0d-ddf5-4117-8d27-d1d5634876da": {
+      "id": "4aeceb0d-ddf5-4117-8d27-d1d5634876da",
+      "username": "Esther",
+      "battles": [
+        "6d575826-34b7-4882-9c1c-c59ccf9f9c92"
+      ],
+      "created_at": "2026-05-07T16:44:19.723577Z"
+    },
+    "8abd5a49-a146-4fe6-8dfc-ed43a84c2eb2": {
+      "id": "8abd5a49-a146-4fe6-8dfc-ed43a84c2eb2",
+      "username": "Esther",
+      "battles": [
+        "5006f3bf-64ff-4b47-8b0a-b0207c6a7c6c"
+      ],
+      "created_at": "2026-05-07T16:44:19.737027Z"
+    },
+    "52d1f8dc-f92b-49a9-90c8-254af6508e7a": {
+      "id": "52d1f8dc-f92b-49a9-90c8-254af6508e7a",
+      "username": "Esther",
+      "battles": [
+        "a5a6bf7d-fe00-4bb9-a91a-d9a720072885"
+      ],
+      "created_at": "2026-05-07T16:44:44.621173Z"
+    },
+    "4a495fda-8de5-46a9-975e-9fce087b1ccd": {
+      "id": "4a495fda-8de5-46a9-975e-9fce087b1ccd",
+      "username": "Esther",
+      "battles": [
+        "323d9792-65b9-4666-9976-750d53986527"
+      ],
+      "created_at": "2026-05-07T16:44:44.631358Z"
+    },
+    "2c6c4df7-86fd-45da-a99a-1ea96f460dc2": {
+      "id": "2c6c4df7-86fd-45da-a99a-1ea96f460dc2",
+      "username": "Esther",
+      "battles": [
+        "8b429a8f-9df0-4b88-90f4-8aa402b1d43b"
+      ],
+      "created_at": "2026-05-07T16:44:52.029594Z"
+    },
+    "ea9472a7-e6c2-4667-a6e0-5b428b8647ef": {
+      "id": "ea9472a7-e6c2-4667-a6e0-5b428b8647ef",
+      "username": "Esther",
+      "battles": [
+        "9daf490a-470b-4aab-a5c9-e1e87fa3e2be"
+      ],
+      "created_at": "2026-05-07T16:44:52.041453Z"
+    },
+    "a322a2c6-1e33-46b6-9170-bc8f9d154b61": {
+      "id": "a322a2c6-1e33-46b6-9170-bc8f9d154b61",
+      "username": "Esther",
+      "battles": [
+        "429908c6-5c4a-4a2d-a9a7-2a571e0710cb"
+      ],
+      "created_at": "2026-05-07T16:45:23.725408Z"
+    },
+    "d5e0f896-5fb1-4a34-8d98-ab2e8b58ffb9": {
+      "id": "d5e0f896-5fb1-4a34-8d98-ab2e8b58ffb9",
+      "username": "Esther",
+      "battles": [
+        "29a1aa3f-0bea-4600-bfff-aeee79a6ef96"
+      ],
+      "created_at": "2026-05-07T16:45:23.789183Z"
+    },
+    "6c4c6cd3-8d5b-4929-b21d-da96af3687ff": {
+      "id": "6c4c6cd3-8d5b-4929-b21d-da96af3687ff",
+      "username": "Esther",
+      "battles": [
+        "7d9f3ba4-3951-4482-ae2b-462974ca23a2"
+      ],
+      "created_at": "2026-05-07T16:45:23.797697Z"
+    },
+    "f5132dc7-15a0-4036-ab60-a9526873b7cf": {
+      "id": "f5132dc7-15a0-4036-ab60-a9526873b7cf",
+      "username": "Esther",
+      "battles": [
+        "cf42436d-479f-4724-b272-e10739f1eb5f"
+      ],
+      "created_at": "2026-05-07T16:45:23.806009Z"
+    },
+    "ac4a7715-7b4d-4adf-9917-287cda3ab606": {
+      "id": "ac4a7715-7b4d-4adf-9917-287cda3ab606",
+      "username": "Esther",
+      "battles": [
+        "72889a01-13f5-48f1-b406-bb7f587f658e"
+      ],
+      "created_at": "2026-05-07T16:45:56.256418Z"
+    },
+    "2d219fc0-c5f9-4be8-8bae-90049d0fbdf9": {
+      "id": "2d219fc0-c5f9-4be8-8bae-90049d0fbdf9",
+      "username": "Esther",
+      "battles": [
+        "b28cf1c8-d3ac-4589-8e1b-ae0005ba6e1e"
+      ],
+      "created_at": "2026-05-07T16:45:56.266888Z"
+    },
+    "29118bc1-7109-4c72-9155-f7b4737287fc": {
+      "id": "29118bc1-7109-4c72-9155-f7b4737287fc",
+      "username": "Esther",
+      "battles": [
+        "211a1a5b-ef26-4327-8f24-f5320516eccd"
+      ],
+      "created_at": "2026-05-07T16:45:57.370473Z"
+    },
+    "05a15c58-90fa-4776-9318-d0c4b6354475": {
+      "id": "05a15c58-90fa-4776-9318-d0c4b6354475",
+      "username": "Esther",
+      "battles": [
+        "75ba900e-3c02-4de4-97a7-1849ac1250f1"
+      ],
+      "created_at": "2026-05-07T16:45:57.381086Z"
+    },
+    "ef4b2001-59cd-4503-9b36-c4131e493e87": {
+      "id": "ef4b2001-59cd-4503-9b36-c4131e493e87",
+      "username": "Esther",
+      "battles": [
+        "ae051889-d5da-4f34-bc46-3250e91e9d7c"
+      ],
+      "created_at": "2026-05-07T16:45:57.599918Z"
+    },
+    "1eb08e02-2fc0-473c-acab-5b301c20f925": {
+      "id": "1eb08e02-2fc0-473c-acab-5b301c20f925",
+      "username": "Esther",
+      "battles": [
+        "710fa2f5-28fe-4a85-a063-6a13a61ab688"
+      ],
+      "created_at": "2026-05-07T16:45:57.608543Z"
+    },
+    "40a0118c-f753-4903-8b00-3368944543c3": {
+      "id": "40a0118c-f753-4903-8b00-3368944543c3",
+      "username": "Esther",
+      "battles": [
+        "308698a2-6745-49bf-8d21-1350f74e48bf"
+      ],
+      "created_at": "2026-05-07T16:45:57.964500Z"
+    },
+    "9b7fd13b-ed8b-4e82-a77d-c64a2745588c": {
+      "id": "9b7fd13b-ed8b-4e82-a77d-c64a2745588c",
+      "username": "Esther",
+      "battles": [
+        "1cbfbdfe-af04-4dae-a3ef-b72a4b149270"
+      ],
+      "created_at": "2026-05-07T16:45:57.976304Z"
+    },
+    "a0b1b771-d24e-4396-b84a-2c279462ddf3": {
+      "id": "a0b1b771-d24e-4396-b84a-2c279462ddf3",
+      "username": "Esther",
+      "battles": [
+        "42672599-9f5d-4bdb-b1db-903d3f6da2cc"
+      ],
+      "created_at": "2026-05-07T16:45:58.287984Z"
+    },
+    "bde8f443-898a-4e88-afdb-21189a7c2d23": {
+      "id": "bde8f443-898a-4e88-afdb-21189a7c2d23",
+      "username": "Esther",
+      "battles": [
+        "dbc30e04-f9a4-4074-b3e9-282105cade24"
+      ],
+      "created_at": "2026-05-07T16:45:58.304010Z"
+    },
+    "ad3c0655-0a75-4ec8-8c5b-dd0b1727df07": {
+      "id": "ad3c0655-0a75-4ec8-8c5b-dd0b1727df07",
+      "username": "Esther",
+      "battles": [
+        "fe212c41-b4c4-4831-bd3d-1e88bcda8cb6"
+      ],
+      "created_at": "2026-05-07T16:51:54.532549Z"
+    },
+    "ff69bff3-8d30-49cf-8ea5-270c68aa4765": {
+      "id": "ff69bff3-8d30-49cf-8ea5-270c68aa4765",
+      "username": "Esther",
+      "battles": [
+        "03fbb1a9-248e-400c-ae17-593862a8ba50"
+      ],
+      "created_at": "2026-05-07T16:52:04.552742Z"
+    },
+    "0c7913cb-bc88-4194-805c-d5712d14aa12": {
+      "id": "0c7913cb-bc88-4194-805c-d5712d14aa12",
+      "username": "Esther",
+      "battles": [
+        "0a32d7aa-805b-426e-ba09-9969a58ea23d"
+      ],
+      "created_at": "2026-05-07T16:58:03.113403Z"
+    },
+    "6717572f-783d-4b48-8967-c5e889353095": {
+      "id": "6717572f-783d-4b48-8967-c5e889353095",
+      "username": "Esther",
+      "battles": [
+        "f04220bc-b265-431d-854d-8c97ec11791d"
+      ],
+      "created_at": "2026-05-07T17:11:50.977488Z"
+    },
+    "524622d7-7620-4759-a817-94846a62a7c8": {
+      "id": "524622d7-7620-4759-a817-94846a62a7c8",
+      "username": "Esther",
+      "battles": [
+        "e2849713-6b79-402a-87a9-e4897a6892c9"
+      ],
+      "created_at": "2026-05-07T17:11:50.988946Z"
+    },
+    "3397fcec-5db0-49f5-be9a-950eb90318c2": {
+      "id": "3397fcec-5db0-49f5-be9a-950eb90318c2",
+      "username": "Esther",
+      "battles": [
+        "f740b212-cbfa-41b5-906b-2dfb0673714d"
+      ],
+      "created_at": "2026-05-07T17:19:25.811934Z"
+    },
+    "20262b94-ae54-4f07-a961-215519011ed8": {
+      "id": "20262b94-ae54-4f07-a961-215519011ed8",
+      "username": "Esther",
+      "battles": [
+        "a883a36e-0d99-492e-b498-03242fdefa8e"
+      ],
+      "created_at": "2026-05-07T17:19:25.823395Z"
+    },
+    "e4a1b906-79ed-478c-ab03-093dda06d132": {
+      "id": "e4a1b906-79ed-478c-ab03-093dda06d132",
+      "username": "Esther",
+      "battles": [
+        "aabdfcc8-2209-4f8a-84bc-3abbe4c6ad09"
+      ],
+      "created_at": "2026-05-07T17:20:17.237276Z"
+    },
+    "1a503252-8f46-454a-9b3a-e6d96e7d35ef": {
+      "id": "1a503252-8f46-454a-9b3a-e6d96e7d35ef",
+      "username": "Esther",
+      "battles": [
+        "cb6996f2-6dfe-4d9f-8831-0f181fae6d3a"
+      ],
+      "created_at": "2026-05-07T17:20:17.250414Z"
+    },
+    "979f2f8a-5e6c-40bc-90e3-71cc0255512e": {
+      "id": "979f2f8a-5e6c-40bc-90e3-71cc0255512e",
+      "username": "Esther",
+      "battles": [
+        "b87c655e-12b5-4d29-b80c-442fdb6bd018"
+      ],
+      "created_at": "2026-05-07T17:20:17.462427Z"
+    },
+    "17a420b0-7cde-4aec-a35e-c57ece4586a6": {
+      "id": "17a420b0-7cde-4aec-a35e-c57ece4586a6",
+      "username": "Esther",
+      "battles": [
+        "b7e99087-3089-4e3a-ab38-78ca2db3bcd6"
+      ],
+      "created_at": "2026-05-07T17:20:17.473506Z"
+    },
+    "3da08a34-cf19-48b8-8bbd-aa03a6138aa7": {
+      "id": "3da08a34-cf19-48b8-8bbd-aa03a6138aa7",
+      "username": "Esther",
+      "battles": [
+        "0ead067d-9f64-46d1-8d40-77ed7f1b314e"
+      ],
+      "created_at": "2026-05-07T17:20:17.784884Z"
+    },
+    "30716850-8a3c-4f5c-9ec5-e77a388c2aa7": {
+      "id": "30716850-8a3c-4f5c-9ec5-e77a388c2aa7",
+      "username": "Esther",
+      "battles": [
+        "f7810427-6012-469a-bf8e-9ec03c368c48"
+      ],
+      "created_at": "2026-05-07T17:20:17.853183Z"
+    },
+    "9de0e885-ea0d-4df5-bb2e-4ca74d8e8c5c": {
+      "id": "9de0e885-ea0d-4df5-bb2e-4ca74d8e8c5c",
+      "username": "Esther",
+      "battles": [
+        "0ee7e0a1-8fab-496f-9495-327b997e6dd1"
+      ],
+      "created_at": "2026-05-07T17:20:17.991209Z"
+    },
+    "ec6ed456-04dc-440d-8148-8d82eb213710": {
+      "id": "ec6ed456-04dc-440d-8148-8d82eb213710",
+      "username": "Esther",
+      "battles": [
+        "a0f1798d-9738-402e-92f3-6648aebfb96a"
+      ],
+      "created_at": "2026-05-07T17:20:18.002450Z"
+    },
+    "0c814939-6c87-47c3-8720-c26e83c7af88": {
+      "id": "0c814939-6c87-47c3-8720-c26e83c7af88",
+      "username": "Esther",
+      "battles": [
+        "c0d3e48b-2338-4348-b8a1-84caf2464526"
+      ],
+      "created_at": "2026-05-07T17:20:18.158816Z"
+    },
+    "0cb33297-c02c-4527-a055-87371fe400cf": {
+      "id": "0cb33297-c02c-4527-a055-87371fe400cf",
+      "username": "Esther",
+      "battles": [
+        "cf96e258-5316-459b-be7b-b68fca9a8ab8"
+      ],
+      "created_at": "2026-05-07T17:20:18.169463Z"
+    },
+    "cdb21859-5f33-4344-85e5-b4eb6cdf2a9b": {
+      "id": "cdb21859-5f33-4344-85e5-b4eb6cdf2a9b",
+      "username": "Esther",
+      "battles": [
+        "711a8fd3-ef65-47ac-af4c-de38df4c6d33"
+      ],
+      "created_at": "2026-05-07T17:20:29.406637Z"
+    },
+    "7e123d77-142f-4408-aef6-bdc92a2816b0": {
+      "id": "7e123d77-142f-4408-aef6-bdc92a2816b0",
+      "username": "Esther",
+      "battles": [
+        "9bd18562-595e-4b5d-b066-cdd8bb8566cf"
+      ],
+      "created_at": "2026-05-07T17:20:29.459199Z"
+    },
+    "5ecaa49a-c966-4dc0-83bb-945154d748c2": {
+      "id": "5ecaa49a-c966-4dc0-83bb-945154d748c2",
+      "username": "Esther",
+      "battles": [
+        "c768b21c-054e-40bb-b734-38f2a9eee587"
+      ],
+      "created_at": "2026-05-07T17:21:01.766681Z"
+    },
+    "3fe21975-d8f7-404c-9127-2bbb87cdf4ca": {
+      "id": "3fe21975-d8f7-404c-9127-2bbb87cdf4ca",
+      "username": "Esther",
+      "battles": [
+        "2c193804-3a55-4e56-bdae-4ad5ccf29a2a"
+      ],
+      "created_at": "2026-05-07T17:21:01.778673Z"
+    },
+    "deb1cf28-a381-4115-b837-29366ce809c2": {
+      "id": "deb1cf28-a381-4115-b837-29366ce809c2",
+      "username": "Esther",
+      "battles": [
+        "12bf09e4-2d67-46f5-a805-572f26612da8"
+      ],
+      "created_at": "2026-05-07T17:21:59.203682Z"
+    },
+    "5676485f-b869-4d91-a8f3-ca6c546ea3dd": {
+      "id": "5676485f-b869-4d91-a8f3-ca6c546ea3dd",
+      "username": "Esther",
+      "battles": [
+        "b4122cca-26a3-4953-abbb-9e6a2b12b649"
+      ],
+      "created_at": "2026-05-07T17:21:59.215101Z"
+    },
+    "893aa6a4-25c8-476e-aa59-7dd7c773a88f": {
+      "id": "893aa6a4-25c8-476e-aa59-7dd7c773a88f",
+      "username": "Esther",
+      "battles": [
+        "21386477-90f3-4f3c-a5c2-d3e14c77c245"
+      ],
+      "created_at": "2026-05-07T17:21:59.964001Z"
+    },
+    "22f97527-9f63-4380-8ed9-dae55e92f8f4": {
+      "id": "22f97527-9f63-4380-8ed9-dae55e92f8f4",
+      "username": "Esther",
+      "battles": [
+        "1f577389-bd20-4915-a8cd-5be08e63ad85"
+      ],
+      "created_at": "2026-05-07T17:22:00.051145Z"
+    },
+    "0b3bbc4b-c01d-431e-96a9-4cc03efc0020": {
+      "id": "0b3bbc4b-c01d-431e-96a9-4cc03efc0020",
+      "username": "Esther",
+      "battles": [
+        "d4612ebe-0918-4ff7-a4f9-9b8d9e08498c"
+      ],
+      "created_at": "2026-05-07T17:22:06.390315Z"
+    },
+    "fa22a7d1-98bd-4c22-a9f3-3dd99de39fba": {
+      "id": "fa22a7d1-98bd-4c22-a9f3-3dd99de39fba",
+      "username": "Esther",
+      "battles": [
+        "294e51d0-ff33-4831-90a8-8b12268cd487"
+      ],
+      "created_at": "2026-05-07T17:22:06.403836Z"
+    },
+    "d93c5762-521d-48b3-99d8-b36914e8c943": {
+      "id": "d93c5762-521d-48b3-99d8-b36914e8c943",
+      "username": "Esther",
+      "battles": [
+        "f16b068b-11df-4771-92ab-767c774168e5"
+      ],
+      "created_at": "2026-05-07T17:29:11.884973Z"
+    },
+    "8eac9cb9-4975-45d7-862c-6790158e35fb": {
+      "id": "8eac9cb9-4975-45d7-862c-6790158e35fb",
+      "username": "Esther",
+      "battles": [
+        "f8c75e25-218f-4990-a441-7dc992ece4a5"
+      ],
+      "created_at": "2026-05-07T17:29:11.900580Z"
+    },
+    "b607281b-648a-46bc-be87-a0312738113b": {
+      "id": "b607281b-648a-46bc-be87-a0312738113b",
+      "username": "Esther",
+      "battles": [
+        "13d31d14-0acd-4914-bac7-44bb33a9df9f"
+      ],
+      "created_at": "2026-05-07T17:29:20.479263Z"
+    },
+    "8b5473fe-4a4b-4e0a-8108-3958385de880": {
+      "id": "8b5473fe-4a4b-4e0a-8108-3958385de880",
+      "username": "Esther",
+      "battles": [
+        "072828c1-5709-4d1c-be8d-c9c89e5aadc4"
+      ],
+      "created_at": "2026-05-07T17:29:20.492858Z"
+    },
+    "0bb07e47-a4c1-46d2-9f8b-f7201f1f0869": {
+      "id": "0bb07e47-a4c1-46d2-9f8b-f7201f1f0869",
+      "username": "Esther",
+      "battles": [
+        "ff7706f4-c720-4c07-9780-aba17e53b2cb"
+      ],
+      "created_at": "2026-05-07T17:29:36.655685Z"
+    },
+    "6ed3c187-a8d4-4e75-bd38-8d29a5e4b9d5": {
+      "id": "6ed3c187-a8d4-4e75-bd38-8d29a5e4b9d5",
+      "username": "Esther",
+      "battles": [
+        "74cc8ccb-f646-4da7-b3cb-ee94f62d6009"
+      ],
+      "created_at": "2026-05-07T17:29:36.668912Z"
+    },
+    "012a5d4f-cf11-4504-b639-c9ff9328fc65": {
+      "id": "012a5d4f-cf11-4504-b639-c9ff9328fc65",
+      "username": "Esther",
+      "battles": [
+        "ca172e81-b572-403e-8a41-02843d18654d"
+      ],
+      "created_at": "2026-05-07T17:29:43.559425Z"
+    },
+    "9bbd0eda-94f7-40ba-a7ed-7ec323507d75": {
+      "id": "9bbd0eda-94f7-40ba-a7ed-7ec323507d75",
+      "username": "Esther",
+      "battles": [
+        "ecf56b99-936e-44c9-b582-93f1fd49c0ef"
+      ],
+      "created_at": "2026-05-07T17:29:43.572774Z"
+    },
+    "28ee69a4-6a47-4afa-93b6-45600552debb": {
+      "id": "28ee69a4-6a47-4afa-93b6-45600552debb",
+      "username": "Esther",
+      "battles": [
+        "53c62954-1552-4bfc-b97d-b52cb163c8a0"
+      ],
+      "created_at": "2026-05-07T17:29:50.453723Z"
+    },
+    "088a078e-c6ef-44ea-a1f0-588cd4e248c0": {
+      "id": "088a078e-c6ef-44ea-a1f0-588cd4e248c0",
+      "username": "Esther",
+      "battles": [
+        "12978bbe-d768-4703-8b3a-a78d2ddee3a5"
+      ],
+      "created_at": "2026-05-07T17:29:50.467592Z"
+    },
+    "6ed5ce10-8ee9-4f17-bf4f-cc4aaa27b38e": {
+      "id": "6ed5ce10-8ee9-4f17-bf4f-cc4aaa27b38e",
+      "username": "Esther",
+      "battles": [
+        "8a65ff68-2534-421d-b5b3-19202abaa7f3"
+      ],
+      "created_at": "2026-05-07T17:36:41.690687Z"
+    },
+    "70cce279-fca6-4400-b0e8-c34359636cdc": {
+      "id": "70cce279-fca6-4400-b0e8-c34359636cdc",
+      "username": "Esther",
+      "battles": [
+        "5048d486-ccdf-4c59-8772-b1776d2fea8a"
+      ],
+      "created_at": "2026-05-07T17:36:41.704471Z"
+    },
+    "564811af-0f77-44ab-bc4d-656806514fb5": {
+      "id": "564811af-0f77-44ab-bc4d-656806514fb5",
+      "username": "Esther",
+      "battles": [
+        "52548d0c-6e55-4bed-a475-13004a4a259c"
+      ],
+      "created_at": "2026-05-07T17:37:37.414597Z"
+    },
+    "9e0430c6-4047-4db9-bbc9-b55a779f1e2b": {
+      "id": "9e0430c6-4047-4db9-bbc9-b55a779f1e2b",
+      "username": "Esther",
+      "battles": [
+        "2ff4460f-e632-472f-b9c7-47b1ba8f002e"
+      ],
+      "created_at": "2026-05-07T17:37:37.428429Z"
+    },
+    "36b45e34-02e7-49cb-92b7-bc37bc06b15e": {
+      "id": "36b45e34-02e7-49cb-92b7-bc37bc06b15e",
+      "username": "Esther",
+      "battles": [
+        "f60a2a3f-819d-493f-b89c-9270e7eccbee"
+      ],
+      "created_at": "2026-05-07T17:37:44.795952Z"
+    },
+    "f06f4628-fae6-4ed6-b343-0a49841539ac": {
+      "id": "f06f4628-fae6-4ed6-b343-0a49841539ac",
+      "username": "Esther",
+      "battles": [
+        "c08342c9-b97b-439a-bf46-0552390c19b9"
+      ],
+      "created_at": "2026-05-07T17:37:44.810584Z"
+    },
+    "8ffb62f6-261f-4f2c-94d2-ca51dea1b310": {
+      "id": "8ffb62f6-261f-4f2c-94d2-ca51dea1b310",
+      "username": "Esther",
+      "battles": [
+        "2ed89628-5e80-4c12-9590-313915d78766"
+      ],
+      "created_at": "2026-05-07T17:42:59.030099Z"
+    },
+    "54167b20-1067-48de-a7f6-b1b99666ea69": {
+      "id": "54167b20-1067-48de-a7f6-b1b99666ea69",
+      "username": "Esther",
+      "battles": [
+        "4b0d48ba-8cc8-43d1-9b6b-f74548ffd7b6"
+      ],
+      "created_at": "2026-05-07T17:44:47.211727Z"
+    },
+    "364025cb-1ca2-4de4-8ee9-dbcd7fa95793": {
+      "id": "364025cb-1ca2-4de4-8ee9-dbcd7fa95793",
+      "username": "Esther",
+      "battles": [
+        "c0c0f72b-e82c-4163-88d2-425e8a2e6c88"
+      ],
+      "created_at": "2026-05-07T17:44:47.225182Z"
+    },
+    "756c8a1a-8407-4bf4-a40a-fa9c3aac8b65": {
+      "id": "756c8a1a-8407-4bf4-a40a-fa9c3aac8b65",
+      "username": "Esther",
+      "battles": [
+        "d3878baa-c154-4834-98c2-15d2328d4096"
+      ],
+      "created_at": "2026-05-07T17:44:55.806555Z"
+    },
+    "b464c73b-6336-425f-9fa8-7b6d092eb54a": {
+      "id": "b464c73b-6336-425f-9fa8-7b6d092eb54a",
+      "username": "Esther",
+      "battles": [
+        "4370c113-fd29-4c8c-a9b6-4460f6147dbe"
+      ],
+      "created_at": "2026-05-07T17:44:55.821257Z"
+    },
+    "295d7a8e-99fc-43e3-b4ea-8fa1577fbcf3": {
+      "id": "295d7a8e-99fc-43e3-b4ea-8fa1577fbcf3",
+      "username": "Esther",
+      "battles": [
+        "43f097e5-e7fe-42c7-8dd2-601257ee20b4"
+      ],
+      "created_at": "2026-05-07T17:45:37.092681Z"
+    },
+    "a67ec0c1-d191-4ca5-8e2e-2269be3949be": {
+      "id": "a67ec0c1-d191-4ca5-8e2e-2269be3949be",
+      "username": "Esther",
+      "battles": [
+        "f9f0fe12-45ff-4379-91cd-2561e31b244b"
+      ],
+      "created_at": "2026-05-07T17:45:37.106689Z"
+    },
+    "e0b61d15-0409-4ccb-b927-0754f840915c": {
+      "id": "e0b61d15-0409-4ccb-b927-0754f840915c",
+      "username": "Esther",
+      "battles": [
+        "ecdf95c8-ba6c-41a2-8fe4-7b01f7aa6acb"
+      ],
+      "created_at": "2026-05-07T18:04:49.702976Z"
+    },
+    "8758d73a-e5d6-4309-9c8c-5279a0ead3fd": {
+      "id": "8758d73a-e5d6-4309-9c8c-5279a0ead3fd",
+      "username": "Esther",
+      "battles": [
+        "b92b0234-e73c-43f7-a62e-39ad799a34c4"
+      ],
+      "created_at": "2026-05-07T18:04:49.716653Z"
+    }
+  },
+  "battles": {
+    "c0e3b02c-b3f0-4654-8c5e-49cfd171b447": {
+      "id": "c0e3b02c-b3f0-4654-8c5e-49cfd171b447",
+      "user_id": "1049fae5-6569-4f01-9f3e-889058b9a3b7",
+      "state": {
+        "battle_id": "c0e3b02c-b3f0-4654-8c5e-49cfd171b447",
+        "user_id": "1049fae5-6569-4f01-9f3e-889058b9a3b7",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Overheat",
+            "Dragon Pulse",
+            "Heat Wave"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Aura Sphere",
+            "Flamethrower",
+            "Shadow Ball",
+            "Psystrike"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:16:47.097064Z",
+      "updated_at": "2026-05-07T16:16:47.097064Z"
+    },
+    "fe27570f-6611-4cf7-b391-42e5a5457eb9": {
+      "id": "fe27570f-6611-4cf7-b391-42e5a5457eb9",
+      "user_id": "b1ddf74b-e515-44eb-a31b-7e23413a8e27",
+      "state": {
+        "battle_id": "fe27570f-6611-4cf7-b391-42e5a5457eb9",
+        "user_id": "b1ddf74b-e515-44eb-a31b-7e23413a8e27",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Dragon Pulse",
+            "Air Slash",
+            "Heat Wave",
+            "Focus Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Ice Beam",
+            "Thunderbolt",
+            "Ice Punch",
+            "Shadow Ball"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:41:36.090641Z",
+      "updated_at": "2026-05-07T16:41:36.090641Z"
+    },
+    "90c48e81-5e76-44c1-bc35-04a5e1e33b2f": {
+      "id": "90c48e81-5e76-44c1-bc35-04a5e1e33b2f",
+      "user_id": "a8de03a2-2949-4ddd-b8c7-e8486b0ece3e",
+      "state": {
+        "battle_id": "90c48e81-5e76-44c1-bc35-04a5e1e33b2f",
+        "user_id": "a8de03a2-2949-4ddd-b8c7-e8486b0ece3e",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Solar Beam",
+            "Focus Blast",
+            "Flamethrower",
+            "Overheat"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psystrike",
+            "Ice Punch",
+            "Ice Beam",
+            "Shadow Ball"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:41:36.098002Z",
+      "updated_at": "2026-05-07T16:41:36.098002Z"
+    },
+    "764931c9-9f36-411f-9de6-71b856c8f15c": {
+      "id": "764931c9-9f36-411f-9de6-71b856c8f15c",
+      "user_id": "6c915c15-6737-46ad-9ddc-7883c7c10d8d",
+      "state": {
+        "battle_id": "764931c9-9f36-411f-9de6-71b856c8f15c",
+        "user_id": "6c915c15-6737-46ad-9ddc-7883c7c10d8d",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Air Slash",
+            "Dragon Pulse",
+            "Flamethrower"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Ice Beam",
+            "Thunderbolt",
+            "Flamethrower",
+            "Shadow Ball"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:42:35.799770Z",
+      "updated_at": "2026-05-07T16:42:35.799770Z"
+    },
+    "92730eaa-8303-49d9-a2ad-0d3228c513cf": {
+      "id": "92730eaa-8303-49d9-a2ad-0d3228c513cf",
+      "user_id": "ec6d99dd-dd6f-4d22-ad94-f04fb3fe7bef",
+      "state": {
+        "battle_id": "92730eaa-8303-49d9-a2ad-0d3228c513cf",
+        "user_id": "ec6d99dd-dd6f-4d22-ad94-f04fb3fe7bef",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Focus Blast",
+            "Overheat",
+            "Heat Wave"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Shadow Ball",
+            "Flamethrower",
+            "Ice Punch",
+            "Aura Sphere"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:42:35.816520Z",
+      "updated_at": "2026-05-07T16:42:35.816520Z"
+    },
+    "b9ce8fc4-c593-44cc-81b9-2b6af8a17ecd": {
+      "id": "b9ce8fc4-c593-44cc-81b9-2b6af8a17ecd",
+      "user_id": "597588b5-7a6d-4d28-86e2-f549a6eaf477",
+      "state": {
+        "battle_id": "b9ce8fc4-c593-44cc-81b9-2b6af8a17ecd",
+        "user_id": "597588b5-7a6d-4d28-86e2-f549a6eaf477",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Solar Beam",
+            "Flamethrower",
+            "Heat Wave",
+            "Focus Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Thunderbolt",
+            "Shadow Ball",
+            "Ice Beam",
+            "Flamethrower"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:43:41.091941Z",
+      "updated_at": "2026-05-07T16:43:41.091941Z"
+    },
+    "763f6b2c-9ff3-4fc9-b425-9fc54c661bf1": {
+      "id": "763f6b2c-9ff3-4fc9-b425-9fc54c661bf1",
+      "user_id": "bc66cd66-d33a-4449-bfd4-31b247b043ca",
+      "state": {
+        "battle_id": "763f6b2c-9ff3-4fc9-b425-9fc54c661bf1",
+        "user_id": "bc66cd66-d33a-4449-bfd4-31b247b043ca",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Focus Blast",
+            "Fire Blast",
+            "Dragon Pulse",
+            "Solar Beam"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Thunderbolt",
+            "Flamethrower",
+            "Ice Beam",
+            "Ice Punch"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:43:41.100680Z",
+      "updated_at": "2026-05-07T16:43:41.100680Z"
+    },
+    "94606ee8-9b6b-4828-bfed-bdc97ccdc8d4": {
+      "id": "94606ee8-9b6b-4828-bfed-bdc97ccdc8d4",
+      "user_id": "da157f1c-1abb-40e1-9119-9a8488f57503",
+      "state": {
+        "battle_id": "94606ee8-9b6b-4828-bfed-bdc97ccdc8d4",
+        "user_id": "da157f1c-1abb-40e1-9119-9a8488f57503",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Overheat",
+            "Solar Beam",
+            "Focus Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Ice Beam",
+            "Psystrike",
+            "Psycho Cut",
+            "Shadow Ball"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:43:41.805029Z",
+      "updated_at": "2026-05-07T16:43:41.805029Z"
+    },
+    "8d4455ad-2bdd-4d1e-9fbe-cf32fdd441a2": {
+      "id": "8d4455ad-2bdd-4d1e-9fbe-cf32fdd441a2",
+      "user_id": "4b7a3106-c6b6-4a94-a003-53e072726e53",
+      "state": {
+        "battle_id": "8d4455ad-2bdd-4d1e-9fbe-cf32fdd441a2",
+        "user_id": "4b7a3106-c6b6-4a94-a003-53e072726e53",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Focus Blast",
+            "Fire Blast",
+            "Flamethrower"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Flamethrower",
+            "Psycho Cut",
+            "Ice Beam",
+            "Ice Punch"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:43:41.813552Z",
+      "updated_at": "2026-05-07T16:43:41.813552Z"
+    },
+    "6d575826-34b7-4882-9c1c-c59ccf9f9c92": {
+      "id": "6d575826-34b7-4882-9c1c-c59ccf9f9c92",
+      "user_id": "4aeceb0d-ddf5-4117-8d27-d1d5634876da",
+      "state": {
+        "battle_id": "6d575826-34b7-4882-9c1c-c59ccf9f9c92",
+        "user_id": "4aeceb0d-ddf5-4117-8d27-d1d5634876da",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Heat Wave",
+            "Focus Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Aura Sphere",
+            "Flamethrower",
+            "Shadow Ball",
+            "Psystrike"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:44:19.749323Z",
+      "updated_at": "2026-05-07T16:44:19.749323Z"
+    },
+    "5006f3bf-64ff-4b47-8b0a-b0207c6a7c6c": {
+      "id": "5006f3bf-64ff-4b47-8b0a-b0207c6a7c6c",
+      "user_id": "8abd5a49-a146-4fe6-8dfc-ed43a84c2eb2",
+      "state": {
+        "battle_id": "5006f3bf-64ff-4b47-8b0a-b0207c6a7c6c",
+        "user_id": "8abd5a49-a146-4fe6-8dfc-ed43a84c2eb2",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Focus Blast",
+            "Air Slash",
+            "Solar Beam",
+            "Fire Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Shadow Ball",
+            "Aura Sphere",
+            "Flamethrower"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:44:19.772074Z",
+      "updated_at": "2026-05-07T16:44:19.772074Z"
+    },
+    "323d9792-65b9-4666-9976-750d53986527": {
+      "id": "323d9792-65b9-4666-9976-750d53986527",
+      "user_id": "4a495fda-8de5-46a9-975e-9fce087b1ccd",
+      "state": {
+        "battle_id": "323d9792-65b9-4666-9976-750d53986527",
+        "user_id": "4a495fda-8de5-46a9-975e-9fce087b1ccd",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Overheat",
+            "Solar Beam",
+            "Air Slash",
+            "Focus Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psystrike",
+            "Psycho Cut",
+            "Flamethrower",
+            "Ice Beam"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:44:44.640343Z",
+      "updated_at": "2026-05-07T16:44:44.640343Z"
+    },
+    "a5a6bf7d-fe00-4bb9-a91a-d9a720072885": {
+      "id": "a5a6bf7d-fe00-4bb9-a91a-d9a720072885",
+      "user_id": "52d1f8dc-f92b-49a9-90c8-254af6508e7a",
+      "state": {
+        "battle_id": "a5a6bf7d-fe00-4bb9-a91a-d9a720072885",
+        "user_id": "52d1f8dc-f92b-49a9-90c8-254af6508e7a",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Focus Blast",
+            "Solar Beam",
+            "Overheat"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Shadow Ball",
+            "Ice Beam",
+            "Psystrike"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:44:44.649267Z",
+      "updated_at": "2026-05-07T16:44:44.649267Z"
+    },
+    "8b429a8f-9df0-4b88-90f4-8aa402b1d43b": {
+      "id": "8b429a8f-9df0-4b88-90f4-8aa402b1d43b",
+      "user_id": "2c6c4df7-86fd-45da-a99a-1ea96f460dc2",
+      "state": {
+        "battle_id": "8b429a8f-9df0-4b88-90f4-8aa402b1d43b",
+        "user_id": "2c6c4df7-86fd-45da-a99a-1ea96f460dc2",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Solar Beam",
+            "Overheat",
+            "Flamethrower",
+            "Focus Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Thunderbolt",
+            "Flamethrower",
+            "Shadow Ball"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:44:52.054154Z",
+      "updated_at": "2026-05-07T16:44:52.054154Z"
+    },
+    "9daf490a-470b-4aab-a5c9-e1e87fa3e2be": {
+      "id": "9daf490a-470b-4aab-a5c9-e1e87fa3e2be",
+      "user_id": "ea9472a7-e6c2-4667-a6e0-5b428b8647ef",
+      "state": {
+        "battle_id": "9daf490a-470b-4aab-a5c9-e1e87fa3e2be",
+        "user_id": "ea9472a7-e6c2-4667-a6e0-5b428b8647ef",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Solar Beam",
+            "Flamethrower",
+            "Focus Blast",
+            "Heat Wave"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Thunderbolt",
+            "Flamethrower",
+            "Ice Punch"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:44:52.071757Z",
+      "updated_at": "2026-05-07T16:44:52.071757Z"
+    },
+    "7d9f3ba4-3951-4482-ae2b-462974ca23a2": {
+      "id": "7d9f3ba4-3951-4482-ae2b-462974ca23a2",
+      "user_id": "6c4c6cd3-8d5b-4929-b21d-da96af3687ff",
+      "state": {
+        "battle_id": "7d9f3ba4-3951-4482-ae2b-462974ca23a2",
+        "user_id": "6c4c6cd3-8d5b-4929-b21d-da96af3687ff",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Focus Blast",
+            "Overheat",
+            "Heat Wave",
+            "Air Slash"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Thunderbolt",
+            "Ice Punch",
+            "Ice Beam",
+            "Aura Sphere"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:23.815641Z",
+      "updated_at": "2026-05-07T16:45:23.815641Z"
+    },
+    "29a1aa3f-0bea-4600-bfff-aeee79a6ef96": {
+      "id": "29a1aa3f-0bea-4600-bfff-aeee79a6ef96",
+      "user_id": "d5e0f896-5fb1-4a34-8d98-ab2e8b58ffb9",
+      "state": {
+        "battle_id": "29a1aa3f-0bea-4600-bfff-aeee79a6ef96",
+        "user_id": "d5e0f896-5fb1-4a34-8d98-ab2e8b58ffb9",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Focus Blast",
+            "Heat Wave",
+            "Overheat",
+            "Solar Beam"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Aura Sphere",
+            "Ice Beam",
+            "Shadow Ball",
+            "Psystrike"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:23.823520Z",
+      "updated_at": "2026-05-07T16:45:23.823520Z"
+    },
+    "429908c6-5c4a-4a2d-a9a7-2a571e0710cb": {
+      "id": "429908c6-5c4a-4a2d-a9a7-2a571e0710cb",
+      "user_id": "a322a2c6-1e33-46b6-9170-bc8f9d154b61",
+      "state": {
+        "battle_id": "429908c6-5c4a-4a2d-a9a7-2a571e0710cb",
+        "user_id": "a322a2c6-1e33-46b6-9170-bc8f9d154b61",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Dragon Pulse",
+            "Fire Blast",
+            "Solar Beam",
+            "Overheat"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Ice Punch",
+            "Ice Beam",
+            "Thunderbolt"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:23.831495Z",
+      "updated_at": "2026-05-07T16:45:23.831495Z"
+    },
+    "cf42436d-479f-4724-b272-e10739f1eb5f": {
+      "id": "cf42436d-479f-4724-b272-e10739f1eb5f",
+      "user_id": "f5132dc7-15a0-4036-ab60-a9526873b7cf",
+      "state": {
+        "battle_id": "cf42436d-479f-4724-b272-e10739f1eb5f",
+        "user_id": "f5132dc7-15a0-4036-ab60-a9526873b7cf",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Flamethrower",
+            "Solar Beam",
+            "Heat Wave"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Ice Beam",
+            "Thunderbolt",
+            "Ice Punch",
+            "Psystrike"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:23.866295Z",
+      "updated_at": "2026-05-07T16:45:23.866295Z"
+    },
+    "b28cf1c8-d3ac-4589-8e1b-ae0005ba6e1e": {
+      "id": "b28cf1c8-d3ac-4589-8e1b-ae0005ba6e1e",
+      "user_id": "2d219fc0-c5f9-4be8-8bae-90049d0fbdf9",
+      "state": {
+        "battle_id": "b28cf1c8-d3ac-4589-8e1b-ae0005ba6e1e",
+        "user_id": "2d219fc0-c5f9-4be8-8bae-90049d0fbdf9",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Dragon Pulse",
+            "Focus Blast",
+            "Flamethrower",
+            "Overheat"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Aura Sphere",
+            "Psystrike",
+            "Psycho Cut",
+            "Ice Beam"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:56.275949Z",
+      "updated_at": "2026-05-07T16:45:56.275949Z"
+    },
+    "72889a01-13f5-48f1-b406-bb7f587f658e": {
+      "id": "72889a01-13f5-48f1-b406-bb7f587f658e",
+      "user_id": "ac4a7715-7b4d-4adf-9917-287cda3ab606",
+      "state": {
+        "battle_id": "72889a01-13f5-48f1-b406-bb7f587f658e",
+        "user_id": "ac4a7715-7b4d-4adf-9917-287cda3ab606",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Flamethrower",
+            "Solar Beam",
+            "Dragon Pulse",
+            "Fire Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Ice Punch",
+            "Aura Sphere",
+            "Ice Beam",
+            "Thunderbolt"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:56.284502Z",
+      "updated_at": "2026-05-07T16:45:56.284502Z"
+    },
+    "75ba900e-3c02-4de4-97a7-1849ac1250f1": {
+      "id": "75ba900e-3c02-4de4-97a7-1849ac1250f1",
+      "user_id": "05a15c58-90fa-4776-9318-d0c4b6354475",
+      "state": {
+        "battle_id": "75ba900e-3c02-4de4-97a7-1849ac1250f1",
+        "user_id": "05a15c58-90fa-4776-9318-d0c4b6354475",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Flamethrower",
+            "Overheat",
+            "Solar Beam"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Shadow Ball",
+            "Aura Sphere",
+            "Flamethrower",
+            "Psycho Cut"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:57.390359Z",
+      "updated_at": "2026-05-07T16:45:57.390359Z"
+    },
+    "211a1a5b-ef26-4327-8f24-f5320516eccd": {
+      "id": "211a1a5b-ef26-4327-8f24-f5320516eccd",
+      "user_id": "29118bc1-7109-4c72-9155-f7b4737287fc",
+      "state": {
+        "battle_id": "211a1a5b-ef26-4327-8f24-f5320516eccd",
+        "user_id": "29118bc1-7109-4c72-9155-f7b4737287fc",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Air Slash",
+            "Focus Blast",
+            "Solar Beam"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Shadow Ball",
+            "Ice Punch",
+            "Aura Sphere"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:57.398759Z",
+      "updated_at": "2026-05-07T16:45:57.398759Z"
+    },
+    "710fa2f5-28fe-4a85-a063-6a13a61ab688": {
+      "id": "710fa2f5-28fe-4a85-a063-6a13a61ab688",
+      "user_id": "1eb08e02-2fc0-473c-acab-5b301c20f925",
+      "state": {
+        "battle_id": "710fa2f5-28fe-4a85-a063-6a13a61ab688",
+        "user_id": "1eb08e02-2fc0-473c-acab-5b301c20f925",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Solar Beam",
+            "Heat Wave",
+            "Focus Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Ice Punch",
+            "Aura Sphere",
+            "Ice Beam"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:57.618973Z",
+      "updated_at": "2026-05-07T16:45:57.618973Z"
+    },
+    "ae051889-d5da-4f34-bc46-3250e91e9d7c": {
+      "id": "ae051889-d5da-4f34-bc46-3250e91e9d7c",
+      "user_id": "ef4b2001-59cd-4503-9b36-c4131e493e87",
+      "state": {
+        "battle_id": "ae051889-d5da-4f34-bc46-3250e91e9d7c",
+        "user_id": "ef4b2001-59cd-4503-9b36-c4131e493e87",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Flamethrower",
+            "Focus Blast",
+            "Overheat",
+            "Air Slash"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Shadow Ball",
+            "Ice Punch",
+            "Psystrike",
+            "Ice Beam"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:57.626879Z",
+      "updated_at": "2026-05-07T16:45:57.626879Z"
+    },
+    "1cbfbdfe-af04-4dae-a3ef-b72a4b149270": {
+      "id": "1cbfbdfe-af04-4dae-a3ef-b72a4b149270",
+      "user_id": "9b7fd13b-ed8b-4e82-a77d-c64a2745588c",
+      "state": {
+        "battle_id": "1cbfbdfe-af04-4dae-a3ef-b72a4b149270",
+        "user_id": "9b7fd13b-ed8b-4e82-a77d-c64a2745588c",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Flamethrower",
+            "Dragon Pulse",
+            "Air Slash",
+            "Overheat"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Ice Punch",
+            "Ice Beam",
+            "Flamethrower"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:57.986299Z",
+      "updated_at": "2026-05-07T16:45:57.986299Z"
+    },
+    "308698a2-6745-49bf-8d21-1350f74e48bf": {
+      "id": "308698a2-6745-49bf-8d21-1350f74e48bf",
+      "user_id": "40a0118c-f753-4903-8b00-3368944543c3",
+      "state": {
+        "battle_id": "308698a2-6745-49bf-8d21-1350f74e48bf",
+        "user_id": "40a0118c-f753-4903-8b00-3368944543c3",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Overheat",
+            "Dragon Pulse",
+            "Heat Wave",
+            "Flamethrower"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Thunderbolt",
+            "Flamethrower",
+            "Psystrike",
+            "Ice Beam"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:57.994695Z",
+      "updated_at": "2026-05-07T16:45:57.994695Z"
+    },
+    "dbc30e04-f9a4-4074-b3e9-282105cade24": {
+      "id": "dbc30e04-f9a4-4074-b3e9-282105cade24",
+      "user_id": "bde8f443-898a-4e88-afdb-21189a7c2d23",
+      "state": {
+        "battle_id": "dbc30e04-f9a4-4074-b3e9-282105cade24",
+        "user_id": "bde8f443-898a-4e88-afdb-21189a7c2d23",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Dragon Pulse",
+            "Solar Beam",
+            "Flamethrower"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Aura Sphere",
+            "Flamethrower",
+            "Psystrike",
+            "Ice Punch"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:58.315395Z",
+      "updated_at": "2026-05-07T16:45:58.315395Z"
+    },
+    "42672599-9f5d-4bdb-b1db-903d3f6da2cc": {
+      "id": "42672599-9f5d-4bdb-b1db-903d3f6da2cc",
+      "user_id": "a0b1b771-d24e-4396-b84a-2c279462ddf3",
+      "state": {
+        "battle_id": "42672599-9f5d-4bdb-b1db-903d3f6da2cc",
+        "user_id": "a0b1b771-d24e-4396-b84a-2c279462ddf3",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Focus Blast",
+            "Heat Wave",
+            "Flamethrower",
+            "Dragon Pulse"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Ice Punch",
+            "Thunderbolt",
+            "Shadow Ball",
+            "Psystrike"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:45:58.324039Z",
+      "updated_at": "2026-05-07T16:45:58.324039Z"
+    },
+    "03fbb1a9-248e-400c-ae17-593862a8ba50": {
+      "id": "03fbb1a9-248e-400c-ae17-593862a8ba50",
+      "user_id": "ff69bff3-8d30-49cf-8ea5-270c68aa4765",
+      "state": {
+        "battle_id": "03fbb1a9-248e-400c-ae17-593862a8ba50",
+        "user_id": "ff69bff3-8d30-49cf-8ea5-270c68aa4765",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Overheat",
+            "Air Slash",
+            "Heat Wave",
+            "Solar Beam"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Psystrike",
+            "Thunderbolt",
+            "Aura Sphere"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:52:04.563709Z",
+      "updated_at": "2026-05-07T16:52:04.563709Z"
+    },
+    "fe212c41-b4c4-4831-bd3d-1e88bcda8cb6": {
+      "id": "fe212c41-b4c4-4831-bd3d-1e88bcda8cb6",
+      "user_id": "ad3c0655-0a75-4ec8-8c5b-dd0b1727df07",
+      "state": {
+        "battle_id": "fe212c41-b4c4-4831-bd3d-1e88bcda8cb6",
+        "user_id": "ad3c0655-0a75-4ec8-8c5b-dd0b1727df07",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Solar Beam",
+            "Fire Blast",
+            "Dragon Pulse",
+            "Overheat"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Ice Punch",
+            "Aura Sphere",
+            "Flamethrower",
+            "Psycho Cut"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:52:04.573311Z",
+      "updated_at": "2026-05-07T16:52:04.573311Z"
+    },
+    "0a32d7aa-805b-426e-ba09-9969a58ea23d": {
+      "id": "0a32d7aa-805b-426e-ba09-9969a58ea23d",
+      "user_id": "0c7913cb-bc88-4194-805c-d5712d14aa12",
+      "state": {
+        "battle_id": "0a32d7aa-805b-426e-ba09-9969a58ea23d",
+        "user_id": "0c7913cb-bc88-4194-805c-d5712d14aa12",
+        "player": {
+          "name": "Lucario",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Fighting",
+            "Steel"
+          ],
+          "moves": [
+            "Dark Pulse",
+            "Ice Punch",
+            "Aura Sphere",
+            "Close Combat"
+          ]
+        },
+        "enemy": {
+          "name": "Volcarona",
+          "hp": 145,
+          "max_hp": 145,
+          "types": [
+            "Bug",
+            "Fire"
+          ],
+          "moves": [
+            "Heat Wave",
+            "Fire Blast",
+            "Solar Beam",
+            "Bug Buzz"
+          ]
+        },
+        "logs": [
+          "Inicia Lucario vs Volcarona"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T16:58:03.128272Z",
+      "updated_at": "2026-05-07T16:58:03.128272Z"
+    },
+    "e2849713-6b79-402a-87a9-e4897a6892c9": {
+      "id": "e2849713-6b79-402a-87a9-e4897a6892c9",
+      "user_id": "524622d7-7620-4759-a817-94846a62a7c8",
+      "state": {
+        "battle_id": "e2849713-6b79-402a-87a9-e4897a6892c9",
+        "user_id": "524622d7-7620-4759-a817-94846a62a7c8",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Dragon Claw",
+            "Energy Ball",
+            "Giga Drain",
+            "Leaf Blade"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Fire Fang",
+            "Iron Head",
+            "Poison Jab",
+            "Earthquake"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:11:50.999153Z",
+      "updated_at": "2026-05-07T17:11:50.999153Z"
+    },
+    "f04220bc-b265-431d-854d-8c97ec11791d": {
+      "id": "f04220bc-b265-431d-854d-8c97ec11791d",
+      "user_id": "6717572f-783d-4b48-8967-c5e889353095",
+      "state": {
+        "battle_id": "f04220bc-b265-431d-854d-8c97ec11791d",
+        "user_id": "6717572f-783d-4b48-8967-c5e889353095",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Giga Drain",
+            "Dragon Claw",
+            "Leaf Blade",
+            "Energy Ball"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Crunch",
+            "Outrage",
+            "Earthquake",
+            "Dragon Claw"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:11:51.007875Z",
+      "updated_at": "2026-05-07T17:11:51.007875Z"
+    },
+    "a883a36e-0d99-492e-b498-03242fdefa8e": {
+      "id": "a883a36e-0d99-492e-b498-03242fdefa8e",
+      "user_id": "20262b94-ae54-4f07-a961-215519011ed8",
+      "state": {
+        "battle_id": "a883a36e-0d99-492e-b498-03242fdefa8e",
+        "user_id": "20262b94-ae54-4f07-a961-215519011ed8",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Energy Ball",
+            "Dragon Pulse",
+            "Leaf Blade",
+            "Focus Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Outrage",
+            "Dragon Claw",
+            "Earthquake",
+            "Stone Edge"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:19:25.834058Z",
+      "updated_at": "2026-05-07T17:19:25.834058Z"
+    },
+    "f740b212-cbfa-41b5-906b-2dfb0673714d": {
+      "id": "f740b212-cbfa-41b5-906b-2dfb0673714d",
+      "user_id": "3397fcec-5db0-49f5-be9a-950eb90318c2",
+      "state": {
+        "battle_id": "f740b212-cbfa-41b5-906b-2dfb0673714d",
+        "user_id": "3397fcec-5db0-49f5-be9a-950eb90318c2",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Leaf Blade",
+            "Earthquake",
+            "Energy Ball",
+            "Dragon Claw"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Crunch",
+            "Outrage",
+            "Stone Edge",
+            "Poison Jab"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:19:25.842956Z",
+      "updated_at": "2026-05-07T17:19:25.842956Z"
+    },
+    "aabdfcc8-2209-4f8a-84bc-3abbe4c6ad09": {
+      "id": "aabdfcc8-2209-4f8a-84bc-3abbe4c6ad09",
+      "user_id": "e4a1b906-79ed-478c-ab03-093dda06d132",
+      "state": {
+        "battle_id": "aabdfcc8-2209-4f8a-84bc-3abbe4c6ad09",
+        "user_id": "e4a1b906-79ed-478c-ab03-093dda06d132",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Dragon Claw",
+            "Dragon Pulse",
+            "Giga Drain",
+            "Leaf Blade"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Iron Head",
+            "Earthquake",
+            "Poison Jab",
+            "Outrage"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:17.263135Z",
+      "updated_at": "2026-05-07T17:20:17.263135Z"
+    },
+    "cb6996f2-6dfe-4d9f-8831-0f181fae6d3a": {
+      "id": "cb6996f2-6dfe-4d9f-8831-0f181fae6d3a",
+      "user_id": "1a503252-8f46-454a-9b3a-e6d96e7d35ef",
+      "state": {
+        "battle_id": "cb6996f2-6dfe-4d9f-8831-0f181fae6d3a",
+        "user_id": "1a503252-8f46-454a-9b3a-e6d96e7d35ef",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Giga Drain",
+            "Leaf Storm",
+            "Dragon Claw",
+            "Dragon Pulse"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Outrage",
+            "Crunch"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:17.283613Z",
+      "updated_at": "2026-05-07T17:20:17.283613Z"
+    },
+    "b87c655e-12b5-4d29-b80c-442fdb6bd018": {
+      "id": "b87c655e-12b5-4d29-b80c-442fdb6bd018",
+      "user_id": "979f2f8a-5e6c-40bc-90e3-71cc0255512e",
+      "state": {
+        "battle_id": "b87c655e-12b5-4d29-b80c-442fdb6bd018",
+        "user_id": "979f2f8a-5e6c-40bc-90e3-71cc0255512e",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Giga Drain",
+            "Leaf Storm"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Dragon Claw",
+            "Iron Head",
+            "Stone Edge",
+            "Earthquake"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:17.485965Z",
+      "updated_at": "2026-05-07T17:20:17.485965Z"
+    },
+    "b7e99087-3089-4e3a-ab38-78ca2db3bcd6": {
+      "id": "b7e99087-3089-4e3a-ab38-78ca2db3bcd6",
+      "user_id": "17a420b0-7cde-4aec-a35e-c57ece4586a6",
+      "state": {
+        "battle_id": "b7e99087-3089-4e3a-ab38-78ca2db3bcd6",
+        "user_id": "17a420b0-7cde-4aec-a35e-c57ece4586a6",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Focus Blast",
+            "Dragon Claw",
+            "Energy Ball",
+            "Giga Drain"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Fire Fang",
+            "Iron Head",
+            "Dragon Claw",
+            "Earthquake"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:17.507327Z",
+      "updated_at": "2026-05-07T17:20:17.507327Z"
+    },
+    "f7810427-6012-469a-bf8e-9ec03c368c48": {
+      "id": "f7810427-6012-469a-bf8e-9ec03c368c48",
+      "user_id": "30716850-8a3c-4f5c-9ec5-e77a388c2aa7",
+      "state": {
+        "battle_id": "f7810427-6012-469a-bf8e-9ec03c368c48",
+        "user_id": "30716850-8a3c-4f5c-9ec5-e77a388c2aa7",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Leaf Blade",
+            "Leaf Storm",
+            "Focus Blast",
+            "Dragon Claw"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Fire Fang",
+            "Outrage",
+            "Dragon Claw",
+            "Iron Head"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:17.865147Z",
+      "updated_at": "2026-05-07T17:20:17.865147Z"
+    },
+    "0ead067d-9f64-46d1-8d40-77ed7f1b314e": {
+      "id": "0ead067d-9f64-46d1-8d40-77ed7f1b314e",
+      "user_id": "3da08a34-cf19-48b8-8bbd-aa03a6138aa7",
+      "state": {
+        "battle_id": "0ead067d-9f64-46d1-8d40-77ed7f1b314e",
+        "user_id": "3da08a34-cf19-48b8-8bbd-aa03a6138aa7",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Dragon Pulse",
+            "Earthquake",
+            "Focus Blast",
+            "Leaf Storm"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Crunch",
+            "Iron Head",
+            "Earthquake",
+            "Fire Fang"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:17.874477Z",
+      "updated_at": "2026-05-07T17:20:17.874477Z"
+    },
+    "a0f1798d-9738-402e-92f3-6648aebfb96a": {
+      "id": "a0f1798d-9738-402e-92f3-6648aebfb96a",
+      "user_id": "ec6ed456-04dc-440d-8148-8d82eb213710",
+      "state": {
+        "battle_id": "a0f1798d-9738-402e-92f3-6648aebfb96a",
+        "user_id": "ec6ed456-04dc-440d-8148-8d82eb213710",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Focus Blast",
+            "Earthquake",
+            "Leaf Storm",
+            "Energy Ball"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Poison Jab",
+            "Crunch",
+            "Fire Fang",
+            "Dragon Claw"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:18.014490Z",
+      "updated_at": "2026-05-07T17:20:18.014490Z"
+    },
+    "0ee7e0a1-8fab-496f-9495-327b997e6dd1": {
+      "id": "0ee7e0a1-8fab-496f-9495-327b997e6dd1",
+      "user_id": "9de0e885-ea0d-4df5-bb2e-4ca74d8e8c5c",
+      "state": {
+        "battle_id": "0ee7e0a1-8fab-496f-9495-327b997e6dd1",
+        "user_id": "9de0e885-ea0d-4df5-bb2e-4ca74d8e8c5c",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Dragon Pulse",
+            "Energy Ball",
+            "Earthquake",
+            "Giga Drain"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Earthquake",
+            "Fire Fang",
+            "Dragon Claw",
+            "Poison Jab"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:18.023777Z",
+      "updated_at": "2026-05-07T17:20:18.023777Z"
+    },
+    "cf96e258-5316-459b-be7b-b68fca9a8ab8": {
+      "id": "cf96e258-5316-459b-be7b-b68fca9a8ab8",
+      "user_id": "0cb33297-c02c-4527-a055-87371fe400cf",
+      "state": {
+        "battle_id": "cf96e258-5316-459b-be7b-b68fca9a8ab8",
+        "user_id": "0cb33297-c02c-4527-a055-87371fe400cf",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Focus Blast",
+            "Leaf Storm",
+            "Dragon Pulse",
+            "Leaf Blade"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Iron Head",
+            "Fire Fang",
+            "Earthquake",
+            "Poison Jab"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:18.181140Z",
+      "updated_at": "2026-05-07T17:20:18.181140Z"
+    },
+    "c0d3e48b-2338-4348-b8a1-84caf2464526": {
+      "id": "c0d3e48b-2338-4348-b8a1-84caf2464526",
+      "user_id": "0c814939-6c87-47c3-8720-c26e83c7af88",
+      "state": {
+        "battle_id": "c0d3e48b-2338-4348-b8a1-84caf2464526",
+        "user_id": "0c814939-6c87-47c3-8720-c26e83c7af88",
+        "player": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Dragon Claw",
+            "Leaf Storm",
+            "Energy Ball",
+            "Dragon Pulse"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Dragon Claw",
+            "Stone Edge",
+            "Outrage",
+            "Fire Fang"
+          ]
+        },
+        "logs": [
+          "Inicia Sceptile vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:18.190789Z",
+      "updated_at": "2026-05-07T17:20:18.190789Z"
+    },
+    "9bd18562-595e-4b5d-b066-cdd8bb8566cf": {
+      "id": "9bd18562-595e-4b5d-b066-cdd8bb8566cf",
+      "user_id": "7e123d77-142f-4408-aef6-bdc92a2816b0",
+      "state": {
+        "battle_id": "9bd18562-595e-4b5d-b066-cdd8bb8566cf",
+        "user_id": "7e123d77-142f-4408-aef6-bdc92a2816b0",
+        "player": {
+          "name": "Typhlosion",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire"
+          ],
+          "moves": [
+            "Solar Beam",
+            "Fire Blast",
+            "Eruption",
+            "Flamethrower"
+          ]
+        },
+        "enemy": {
+          "name": "Metagross",
+          "hp": 140,
+          "max_hp": 140,
+          "types": [
+            "Steel",
+            "Psychic"
+          ],
+          "moves": [
+            "Bullet Punch",
+            "Earthquake",
+            "Psychic",
+            "Thunder Punch"
+          ]
+        },
+        "logs": [
+          "Inicia Typhlosion vs Metagross"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:29.471202Z",
+      "updated_at": "2026-05-07T17:20:29.471202Z"
+    },
+    "711a8fd3-ef65-47ac-af4c-de38df4c6d33": {
+      "id": "711a8fd3-ef65-47ac-af4c-de38df4c6d33",
+      "user_id": "cdb21859-5f33-4344-85e5-b4eb6cdf2a9b",
+      "state": {
+        "battle_id": "711a8fd3-ef65-47ac-af4c-de38df4c6d33",
+        "user_id": "cdb21859-5f33-4344-85e5-b4eb6cdf2a9b",
+        "player": {
+          "name": "Typhlosion",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire"
+          ],
+          "moves": [
+            "Overheat",
+            "Flamethrower",
+            "Focus Blast",
+            "Fire Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Metagross",
+          "hp": 140,
+          "max_hp": 140,
+          "types": [
+            "Steel",
+            "Psychic"
+          ],
+          "moves": [
+            "Psychic",
+            "Ice Punch",
+            "Zen Headbutt",
+            "Meteor Mash"
+          ]
+        },
+        "logs": [
+          "Inicia Typhlosion vs Metagross"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:20:29.481331Z",
+      "updated_at": "2026-05-07T17:20:29.481331Z"
+    },
+    "2c193804-3a55-4e56-bdae-4ad5ccf29a2a": {
+      "id": "2c193804-3a55-4e56-bdae-4ad5ccf29a2a",
+      "user_id": "3fe21975-d8f7-404c-9127-2bbb87cdf4ca",
+      "state": {
+        "battle_id": "2c193804-3a55-4e56-bdae-4ad5ccf29a2a",
+        "user_id": "3fe21975-d8f7-404c-9127-2bbb87cdf4ca",
+        "player": {
+          "name": "Snorlax",
+          "hp": 220,
+          "max_hp": 220,
+          "types": [
+            "Normal"
+          ],
+          "moves": [
+            "Thunder Punch",
+            "Heavy Slam",
+            "Body Slam",
+            "Rock Slide"
+          ]
+        },
+        "enemy": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Dragon Claw",
+            "Giga Drain",
+            "Energy Ball",
+            "Earthquake"
+          ]
+        },
+        "logs": [
+          "Inicia Snorlax vs Sceptile"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:21:01.790464Z",
+      "updated_at": "2026-05-07T17:21:01.790464Z"
+    },
+    "c768b21c-054e-40bb-b734-38f2a9eee587": {
+      "id": "c768b21c-054e-40bb-b734-38f2a9eee587",
+      "user_id": "5ecaa49a-c966-4dc0-83bb-945154d748c2",
+      "state": {
+        "battle_id": "c768b21c-054e-40bb-b734-38f2a9eee587",
+        "user_id": "5ecaa49a-c966-4dc0-83bb-945154d748c2",
+        "player": {
+          "name": "Snorlax",
+          "hp": 220,
+          "max_hp": 220,
+          "types": [
+            "Normal"
+          ],
+          "moves": [
+            "Body Slam",
+            "Ice Punch",
+            "Thunder Punch",
+            "Crunch"
+          ]
+        },
+        "enemy": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Leaf Blade",
+            "Leaf Storm",
+            "Dragon Pulse",
+            "Giga Drain"
+          ]
+        },
+        "logs": [
+          "Inicia Snorlax vs Sceptile"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:21:01.800721Z",
+      "updated_at": "2026-05-07T17:21:01.800721Z"
+    },
+    "b4122cca-26a3-4953-abbb-9e6a2b12b649": {
+      "id": "b4122cca-26a3-4953-abbb-9e6a2b12b649",
+      "user_id": "5676485f-b869-4d91-a8f3-ca6c546ea3dd",
+      "state": {
+        "battle_id": "b4122cca-26a3-4953-abbb-9e6a2b12b649",
+        "user_id": "5676485f-b869-4d91-a8f3-ca6c546ea3dd",
+        "player": {
+          "name": "Snorlax",
+          "hp": 220,
+          "max_hp": 220,
+          "types": [
+            "Normal"
+          ],
+          "moves": [
+            "Thunder Punch",
+            "Ice Punch",
+            "Earthquake",
+            "Heavy Slam"
+          ]
+        },
+        "enemy": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Dragon Claw",
+            "Leaf Blade",
+            "Leaf Storm",
+            "Dragon Pulse"
+          ]
+        },
+        "logs": [
+          "Inicia Snorlax vs Sceptile"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:21:59.226740Z",
+      "updated_at": "2026-05-07T17:21:59.226740Z"
+    },
+    "12bf09e4-2d67-46f5-a805-572f26612da8": {
+      "id": "12bf09e4-2d67-46f5-a805-572f26612da8",
+      "user_id": "deb1cf28-a381-4115-b837-29366ce809c2",
+      "state": {
+        "battle_id": "12bf09e4-2d67-46f5-a805-572f26612da8",
+        "user_id": "deb1cf28-a381-4115-b837-29366ce809c2",
+        "player": {
+          "name": "Snorlax",
+          "hp": 220,
+          "max_hp": 220,
+          "types": [
+            "Normal"
+          ],
+          "moves": [
+            "Body Slam",
+            "Fire Punch",
+            "Earthquake",
+            "Rock Slide"
+          ]
+        },
+        "enemy": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Leaf Storm",
+            "Leaf Blade",
+            "Earthquake",
+            "Giga Drain"
+          ]
+        },
+        "logs": [
+          "Inicia Snorlax vs Sceptile"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:21:59.237245Z",
+      "updated_at": "2026-05-07T17:21:59.237245Z"
+    },
+    "1f577389-bd20-4915-a8cd-5be08e63ad85": {
+      "id": "1f577389-bd20-4915-a8cd-5be08e63ad85",
+      "user_id": "22f97527-9f63-4380-8ed9-dae55e92f8f4",
+      "state": {
+        "battle_id": "1f577389-bd20-4915-a8cd-5be08e63ad85",
+        "user_id": "22f97527-9f63-4380-8ed9-dae55e92f8f4",
+        "player": {
+          "name": "Snorlax",
+          "hp": 220,
+          "max_hp": 220,
+          "types": [
+            "Normal"
+          ],
+          "moves": [
+            "Body Slam",
+            "Fire Punch",
+            "Ice Punch",
+            "Earthquake"
+          ]
+        },
+        "enemy": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Leaf Blade",
+            "Energy Ball",
+            "Dragon Pulse",
+            "Leaf Storm"
+          ]
+        },
+        "logs": [
+          "Inicia Snorlax vs Sceptile"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:22:00.063432Z",
+      "updated_at": "2026-05-07T17:22:00.063432Z"
+    },
+    "21386477-90f3-4f3c-a5c2-d3e14c77c245": {
+      "id": "21386477-90f3-4f3c-a5c2-d3e14c77c245",
+      "user_id": "893aa6a4-25c8-476e-aa59-7dd7c773a88f",
+      "state": {
+        "battle_id": "21386477-90f3-4f3c-a5c2-d3e14c77c245",
+        "user_id": "893aa6a4-25c8-476e-aa59-7dd7c773a88f",
+        "player": {
+          "name": "Snorlax",
+          "hp": 220,
+          "max_hp": 220,
+          "types": [
+            "Normal"
+          ],
+          "moves": [
+            "Fire Punch",
+            "Ice Punch",
+            "Heavy Slam",
+            "Body Slam"
+          ]
+        },
+        "enemy": {
+          "name": "Sceptile",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Grass"
+          ],
+          "moves": [
+            "Energy Ball",
+            "Dragon Claw",
+            "Earthquake",
+            "Leaf Blade"
+          ]
+        },
+        "logs": [
+          "Inicia Snorlax vs Sceptile"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:22:00.073618Z",
+      "updated_at": "2026-05-07T17:22:00.073618Z"
+    },
+    "d4612ebe-0918-4ff7-a4f9-9b8d9e08498c": {
+      "id": "d4612ebe-0918-4ff7-a4f9-9b8d9e08498c",
+      "user_id": "0b3bbc4b-c01d-431e-96a9-4cc03efc0020",
+      "state": {
+        "battle_id": "d4612ebe-0918-4ff7-a4f9-9b8d9e08498c",
+        "user_id": "0b3bbc4b-c01d-431e-96a9-4cc03efc0020",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Fire Blast",
+            "Overheat",
+            "Flamethrower"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Thunderbolt",
+            "Flamethrower",
+            "Psystrike",
+            "Aura Sphere"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:22:06.416733Z",
+      "updated_at": "2026-05-07T17:22:06.416733Z"
+    },
+    "294e51d0-ff33-4831-90a8-8b12268cd487": {
+      "id": "294e51d0-ff33-4831-90a8-8b12268cd487",
+      "user_id": "fa22a7d1-98bd-4c22-a9f3-3dd99de39fba",
+      "state": {
+        "battle_id": "294e51d0-ff33-4831-90a8-8b12268cd487",
+        "user_id": "fa22a7d1-98bd-4c22-a9f3-3dd99de39fba",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Flamethrower",
+            "Dragon Pulse",
+            "Focus Blast",
+            "Fire Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Ice Beam",
+            "Thunderbolt",
+            "Ice Punch"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:22:06.440481Z",
+      "updated_at": "2026-05-07T17:22:06.440481Z"
+    },
+    "f8c75e25-218f-4990-a441-7dc992ece4a5": {
+      "id": "f8c75e25-218f-4990-a441-7dc992ece4a5",
+      "user_id": "8eac9cb9-4975-45d7-862c-6790158e35fb",
+      "state": {
+        "battle_id": "f8c75e25-218f-4990-a441-7dc992ece4a5",
+        "user_id": "8eac9cb9-4975-45d7-862c-6790158e35fb",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Focus Blast",
+            "Overheat",
+            "Heat Wave"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Ice Beam",
+            "Ice Punch",
+            "Psycho Cut",
+            "Thunderbolt"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:29:11.913710Z",
+      "updated_at": "2026-05-07T17:29:11.913710Z"
+    },
+    "f16b068b-11df-4771-92ab-767c774168e5": {
+      "id": "f16b068b-11df-4771-92ab-767c774168e5",
+      "user_id": "d93c5762-521d-48b3-99d8-b36914e8c943",
+      "state": {
+        "battle_id": "f16b068b-11df-4771-92ab-767c774168e5",
+        "user_id": "d93c5762-521d-48b3-99d8-b36914e8c943",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Solar Beam",
+            "Air Slash",
+            "Flamethrower"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Flamethrower",
+            "Ice Punch",
+            "Aura Sphere",
+            "Ice Beam"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:29:11.924007Z",
+      "updated_at": "2026-05-07T17:29:11.924007Z"
+    },
+    "13d31d14-0acd-4914-bac7-44bb33a9df9f": {
+      "id": "13d31d14-0acd-4914-bac7-44bb33a9df9f",
+      "user_id": "b607281b-648a-46bc-be87-a0312738113b",
+      "state": {
+        "battle_id": "13d31d14-0acd-4914-bac7-44bb33a9df9f",
+        "user_id": "b607281b-648a-46bc-be87-a0312738113b",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Heat Wave",
+            "Fire Blast",
+            "Focus Blast",
+            "Overheat"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Flamethrower",
+            "Ice Beam",
+            "Thunderbolt"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:29:20.506086Z",
+      "updated_at": "2026-05-07T17:29:20.506086Z"
+    },
+    "072828c1-5709-4d1c-be8d-c9c89e5aadc4": {
+      "id": "072828c1-5709-4d1c-be8d-c9c89e5aadc4",
+      "user_id": "8b5473fe-4a4b-4e0a-8108-3958385de880",
+      "state": {
+        "battle_id": "072828c1-5709-4d1c-be8d-c9c89e5aadc4",
+        "user_id": "8b5473fe-4a4b-4e0a-8108-3958385de880",
+        "player": {
+          "name": "Charizard",
+          "hp": 0,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Heat Wave",
+            "Fire Blast",
+            "Air Slash",
+            "Flamethrower"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 88,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Shadow Ball",
+            "Psycho Cut",
+            "Psystrike",
+            "Flamethrower"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo",
+          "Mewtwo uso Shadow Ball. Hizo 65 de dano.",
+          "Charizard uso Heat Wave. Hizo 78 de dano.",
+          "Mewtwo uso Psystrike. Hizo 122 de dano.",
+          "Charizard se debilito."
+        ],
+        "finished": true,
+        "winner": "Mewtwo"
+      },
+      "created_at": "2026-05-07T17:29:20.530797Z",
+      "updated_at": "2026-05-07T17:29:30.182974Z"
+    },
+    "74cc8ccb-f646-4da7-b3cb-ee94f62d6009": {
+      "id": "74cc8ccb-f646-4da7-b3cb-ee94f62d6009",
+      "user_id": "6ed3c187-a8d4-4e75-bd38-8d29a5e4b9d5",
+      "state": {
+        "battle_id": "74cc8ccb-f646-4da7-b3cb-ee94f62d6009",
+        "user_id": "6ed3c187-a8d4-4e75-bd38-8d29a5e4b9d5",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Solar Beam",
+            "Air Slash",
+            "Flamethrower",
+            "Overheat"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Shadow Ball",
+            "Thunderbolt",
+            "Ice Beam",
+            "Psystrike"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:29:36.681986Z",
+      "updated_at": "2026-05-07T17:29:36.681986Z"
+    },
+    "ff7706f4-c720-4c07-9780-aba17e53b2cb": {
+      "id": "ff7706f4-c720-4c07-9780-aba17e53b2cb",
+      "user_id": "0bb07e47-a4c1-46d2-9f8b-f7201f1f0869",
+      "state": {
+        "battle_id": "ff7706f4-c720-4c07-9780-aba17e53b2cb",
+        "user_id": "0bb07e47-a4c1-46d2-9f8b-f7201f1f0869",
+        "player": {
+          "name": "Charizard",
+          "hp": 0,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Heat Wave",
+            "Focus Blast",
+            "Solar Beam"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Thunderbolt",
+            "Psycho Cut",
+            "Psystrike",
+            "Flamethrower"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo",
+          "Mewtwo uso Thunderbolt. Hizo 147 de dano.",
+          "Charizard se debilito."
+        ],
+        "finished": true,
+        "winner": "Mewtwo"
+      },
+      "created_at": "2026-05-07T17:29:36.692419Z",
+      "updated_at": "2026-05-07T17:29:37.673435Z"
+    },
+    "ecf56b99-936e-44c9-b582-93f1fd49c0ef": {
+      "id": "ecf56b99-936e-44c9-b582-93f1fd49c0ef",
+      "user_id": "9bbd0eda-94f7-40ba-a7ed-7ec323507d75",
+      "state": {
+        "battle_id": "ecf56b99-936e-44c9-b582-93f1fd49c0ef",
+        "user_id": "9bbd0eda-94f7-40ba-a7ed-7ec323507d75",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Heat Wave",
+            "Focus Blast",
+            "Overheat"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psystrike",
+            "Ice Beam",
+            "Thunderbolt",
+            "Aura Sphere"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:29:43.585151Z",
+      "updated_at": "2026-05-07T17:29:43.585151Z"
+    },
+    "ca172e81-b572-403e-8a41-02843d18654d": {
+      "id": "ca172e81-b572-403e-8a41-02843d18654d",
+      "user_id": "012a5d4f-cf11-4504-b639-c9ff9328fc65",
+      "state": {
+        "battle_id": "ca172e81-b572-403e-8a41-02843d18654d",
+        "user_id": "012a5d4f-cf11-4504-b639-c9ff9328fc65",
+        "player": {
+          "name": "Charizard",
+          "hp": 0,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Focus Blast",
+            "Solar Beam",
+            "Overheat"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psystrike",
+            "Thunderbolt",
+            "Aura Sphere",
+            "Shadow Ball"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo",
+          "Mewtwo uso Thunderbolt. Hizo 147 de dano.",
+          "Charizard se debilito."
+        ],
+        "finished": true,
+        "winner": "Mewtwo"
+      },
+      "created_at": "2026-05-07T17:29:43.595607Z",
+      "updated_at": "2026-05-07T17:29:46.246647Z"
+    },
+    "12978bbe-d768-4703-8b3a-a78d2ddee3a5": {
+      "id": "12978bbe-d768-4703-8b3a-a78d2ddee3a5",
+      "user_id": "088a078e-c6ef-44ea-a1f0-588cd4e248c0",
+      "state": {
+        "battle_id": "12978bbe-d768-4703-8b3a-a78d2ddee3a5",
+        "user_id": "088a078e-c6ef-44ea-a1f0-588cd4e248c0",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Dragon Pulse",
+            "Flamethrower",
+            "Overheat",
+            "Air Slash"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Shadow Ball",
+            "Thunderbolt",
+            "Psycho Cut",
+            "Flamethrower"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:29:50.480907Z",
+      "updated_at": "2026-05-07T17:29:50.480907Z"
+    },
+    "53c62954-1552-4bfc-b97d-b52cb163c8a0": {
+      "id": "53c62954-1552-4bfc-b97d-b52cb163c8a0",
+      "user_id": "28ee69a4-6a47-4afa-93b6-45600552debb",
+      "state": {
+        "battle_id": "53c62954-1552-4bfc-b97d-b52cb163c8a0",
+        "user_id": "28ee69a4-6a47-4afa-93b6-45600552debb",
+        "player": {
+          "name": "Charizard",
+          "hp": 0,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Heat Wave",
+            "Flamethrower",
+            "Focus Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 92,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psystrike",
+            "Psycho Cut",
+            "Shadow Ball",
+            "Flamethrower"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo",
+          "Mewtwo uso Shadow Ball. Hizo 65 de dano.",
+          "Charizard uso Flamethrower. Hizo 74 de dano.",
+          "Mewtwo uso Psystrike. Hizo 122 de dano.",
+          "Charizard se debilito."
+        ],
+        "finished": true,
+        "winner": "Mewtwo"
+      },
+      "created_at": "2026-05-07T17:29:50.491533Z",
+      "updated_at": "2026-05-07T17:29:55.030479Z"
+    },
+    "5048d486-ccdf-4c59-8772-b1776d2fea8a": {
+      "id": "5048d486-ccdf-4c59-8772-b1776d2fea8a",
+      "user_id": "70cce279-fca6-4400-b0e8-c34359636cdc",
+      "state": {
+        "battle_id": "5048d486-ccdf-4c59-8772-b1776d2fea8a",
+        "user_id": "70cce279-fca6-4400-b0e8-c34359636cdc",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Dragon Pulse",
+            "Heat Wave",
+            "Flamethrower"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Iron Head",
+            "Poison Jab",
+            "Stone Edge",
+            "Crunch"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Garchomp"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:36:41.716814Z",
+      "updated_at": "2026-05-07T17:36:41.716814Z"
+    },
+    "8a65ff68-2534-421d-b5b3-19202abaa7f3": {
+      "id": "8a65ff68-2534-421d-b5b3-19202abaa7f3",
+      "user_id": "6ed5ce10-8ee9-4f17-bf4f-cc4aaa27b38e",
+      "state": {
+        "battle_id": "8a65ff68-2534-421d-b5b3-19202abaa7f3",
+        "user_id": "6ed5ce10-8ee9-4f17-bf4f-cc4aaa27b38e",
+        "player": {
+          "name": "Charizard",
+          "hp": 0,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Solar Beam",
+            "Fire Blast",
+            "Heat Wave"
+          ]
+        },
+        "enemy": {
+          "name": "Garchomp",
+          "hp": 26,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            "Crunch",
+            "Iron Head",
+            "Fire Fang",
+            "Earthquake"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Garchomp",
+          "Garchomp uso Crunch. Hizo 21 de dano.",
+          "Charizard uso Air Slash. Hizo 23 de dano.",
+          "Garchomp uso Crunch. Hizo 21 de dano.",
+          "Charizard uso Air Slash. Hizo 23 de dano.",
+          "Garchomp uso Crunch. Hizo 21 de dano.",
+          "Charizard uso Fire Blast. Hizo 16 de dano.",
+          "Garchomp uso Crunch. Hizo 21 de dano.",
+          "Charizard uso Solar Beam. Hizo 24 de dano.",
+          "Garchomp uso Crunch. Hizo 21 de dano.",
+          "Charizard uso Fire Blast. Hizo 32 de dano. \u00a1Golpe critico!",
+          "Garchomp uso Crunch. Hizo 21 de dano.",
+          "Charizard uso Solar Beam. Hizo 24 de dano.",
+          "Garchomp uso Crunch. Hizo 21 de dano.",
+          "Charizard se debilito."
+        ],
+        "finished": true,
+        "winner": "Garchomp"
+      },
+      "created_at": "2026-05-07T17:36:41.727843Z",
+      "updated_at": "2026-05-07T17:37:30.360719Z"
+    },
+    "2ff4460f-e632-472f-b9c7-47b1ba8f002e": {
+      "id": "2ff4460f-e632-472f-b9c7-47b1ba8f002e",
+      "user_id": "9e0430c6-4047-4db9-bbc9-b55a779f1e2b",
+      "state": {
+        "battle_id": "2ff4460f-e632-472f-b9c7-47b1ba8f002e",
+        "user_id": "9e0430c6-4047-4db9-bbc9-b55a779f1e2b",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Dragon Pulse",
+            "Air Slash",
+            "Flamethrower",
+            "Overheat"
+          ]
+        },
+        "enemy": {
+          "name": "Metagross",
+          "hp": 140,
+          "max_hp": 140,
+          "types": [
+            "Steel",
+            "Psychic"
+          ],
+          "moves": [
+            "Earthquake",
+            "Ice Punch",
+            "Bullet Punch",
+            "Hammer Arm"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Metagross"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:37:37.442041Z",
+      "updated_at": "2026-05-07T17:37:37.442041Z"
+    },
+    "52548d0c-6e55-4bed-a475-13004a4a259c": {
+      "id": "52548d0c-6e55-4bed-a475-13004a4a259c",
+      "user_id": "564811af-0f77-44ab-bc4d-656806514fb5",
+      "state": {
+        "battle_id": "52548d0c-6e55-4bed-a475-13004a4a259c",
+        "user_id": "564811af-0f77-44ab-bc4d-656806514fb5",
+        "player": {
+          "name": "Charizard",
+          "hp": 60,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Overheat",
+            "Dragon Pulse",
+            "Fire Blast",
+            "Focus Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Metagross",
+          "hp": 0,
+          "max_hp": 140,
+          "types": [
+            "Steel",
+            "Psychic"
+          ],
+          "moves": [
+            "Thunder Punch",
+            "Bullet Punch",
+            "Hammer Arm",
+            "Psychic"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Metagross",
+          "Charizard uso Overheat. Hizo 74 de dano.",
+          "Metagross uso Thunder Punch. Hizo 78 de dano. \u00a1Golpe critico!",
+          "Charizard uso Overheat. Hizo 74 de dano.",
+          "Metagross se debilito."
+        ],
+        "finished": true,
+        "winner": "Charizard"
+      },
+      "created_at": "2026-05-07T17:37:37.452798Z",
+      "updated_at": "2026-05-07T17:37:39.483900Z"
+    },
+    "f60a2a3f-819d-493f-b89c-9270e7eccbee": {
+      "id": "f60a2a3f-819d-493f-b89c-9270e7eccbee",
+      "user_id": "36b45e34-02e7-49cb-92b7-bc37bc06b15e",
+      "state": {
+        "battle_id": "f60a2a3f-819d-493f-b89c-9270e7eccbee",
+        "user_id": "36b45e34-02e7-49cb-92b7-bc37bc06b15e",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Solar Beam",
+            "Focus Blast",
+            "Air Slash",
+            "Fire Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Salamence",
+          "hp": 155,
+          "max_hp": 155,
+          "types": [
+            "Dragon",
+            "Flying"
+          ],
+          "moves": [
+            "Draco Meteor",
+            "Dragon Claw",
+            "Fire Blast",
+            "Fly"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Salamence"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:37:44.824557Z",
+      "updated_at": "2026-05-07T17:37:44.824557Z"
+    },
+    "c08342c9-b97b-439a-bf46-0552390c19b9": {
+      "id": "c08342c9-b97b-439a-bf46-0552390c19b9",
+      "user_id": "f06f4628-fae6-4ed6-b343-0a49841539ac",
+      "state": {
+        "battle_id": "c08342c9-b97b-439a-bf46-0552390c19b9",
+        "user_id": "f06f4628-fae6-4ed6-b343-0a49841539ac",
+        "player": {
+          "name": "Charizard",
+          "hp": 3,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Flamethrower",
+            "Air Slash",
+            "Dragon Pulse",
+            "Fire Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Salamence",
+          "hp": 89,
+          "max_hp": 155,
+          "types": [
+            "Dragon",
+            "Flying"
+          ],
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Hydro Pump",
+            "Fire Blast"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Salamence",
+          "Charizard uso Flamethrower. Hizo 28 de dano. \u00a1Golpe critico!",
+          "Salamence uso Hydro Pump. Hizo 45 de dano.",
+          "Charizard uso Flamethrower. Hizo 14 de dano.",
+          "Salamence uso Hydro Pump. Hizo 45 de dano.",
+          "Charizard uso Air Slash. Hizo 24 de dano.",
+          "Salamence uso Hydro Pump. Hizo 45 de dano."
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:37:44.851257Z",
+      "updated_at": "2026-05-07T17:37:48.553578Z"
+    },
+    "2ed89628-5e80-4c12-9590-313915d78766": {
+      "id": "2ed89628-5e80-4c12-9590-313915d78766",
+      "user_id": "8ffb62f6-261f-4f2c-94d2-ca51dea1b310",
+      "state": {
+        "battle_id": "2ed89628-5e80-4c12-9590-313915d78766",
+        "user_id": "8ffb62f6-261f-4f2c-94d2-ca51dea1b310",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Solar Beam",
+            "Dragon Pulse",
+            "Focus Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Salamence",
+          "hp": 155,
+          "max_hp": 155,
+          "types": [
+            "Dragon",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Dragon Claw",
+            "Dual Wingbeat",
+            "Outrage"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Salamence"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:42:59.088258Z",
+      "updated_at": "2026-05-07T17:42:59.088258Z"
+    },
+    "c0c0f72b-e82c-4163-88d2-425e8a2e6c88": {
+      "id": "c0c0f72b-e82c-4163-88d2-425e8a2e6c88",
+      "user_id": "364025cb-1ca2-4de4-8ee9-dbcd7fa95793",
+      "state": {
+        "battle_id": "c0c0f72b-e82c-4163-88d2-425e8a2e6c88",
+        "user_id": "364025cb-1ca2-4de4-8ee9-dbcd7fa95793",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Dragon Pulse",
+            "Air Slash",
+            "Fire Blast",
+            "Solar Beam"
+          ]
+        },
+        "enemy": {
+          "name": "Salamence",
+          "hp": 155,
+          "max_hp": 155,
+          "types": [
+            "Dragon",
+            "Flying"
+          ],
+          "moves": [
+            "Earthquake",
+            "Hydro Pump",
+            "Fire Blast",
+            "Fly"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Salamence"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:44:47.238420Z",
+      "updated_at": "2026-05-07T17:44:47.238420Z"
+    },
+    "4b0d48ba-8cc8-43d1-9b6b-f74548ffd7b6": {
+      "id": "4b0d48ba-8cc8-43d1-9b6b-f74548ffd7b6",
+      "user_id": "54167b20-1067-48de-a7f6-b1b99666ea69",
+      "state": {
+        "battle_id": "4b0d48ba-8cc8-43d1-9b6b-f74548ffd7b6",
+        "user_id": "54167b20-1067-48de-a7f6-b1b99666ea69",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Flamethrower",
+            "Dragon Pulse",
+            "Focus Blast",
+            "Fire Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Salamence",
+          "hp": 155,
+          "max_hp": 155,
+          "types": [
+            "Dragon",
+            "Flying"
+          ],
+          "moves": [
+            "Draco Meteor",
+            "Fire Blast",
+            "Earthquake",
+            "Outrage"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Salamence"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:44:47.250323Z",
+      "updated_at": "2026-05-07T17:44:47.250323Z"
+    },
+    "d3878baa-c154-4834-98c2-15d2328d4096": {
+      "id": "d3878baa-c154-4834-98c2-15d2328d4096",
+      "user_id": "756c8a1a-8407-4bf4-a40a-fa9c3aac8b65",
+      "state": {
+        "battle_id": "d3878baa-c154-4834-98c2-15d2328d4096",
+        "user_id": "756c8a1a-8407-4bf4-a40a-fa9c3aac8b65",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Solar Beam",
+            "Focus Blast",
+            "Air Slash"
+          ]
+        },
+        "enemy": {
+          "name": "Tyranitar",
+          "hp": 160,
+          "max_hp": 160,
+          "types": [
+            "Rock",
+            "Dark"
+          ],
+          "moves": [
+            "Rock Slide",
+            "Crunch",
+            "Thunder Punch",
+            "Ice Punch"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Tyranitar"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:44:55.835801Z",
+      "updated_at": "2026-05-07T17:44:55.835801Z"
+    },
+    "4370c113-fd29-4c8c-a9b6-4460f6147dbe": {
+      "id": "4370c113-fd29-4c8c-a9b6-4460f6147dbe",
+      "user_id": "b464c73b-6336-425f-9fa8-7b6d092eb54a",
+      "state": {
+        "battle_id": "4370c113-fd29-4c8c-a9b6-4460f6147dbe",
+        "user_id": "b464c73b-6336-425f-9fa8-7b6d092eb54a",
+        "player": {
+          "name": "Charizard",
+          "hp": 0,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Overheat",
+            "Dragon Pulse",
+            "Focus Blast",
+            "Fire Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Tyranitar",
+          "hp": 144,
+          "max_hp": 160,
+          "types": [
+            "Rock",
+            "Dark"
+          ],
+          "moves": [
+            "Rock Slide",
+            "Stone Edge",
+            "Fire Blast",
+            "Ice Punch"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Tyranitar",
+          "Charizard uso Overheat. Hizo 16 de dano.",
+          "Tyranitar uso Stone Edge. Hizo 162 de dano.",
+          "Charizard se debilito."
+        ],
+        "finished": true,
+        "winner": "Tyranitar"
+      },
+      "created_at": "2026-05-07T17:44:55.861583Z",
+      "updated_at": "2026-05-07T17:45:01.117644Z"
+    },
+    "f9f0fe12-45ff-4379-91cd-2561e31b244b": {
+      "id": "f9f0fe12-45ff-4379-91cd-2561e31b244b",
+      "user_id": "a67ec0c1-d191-4ca5-8e2e-2269be3949be",
+      "state": {
+        "battle_id": "f9f0fe12-45ff-4379-91cd-2561e31b244b",
+        "user_id": "a67ec0c1-d191-4ca5-8e2e-2269be3949be",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Solar Beam",
+            "Fire Blast",
+            "Air Slash",
+            "Dragon Pulse"
+          ]
+        },
+        "enemy": {
+          "name": "Metagross",
+          "hp": 140,
+          "max_hp": 140,
+          "types": [
+            "Steel",
+            "Psychic"
+          ],
+          "moves": [
+            "Earthquake",
+            "Ice Punch",
+            "Zen Headbutt",
+            "Thunder Punch"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Metagross"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T17:45:37.120574Z",
+      "updated_at": "2026-05-07T17:45:37.120574Z"
+    },
+    "43f097e5-e7fe-42c7-8dd2-601257ee20b4": {
+      "id": "43f097e5-e7fe-42c7-8dd2-601257ee20b4",
+      "user_id": "295d7a8e-99fc-43e3-b4ea-8fa1577fbcf3",
+      "state": {
+        "battle_id": "43f097e5-e7fe-42c7-8dd2-601257ee20b4",
+        "user_id": "295d7a8e-99fc-43e3-b4ea-8fa1577fbcf3",
+        "player": {
+          "name": "Charizard",
+          "hp": 0,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Dragon Pulse",
+            "Heat Wave",
+            "Fire Blast",
+            "Air Slash"
+          ]
+        },
+        "enemy": {
+          "name": "Metagross",
+          "hp": 39,
+          "max_hp": 140,
+          "types": [
+            "Steel",
+            "Psychic"
+          ],
+          "moves": [
+            "Meteor Mash",
+            "Earthquake",
+            "Ice Punch",
+            "Bullet Punch"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Metagross",
+          "Charizard uso Dragon Pulse. Hizo 8 de dano.",
+          "Metagross uso Ice Punch. Hizo 20 de dano.",
+          "Charizard uso Heat Wave. Hizo 55 de dano.",
+          "Metagross uso Ice Punch. Hizo 20 de dano.",
+          "Charizard uso Dragon Pulse. Hizo 8 de dano.",
+          "Metagross uso Ice Punch. Hizo 20 de dano.",
+          "Charizard uso Air Slash. Hizo 11 de dano.",
+          "Metagross uso Ice Punch. Hizo 20 de dano.",
+          "Charizard uso Dragon Pulse. Hizo 8 de dano.",
+          "Metagross uso Ice Punch. Hizo 39 de dano. \u00a1Golpe critico!",
+          "Charizard uso Air Slash. Hizo 11 de dano.",
+          "Metagross uso Ice Punch. Hizo 39 de dano. \u00a1Golpe critico!",
+          "Charizard se debilito."
+        ],
+        "finished": true,
+        "winner": "Metagross"
+      },
+      "created_at": "2026-05-07T17:45:37.132638Z",
+      "updated_at": "2026-05-07T17:46:10.665098Z"
+    },
+    "b92b0234-e73c-43f7-a62e-39ad799a34c4": {
+      "id": "b92b0234-e73c-43f7-a62e-39ad799a34c4",
+      "user_id": "8758d73a-e5d6-4309-9c8c-5279a0ead3fd",
+      "state": {
+        "battle_id": "b92b0234-e73c-43f7-a62e-39ad799a34c4",
+        "user_id": "8758d73a-e5d6-4309-9c8c-5279a0ead3fd",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Focus Blast",
+            "Overheat",
+            "Solar Beam",
+            "Fire Blast"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Thunderbolt",
+            "Psycho Cut",
+            "Aura Sphere",
+            "Ice Punch"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T18:04:49.730213Z",
+      "updated_at": "2026-05-07T18:04:49.730213Z"
+    },
+    "ecdf95c8-ba6c-41a2-8fe4-7b01f7aa6acb": {
+      "id": "ecdf95c8-ba6c-41a2-8fe4-7b01f7aa6acb",
+      "user_id": "e0b61d15-0409-4ccb-b927-0754f840915c",
+      "state": {
+        "battle_id": "ecdf95c8-ba6c-41a2-8fe4-7b01f7aa6acb",
+        "user_id": "e0b61d15-0409-4ccb-b927-0754f840915c",
+        "player": {
+          "name": "Charizard",
+          "hp": 12,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Dragon Pulse",
+            "Solar Beam",
+            "Fire Blast",
+            "Air Slash"
+          ]
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 96,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Shadow Ball",
+            "Ice Beam",
+            "Psystrike",
+            "Psycho Cut"
+          ]
+        },
+        "logs": [
+          "Inicia Charizard vs Mewtwo",
+          "Mewtwo uso Psystrike. Hizo 42 de dano.",
+          "Charizard uso Dragon Pulse. Hizo 16 de dano.",
+          "Mewtwo uso Psystrike. Hizo 42 de dano.",
+          "Charizard uso Solar Beam. Hizo 23 de dano.",
+          "Mewtwo uso Psystrike. Hizo 42 de dano.",
+          "Charizard uso Fire Blast. Hizo 31 de dano."
+        ],
+        "finished": false,
+        "winner": null
+      },
+      "created_at": "2026-05-07T18:04:49.741639Z",
+      "updated_at": "2026-05-07T18:04:58.033397Z"
+    }
+  }
 }

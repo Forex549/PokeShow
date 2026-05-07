@@ -115,7 +115,7 @@ def calculate_damage(attacker: Pokemon, defender: Pokemon, move: Movimiento) -> 
         atk_val = attacker.spa
         def_val = defender.spd
 
-    base_dmg = ((2 * 50 / 5 + 2) * move.power * (atk_val / def_val)) / 50 + 2
+    base_dmg = (((2 * 50 / 5 + 2) * move.power * (atk_val / def_val)) / 50 + 2) * 0.35
 
     stab = 1.5 if move.type in attacker.types else 1.0
     print("-----")

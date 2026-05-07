@@ -78,9 +78,15 @@ def _execute_turn(player: Pokemon, enemy: Pokemon, player_move: Movimiento, enem
         if attacker.hp <= 0:
             continue
 
-        damage = calculate_damage(attacker, defender, move)
-        defender.hp -= damage
-        logs.append(f"{attacker.name} uso {move.name}. Hizo {damage} de dano.")
+        damage, crit = calculate_damage(attacker, defender, move)
+        defender.hp = max(0, defender.hp - damage)
+        
+        message = f"{attacker.name} uso {move.name}. Hizo {damage} de dano."
+        
+        if crit:
+            message += " ¡Golpe critico!"
+
+        logs.append(message)
 
         if defender.hp <= 0:
             logs.append(f"{defender.name} se debilito.")
