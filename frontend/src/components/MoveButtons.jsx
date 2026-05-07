@@ -15,7 +15,7 @@ function MoveButtons({
 
                         ${disabled
                             ? "bg-gray-400 cursor-not-allowed opacity-60"
-                            : "bg-blue-500 hover:bg-blue-600"
+                            : "bg-slate-700 hover:bg-slate-800"
                         }
                     `}
                 >

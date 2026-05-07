@@ -34,6 +34,7 @@ class BattleState:
     logs: List[str]
     finished: bool
     winner: Optional[str]
+    first_turn: Optional[str]
 
 
 BATTLES: Dict[str, BattleState] = {}
@@ -69,11 +70,22 @@ def _find_move(pokemon: Pokemon, move_name: str) -> Movimiento:
 def _execute_turn(player: Pokemon, enemy: Pokemon, player_move: Movimiento, enemy_move: Movimiento) -> List[str]:
     logs: List[str] = []
 
-    if player.spe >= enemy.spe:
-        order = [(player, player_move, enemy), (enemy, enemy_move, player)]
-    else:
-        order = [(enemy, enemy_move, player), (player, player_move, enemy)]
+    player_first = player.spe >= enemy.spe
 
+    if player_first:
+        logs.append(f"{player.name} es más rápido.")
+        
+        order = [
+            (player, player_move, enemy),
+            (enemy, enemy_move, player)
+        ]
+    else:
+        logs.append(f"{enemy.name} es más rápido.")
+
+        order = [
+            (enemy, enemy_move, player),
+            (player, player_move, enemy)
+        ]
     for attacker, move, defender in order:
         if attacker.hp <= 0:
             continue
@@ -92,7 +104,7 @@ def _execute_turn(player: Pokemon, enemy: Pokemon, player_move: Movimiento, enem
             logs.append(f"{defender.name} se debilito.")
             break
 
-    return logs
+    return logs, "player" if player_first else "enemy"
 
 
 def _build_state(battle: BattleState) -> Dict[str, object]:
@@ -109,13 +121,14 @@ def _build_state(battle: BattleState) -> Dict[str, object]:
         "enemy": {
             "name": battle.enemy.name,
             "hp": battle.enemy.hp,
-            "max_hp": battle.enemy.max_hp,
+            "max_hp": battle.player.max_hp,
             "types": list(battle.enemy.types),
             "moves": [move.name for move in battle.enemy.moves],
         },
         "logs": list(battle.logs),
         "finished": battle.finished,
         "winner": battle.winner,
+        "first_turn": battle.first_turn,
     }
 
 
@@ -123,7 +136,6 @@ def _pokemon_from_state(state: Dict[str, object]) -> Pokemon:
     name = str(state.get("name", ""))
     pokemon = _get_pokemon(name)
     pokemon.hp = int(state.get("hp", pokemon.hp))
-    pokemon.max_hp = int(state.get("max_hp", pokemon.max_hp))
     stored_moves = list(state.get("moves", []))
     if stored_moves:
         pokemon.moves = [_get_move_obj(move_name) for move_name in stored_moves]
@@ -164,6 +176,7 @@ def start_battle(user_id: str, player_name: str, enemy_name: Optional[str]) -> D
         logs=[f"Inicia {player.name} vs {enemy.name}"],
         finished=False,
         winner=None,
+        first_turn=None,
     )
     BATTLES[battle_id] = battle
     state = _build_state(battle)
@@ -185,7 +198,9 @@ def play_turn(battle_id: str, player_move: str) -> Dict[str, object]:
 
     player_move_obj = _find_move(battle.player, player_move)
     enemy_move_obj = choose_best_move(battle.enemy, battle.player)
-    battle.logs.extend(_execute_turn(battle.player, battle.enemy, player_move_obj, enemy_move_obj))
+    turn_logs, first_turn = _execute_turn(battle.player, battle.enemy, player_move_obj, enemy_move_obj)
+    battle.logs.extend(turn_logs)
+    battle.first_turn = first_turn
 
     if battle.player.hp <= 0 or battle.enemy.hp <= 0:
         battle.finished = True
