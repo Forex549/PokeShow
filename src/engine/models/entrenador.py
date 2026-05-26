@@ -10,7 +10,9 @@ class Entrenador:
     def switch_pokemon(self, index: int):
         if 0 <= index < len(self.pokemones):
             if self.pokemones[index].hp > 0:
+                self.get_current_pokemon().clear_volatiles()
                 self.current_pokemon_index = index
+                self.get_current_pokemon().clear_volatiles()
             else:
                 print(f"{self.pokemones[index].name} está debilitado y no puede ser seleccionado.")
     

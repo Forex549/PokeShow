@@ -1,5 +1,6 @@
 import random
 from .movimientos import Movimiento
+from src.engine.logic.status_effects import STATUS_RULES
 
 def calculate_hp(base, level=50):
     return int(((2 * base) * level) / 100 + level + 10)
@@ -28,9 +29,13 @@ class Pokemon:
             for move_name in random.sample(self.names_moves, 4)
         ]
 
-        # Estados de salud
+        # Estados principales
         self._status = "No State"
         self._status_turns = 0
+
+        # Para estados volátiles
+        self._volatile_status = "No State"
+        self._volatile_turns = 0
 
    
     @property
@@ -47,7 +52,11 @@ class Pokemon:
         return self._max_hp
 
     @property
-    def atk(self): return self._stats["atk"]
+    def atk(self): 
+        base_atk = self._stats["atk"]
+        if self._status == "brn":
+            return int(base_atk * STATUS_RULES["brn"]["multiplier"])
+        return base_atk
 
     @property
     def spa(self): return self._stats["spa"]
@@ -59,7 +68,11 @@ class Pokemon:
     def spd(self): return self._stats["spd"]
 
     @property
-    def spe(self): return self._stats["spe"]
+    def spe(self): 
+        base_spe = self._stats["spe"]
+        if self._status == "par":
+            return int(base_spe * STATUS_RULES["par"]["multiplier"])
+        return base_spe
 
     @property
     def available_moves(self):
@@ -87,5 +100,30 @@ class Pokemon:
         
         if self._status_turns == 0:
             self._status = "No State"
+            
+    # Atributos y métodos para estados volátiles 
+    @property
+    def volatile_status(self): return self._volatile_status
+
+    @volatile_status.setter
+    def volatile_status(self, new_status: str): self._volatile_status = new_status
+
+    @property
+    def volatile_turns(self): return self._volatile_turns
+
+    @volatile_turns.setter
+    def volatile_turns(self, turns: int): self._volatile_turns = turns
+
+    def decrease_volatile_turn(self):
+        if self._volatile_turns > 0:
+            self._volatile_turns -= 1
+        if self._volatile_turns == 0:
+            self._volatile_status = "No State"
+            print(f"{self.name} se ha librado de la confusión!")
+            
+    def clear_volatiles(self):
+        """Limpia los estados volátiles al cambiar de Pokémon."""
+        self._volatile_status = "No State"
+        self._volatile_turns = 0
 
     

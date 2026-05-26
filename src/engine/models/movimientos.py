@@ -1,4 +1,5 @@
 from random import random
+from typing import Optional
 
 
 class Movimiento:
@@ -29,6 +30,24 @@ class Movimiento:
 
         self.available: bool = True
 
+
+        self.secondary_status = None    
+        self.secondary_volatile = None  
+        self.secondary_chance = 0
+        
+        # Ataques de estado puro (que no hacen daño pero aplican un estado)
+        self.direct_status: Optional[str] = data.get("status", None)
+        
+        secondaries = data.get("secondaries", [])
+        if secondaries:
+            eff = secondaries[0]
+            if "status" in eff:
+                self.secondary_status = eff["status"]          
+                self.secondary_chance = eff.get("chance", 100) 
+            if "volatileStatus" in eff:
+                self.secondary_volatile = eff["volatileStatus"] 
+                self.secondary_chance = eff.get("chance", 100)
+        
     def __repr__(self) -> str:
         return f"<Move {self.name} ({self.type}) Power: {self.power} Priority: {self.priority}>"
     
