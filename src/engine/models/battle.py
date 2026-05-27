@@ -59,25 +59,35 @@ class Battle:
                     print(f"{atacante.name} está paralizado y no puede moverse.")
                     continue  
 
-            # Estado confusión: si el Pokémon está confundido, tiene una chance de golpearse a sí mismo en lugar de atacar
-            if atacante.volatile_status == "confusion":
+            if atacante.volatile_status != "No State":
+                estado_v = atacante.volatile_status
+                
                 if atacante.volatile_turns > 0:
-                    print(f"{atacante.name} se encuentra confundido...")
+                    # Reducimos en 1 el contador de turnos del estado volátil actual
                     atacante.decrease_volatile_turn()
                     
-                    chance_autogolpe = VOLATILE_STATUS_RULES["confusion"]["self_hit_chance"]
-                    if random.randint(1, 100) <= chance_autogolpe:
-                        print(f"{atacante.name} se hirió a sí mismo en su confusión!")
-                        potencia_confusion = VOLATILE_STATUS_RULES["confusion"]["self_hit_power"]
+                    if estado_v in VOLATILE_STATUS_RULES:
+                        reglas = VOLATILE_STATUS_RULES[estado_v]
+                        nombre_estado = reglas.get("name", estado_v)
                         
-                        # Daño por confusión usando sus propios stats
-                        dmg_conf = max(1, int((atacante.atk / atacante.defense) * potencia_confusion * 0.15))
-                        atacante.hp -= dmg_conf
-                        print(f"¡{atacante.name} se hizo {dmg_conf} de daño!")
-                        
-                        if atacante.hp <= 0:
-                            print(f"¡{atacante.name} se ha debilitado!")
-                        continue  
+                        # CASO A: El estado puede provocar un autogolpe (Ej: Confusión)
+                        if "self_hit_chance" in reglas:
+                            chance_autogolpe = reglas["self_hit_chance"]
+                            if random.randint(1, 100) <= chance_autogolpe:
+                                print(f"{atacante.name} está bajo el efecto de {nombre_estado} y se hirió a sí mismo!")
+                                potencia_golpe = reglas.get("self_hit_power", 40)
+                                dmg_conf = max(1, int((atacante.atk / atacante.defense) * potencia_golpe * 0.15))
+                                atacante.hp -= dmg_conf
+                                print(f"{atacante.name} se hizo {dmg_conf} de daño!")
+                                
+                                if atacante.hp <= 0:
+                                    print(f"{atacante.name} se ha debilitado!")
+                                continue  # Se salta el ataque al rival
+                                
+                        # CASO B: El estado simplemente bloquea el turno (Ej: Retroceso / Flinch)
+                        elif reglas.get("can_attack") == False:
+                            print(f"💤 {atacante.name} sufre el efecto de {nombre_estado} y no puede moverse este turno.")
+                            continue  
                 else:
                     atacante.volatile_status = "No State"
             
