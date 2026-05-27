@@ -3,7 +3,7 @@ import os
 import random
 from typing import Optional
 #from importJson import calculate_damage
-from engine.models.movimientos import Movimiento
+from src.engine.models.movimientos import Movimiento
 from src.engine.logic.damage_calc import calculate_damage
 from src.engine.models.pokemon import Pokemon
 from src.engine.models.entrenador import Entrenador
@@ -167,6 +167,7 @@ def estrategia_ia_minimax_nivel2(entrenador: Entrenador, rival: Entrenador) -> O
             return move_real
             
     return poke_real.available_moves[0] if poke_real.available_moves else None
+
 def main():
     # Menu de selección de modo
     print("Selecciona el modo de juego:")
