@@ -84,9 +84,9 @@ class Battle:
                                     print(f"{atacante.name} se ha debilitado!")
                                 continue  # Se salta el ataque al rival
                                 
-                        # CASO B: El estado simplemente bloquea el turno (Ej: Retroceso / Flinch)
+                        # CASO B: El estado simplemente bloquea el turno 
                         elif reglas.get("can_attack") == False:
-                            print(f"💤 {atacante.name} sufre el efecto de {nombre_estado} y no puede moverse este turno.")
+                            print(f"{atacante.name} sufre el efecto de {nombre_estado} y no puede moverse este turno.")
                             continue  
                 else:
                     atacante.volatile_status = "No State"

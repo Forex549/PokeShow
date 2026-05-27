@@ -1,10 +1,15 @@
 import json
 import os
 import random
+from typing import Optional
+#from importJson import calculate_damage
+from engine.models.movimientos import Movimiento
+from src.engine.logic.damage_calc import calculate_damage
 from src.engine.models.pokemon import Pokemon
 from src.engine.models.entrenador import Entrenador
 from src.engine.models.battle import Battle
-from src.engine.logic.heuristic import choose_best_move, chose_random_move
+from src.engine.logic.heuristic import choose_best_move, chose_random_move, minimax_alfa_beta
+import copy
 
 # Carga de datos de Pokemon y movimientos
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -105,6 +110,63 @@ def estrategia_ia_random(entrenador: Entrenador, rival: Entrenador):
                 return None
 
     return chose_random_move(poke)
+
+
+def estrategia_ia_minimax_nivel2(entrenador: Entrenador, rival: Entrenador) -> Optional[Movimiento]:
+    poke_real = entrenador.get_current_pokemon()
+
+    # Si nuestro Pokémon está muerto, obligamos al cambio
+    if poke_real.hp <= 0:
+        for i, p in enumerate(entrenador.pokemones): # Cambia al siguiente pokemon disponible
+            if p.hp > 0:
+                entrenador.switch_pokemon(i)
+                print(f"¡{entrenador.name} envió a {p.name} debido a debilitación!")
+                return None
+        return None
+
+    
+    ia_clon = copy.deepcopy(entrenador)
+    rival_clon = copy.deepcopy(rival)
+    
+    # Creamos una batalla espejo temporal  para cumplir con los parámetros del Minimax
+    batalla_simulada = Battle(ia_clon, rival_clon)
+    
+    poke_ia_clon = ia_clon.get_current_pokemon()
+    poke_rival_clon = rival_clon.get_current_pokemon()
+
+    best_move = None # Guardamos el nombre del movimiento para buscarlo en el real luego
+    best_value = float("-inf")
+
+    # El Minimax corre usando únicamente los objetos del clon fantasma
+    for i, move_clon in enumerate(poke_ia_clon.available_moves):
+        dmg = calculate_damage(poke_ia_clon, poke_rival_clon, move_clon)
+        
+        # Simulamos en el clon sin miedo
+        hp_original_rival = poke_rival_clon.hp
+        poke_rival_clon.hp -= dmg
+        
+        valor_futuro = minimax_alfa_beta(
+            battle_clone=batalla_simulada,
+            profundidad=3,
+            alfa=float("-inf"),
+            beta=float("inf"),
+            es_maximizando=False,
+            entrenador_ia=ia_clon,        # Mandamos el clon
+            entrenador_rival=rival_clon   # Mandamos el clon
+        )
+        
+        poke_rival_clon.hp = hp_original_rival
+        
+        if valor_futuro > best_value:
+            best_value = valor_futuro
+            best_move_name = move_clon.name  # Nos guardamos el nombre elegido
+
+    # Buscamos y devolvemos el movimiento real correspondiente al que eligió el clon
+    for move_real in poke_real.available_moves:
+        if move_real.name == best_move_name:
+            return move_real
+            
+    return poke_real.available_moves[0] if poke_real.available_moves else None
 def main():
     # Menu de selección de modo
     print("Selecciona el modo de juego:")
@@ -127,15 +189,19 @@ def main():
         print(f"\nSelecciona el bot para {nombre_ia}:")
         print("1. Aleatorio")
         print("2. Mejor opción")
+        print("3. Minimax Nivel 2")
         while True:
             try:
-                bot = int(input("Elige un bot (1-2): "))
+                bot = int(input("Elige un bot (1-3): "))
                 if bot == 1:
                     
                     return estrategia_ia_random
                 elif bot == 2:
                     
                     return estrategia_ia_best_option
+                elif bot == 3:
+                    
+                    return estrategia_ia_minimax_nivel2
                 else:
                     print("Selección no válida.")
                     continue
