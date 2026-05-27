@@ -196,7 +196,7 @@ class Battle:
             self.display_status()
             
             try:
-                # 🔥 FORZAR CAMBIOS ANTES DEL TURNO
+                # FORZAR CAMBIOS ANTES DEL TURNO
                 if self.entrenador1.get_current_pokemon().hp <= 0:
                     strategy_p1(self.entrenador1, self.entrenador2)
                     continue

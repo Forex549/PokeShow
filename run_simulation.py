@@ -67,7 +67,7 @@ def estrategia_humano(entrenador: Entrenador, rival: Entrenador):
 
     print(f"\nTurno de {entrenador.name}. Pokémon: {poke.name}")
     for i, move in enumerate(poke.moves):
-        print(f"{i+1}. {move.name}")
+        print(f"{i+1}. {move.name} | power: {move.power} priority: {move.priority} ")
     print("5. Cambiar Pokémon")
     print("6. Rendirse")
 
