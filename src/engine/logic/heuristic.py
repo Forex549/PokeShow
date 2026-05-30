@@ -67,7 +67,7 @@ def minimax_alfa_beta(
         # La IA evalúa todos sus movimientos disponibles
         for move_ia in poke_ia.available_moves:
             # Simulamos el daño que haríamos usando tu función de daño actual
-            from ..logic.damage_calc import calculate_damage
+            #from ..logic.damage_calc import calculate_damage
             dmg_a_rival, _ = calculate_damage(poke_ia, poke_rival, move_ia)
             
             # Aplicamos el daño hipotético en el futuro simulado

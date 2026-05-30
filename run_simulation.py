@@ -10,6 +10,7 @@ from src.engine.models.entrenador import Entrenador
 from src.engine.models.battle import Battle
 from src.engine.logic.heuristic import choose_best_move, chose_random_move, minimax_alfa_beta
 import copy
+import traceback
 
 # Carga de datos de Pokemon y movimientos
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -139,7 +140,7 @@ def estrategia_ia_minimax_nivel2(entrenador: Entrenador, rival: Entrenador) -> O
 
     # El Minimax corre usando únicamente los objetos del clon fantasma
     for i, move_clon in enumerate(poke_ia_clon.available_moves):
-        dmg = calculate_damage(poke_ia_clon, poke_rival_clon, move_clon)
+        dmg, _ = calculate_damage(poke_ia_clon, poke_rival_clon, move_clon)
         
         # Simulamos en el clon sin miedo
         hp_original_rival = poke_rival_clon.hp
@@ -260,4 +261,9 @@ def main():
     batalla.start_battle(estrategia_jugador, estrategia_rival)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"Error: {e}")
+        print(traceback.format_exc())
+        traceback.print_exc()
