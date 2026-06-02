@@ -1,0 +1,380 @@
+[
+  {
+    "clave": "pop10_gen10_bat4",
+    "pop_size": 10,
+    "generations": 10,
+    "n_battles": 4,
+    "fitness": 0.7083333333333334,
+    "generaciones_reales": 7,
+    "pesos": [
+      1.3899774653898391,
+      0.4149041254675643,
+      1.2285130930975208,
+      0.4614873748296712
+    ]
+  },
+  {
+    "clave": "pop10_gen10_bat8",
+    "pop_size": 10,
+    "generations": 10,
+    "n_battles": 8,
+    "fitness": 0.6875,
+    "generaciones_reales": 9,
+    "pesos": [
+      2.2057506356134153,
+      0.4149041254675643,
+      1.5834227379336747,
+      -1.6522446694823354
+    ]
+  },
+  {
+    "clave": "pop10_gen10_bat12",
+    "pop_size": 10,
+    "generations": 10,
+    "n_battles": 12,
+    "fitness": 0.5833333333333334,
+    "generaciones_reales": 7,
+    "pesos": [
+      0.9458848566560496,
+      0.7067979496916452,
+      1.5687182708193816,
+      -1.6522446694823354
+    ]
+  },
+  {
+    "clave": "pop10_gen20_bat4",
+    "pop_size": 10,
+    "generations": 20,
+    "n_battles": 4,
+    "fitness": 0.625,
+    "generaciones_reales": 6,
+    "pesos": [
+      1.3899774653898391,
+      0.4149041254675643,
+      1.2285130930975208,
+      0.9189271467752715
+    ]
+  },
+  {
+    "clave": "pop10_gen20_bat8",
+    "pop_size": 10,
+    "generations": 20,
+    "n_battles": 8,
+    "fitness": 0.6041666666666666,
+    "generaciones_reales": 7,
+    "pesos": [
+      1.3899774653898391,
+      0.4149041254675643,
+      1.2285130930975208,
+      0.9189271467752715
+    ]
+  },
+  {
+    "clave": "pop10_gen20_bat12",
+    "pop_size": 10,
+    "generations": 20,
+    "n_battles": 12,
+    "fitness": 0.6527777777777778,
+    "generaciones_reales": 14,
+    "pesos": [
+      1.2232770073312316,
+      0.4149041254675643,
+      -0.4858624911665861,
+      -0.04053248378486904
+    ]
+  },
+  {
+    "clave": "pop10_gen30_bat4",
+    "pop_size": 10,
+    "generations": 30,
+    "n_battles": 4,
+    "fitness": 0.75,
+    "generaciones_reales": 9,
+    "pesos": [
+      0.14491236581880296,
+      0.7925575799529074,
+      -1.6290166264794084,
+      0.30940858102704816
+    ]
+  },
+  {
+    "clave": "pop10_gen30_bat8",
+    "pop_size": 10,
+    "generations": 30,
+    "n_battles": 8,
+    "fitness": 0.6875,
+    "generaciones_reales": 12,
+    "pesos": [
+      0.6505863607863577,
+      1.0187184000031053,
+      -1.1477139538871297,
+      -1.7981770793669936
+    ]
+  },
+  {
+    "clave": "pop10_gen30_bat12",
+    "pop_size": 10,
+    "generations": 30,
+    "n_battles": 12,
+    "fitness": 0.5833333333333334,
+    "generaciones_reales": 10,
+    "pesos": [
+      1.0717246370754547,
+      2.1186238759676805,
+      1.5739133764829385,
+      -0.038563912446593296
+    ]
+  },
+  {
+    "clave": "pop20_gen10_bat4",
+    "pop_size": 20,
+    "generations": 10,
+    "n_battles": 4,
+    "fitness": 0.7916666666666666,
+    "generaciones_reales": 7,
+    "pesos": [
+      2.4562649940823102,
+      0.7925575799529074,
+      0.6217546611795202,
+      -0.41747239575734296
+    ]
+  },
+  {
+    "clave": "pop20_gen10_bat8",
+    "pop_size": 20,
+    "generations": 10,
+    "n_battles": 8,
+    "fitness": 0.625,
+    "generaciones_reales": 8,
+    "pesos": [
+      2.1361331481566683,
+      0.5599990394163714,
+      0.22779897509858493,
+      -1.107157047404709
+    ]
+  },
+  {
+    "clave": "pop20_gen10_bat12",
+    "pop_size": 20,
+    "generations": 10,
+    "n_battles": 12,
+    "fitness": 0.6527777777777778,
+    "generaciones_reales": 7,
+    "pesos": [
+      1.3176186570119794,
+      0.4740790094569842,
+      1.446827601243109,
+      1.0353444886831875
+    ]
+  },
+  {
+    "clave": "pop20_gen20_bat4",
+    "pop_size": 20,
+    "generations": 20,
+    "n_battles": 4,
+    "fitness": 0.7916666666666666,
+    "generaciones_reales": 11,
+    "pesos": [
+      0.8518222906481675,
+      1.0217182066732258,
+      -0.45574562875856284,
+      -1.3924904600716361
+    ]
+  },
+  {
+    "clave": "pop20_gen20_bat8",
+    "pop_size": 20,
+    "generations": 20,
+    "n_battles": 8,
+    "fitness": 0.6875,
+    "generaciones_reales": 13,
+    "pesos": [
+      1.0173360157949054,
+      0.4149041254675643,
+      1.2285130930975208,
+      -2.304590891102052
+    ]
+  },
+  {
+    "clave": "pop20_gen20_bat12",
+    "pop_size": 20,
+    "generations": 20,
+    "n_battles": 12,
+    "fitness": 0.625,
+    "generaciones_reales": 8,
+    "pesos": [
+      1.3714076807592384,
+      1.733778180596127,
+      -1.0838077121435825,
+      -1.7878781221509714
+    ]
+  },
+  {
+    "clave": "pop20_gen30_bat4",
+    "pop_size": 20,
+    "generations": 30,
+    "n_battles": 4,
+    "fitness": 0.75,
+    "generaciones_reales": 7,
+    "pesos": [
+      1.3714076807592384,
+      1.1039996461849793,
+      1.1308982213522896,
+      -1.6522446694823354
+    ]
+  },
+  {
+    "clave": "pop20_gen30_bat8",
+    "pop_size": 20,
+    "generations": 30,
+    "n_battles": 8,
+    "fitness": 0.7291666666666666,
+    "generaciones_reales": 10,
+    "pesos": [
+      0.9458848566560496,
+      0.4740790094569842,
+      1.446827601243109,
+      -1.6267770096306509
+    ]
+  },
+  {
+    "clave": "pop20_gen30_bat12",
+    "pop_size": 20,
+    "generations": 30,
+    "n_battles": 12,
+    "fitness": 0.5833333333333334,
+    "generaciones_reales": 8,
+    "pesos": [
+      1.3899774653898391,
+      0.4149041254675643,
+      -0.4858624911665861,
+      0.208162525092908
+    ]
+  },
+  {
+    "clave": "pop40_gen10_bat4",
+    "pop_size": 40,
+    "generations": 10,
+    "n_battles": 4,
+    "fitness": 0.75,
+    "generaciones_reales": 7,
+    "pesos": [
+      0.14491236581880296,
+      1.8924630559174824,
+      -0.4858624911665861,
+      0.12141468878070993
+    ]
+  },
+  {
+    "clave": "pop40_gen10_bat8",
+    "pop_size": 40,
+    "generations": 10,
+    "n_battles": 8,
+    "fitness": 0.7291666666666666,
+    "generaciones_reales": 10,
+    "pesos": [
+      1.3176186570119794,
+      0.4149041254675643,
+      1.446827601243109,
+      -0.3521342172045453
+    ]
+  },
+  {
+    "clave": "pop40_gen10_bat12",
+    "pop_size": 40,
+    "generations": 10,
+    "n_battles": 12,
+    "fitness": 0.638888888888889,
+    "generaciones_reales": 10,
+    "pesos": [
+      1.5054705058906754,
+      0.4740790094569842,
+      -0.9397734842397636,
+      -0.7548792945027838
+    ]
+  },
+  {
+    "clave": "pop40_gen20_bat4",
+    "pop_size": 40,
+    "generations": 20,
+    "n_battles": 4,
+    "fitness": 0.7916666666666666,
+    "generaciones_reales": 8,
+    "pesos": [
+      1.658190358962174,
+      1.9553782881473039,
+      -1.0838077121435825,
+      -1.871599024383849
+    ]
+  },
+  {
+    "clave": "pop40_gen20_bat8",
+    "pop_size": 40,
+    "generations": 20,
+    "n_battles": 8,
+    "fitness": 0.6875,
+    "generaciones_reales": 10,
+    "pesos": [
+      1.3714076807592384,
+      1.7877977811919763,
+      -1.0838077121435825,
+      -0.49015816771949533
+    ]
+  },
+  {
+    "clave": "pop40_gen20_bat12",
+    "pop_size": 40,
+    "generations": 20,
+    "n_battles": 12,
+    "fitness": 0.6944444444444445,
+    "generaciones_reales": 8,
+    "pesos": [
+      1.514887511292737,
+      2.72204136617565,
+      -1.0838077121435825,
+      -1.3780820007528738
+    ]
+  },
+  {
+    "clave": "pop40_gen30_bat4",
+    "pop_size": 40,
+    "generations": 30,
+    "n_battles": 4,
+    "fitness": 0.875,
+    "generaciones_reales": 8,
+    "pesos": [
+      1.3714076807592384,
+      1.1039996461849793,
+      -1.0838077121435825,
+      -1.871599024383849
+    ]
+  },
+  {
+    "clave": "pop40_gen30_bat8",
+    "pop_size": 40,
+    "generations": 30,
+    "n_battles": 8,
+    "fitness": 0.6875,
+    "generaciones_reales": 9,
+    "pesos": [
+      2.181985620907027,
+      1.6186720967160004,
+      -2.617097037441604,
+      -1.6522446694823354
+    ]
+  },
+  {
+    "clave": "pop40_gen30_bat12",
+    "pop_size": 40,
+    "generations": 30,
+    "n_battles": 12,
+    "fitness": 0.625,
+    "generaciones_reales": 12,
+    "pesos": [
+      0.14491236581880296,
+      0.7925575799529074,
+      -1.1443735267586783,
+      -2.310758137021253
+    ]
+  }
+]

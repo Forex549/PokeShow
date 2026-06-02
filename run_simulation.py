@@ -8,7 +8,7 @@ from src.engine.logic.damage_calc import calculate_damage
 from src.engine.models.pokemon import Pokemon
 from src.engine.models.entrenador import Entrenador
 from src.engine.models.battle import Battle
-from src.engine.logic.heuristic import choose_best_move, chose_random_move, minimax_alfa_beta
+from src.engine.logic.heuristic import choose_best_move, chose_random_move, minimax_alfa_beta, elegir_movimiento_nivel3
 import copy
 import traceback
 
@@ -18,6 +18,28 @@ with open(os.path.join(BASE_DIR, "data", "moves-data.json")) as f:
     moves_db = json.load(f)
 with open(os.path.join(BASE_DIR, "data", "pokedex_con_moves.json")) as f:
     pokedex = json.load(f)
+
+
+_PESOS_N3_DEFAULT = [1.0, 1.0, 0.5, 1.0]
+_pesos_nivel3_cache: Optional[list] = None
+
+
+def cargar_pesos_nivel3() -> list:
+    global _pesos_nivel3_cache
+    if _pesos_nivel3_cache is not None:
+        return _pesos_nivel3_cache
+    path = os.path.join(BASE_DIR, "data", "best_weights.json")
+    try:
+        with open(path) as f:
+            data = json.load(f)
+        pesos = data["pesos"] if isinstance(data, dict) else data
+        if not (isinstance(pesos, list) and len(pesos) == 4 and all(isinstance(x, (int, float)) for x in pesos)):
+            raise ValueError("formato inválido")
+        _pesos_nivel3_cache = [float(x) for x in pesos]
+    except (FileNotFoundError, ValueError, json.JSONDecodeError):
+        print("[nivel3] best_weights.json no encontrado o corrupto — usando pesos por defecto.")
+        _pesos_nivel3_cache = list(_PESOS_N3_DEFAULT)
+    return _pesos_nivel3_cache
 
 
 def mostrar_equipo(entrenador: Entrenador):
@@ -169,6 +191,21 @@ def estrategia_ia_minimax_nivel2(entrenador: Entrenador, rival: Entrenador) -> O
             
     return poke_real.available_moves[0] if poke_real.available_moves else None
 
+def estrategia_ia_minimax_nivel3(entrenador: Entrenador, rival: Entrenador) -> Optional[Movimiento]:
+    poke_real = entrenador.get_current_pokemon()
+
+    if poke_real.hp <= 0:
+        for i, p in enumerate(entrenador.pokemones):
+            if p.hp > 0:
+                entrenador.switch_pokemon(i)
+                print(f"¡{entrenador.name} envió a {p.name} debido a debilitación!")
+                return None
+        return None
+
+    pesos = cargar_pesos_nivel3()
+    return elegir_movimiento_nivel3(entrenador, rival, pesos)
+
+
 def main():
     # Menu de selección de modo
     print("Selecciona el modo de juego:")
@@ -192,18 +229,18 @@ def main():
         print("1. Aleatorio")
         print("2. Mejor opción")
         print("3. Minimax Nivel 2")
+        print("4. Minimax Nivel 3 (pesos GA)")
         while True:
             try:
-                bot = int(input("Elige un bot (1-3): "))
+                bot = int(input("Elige un bot (1-4): "))
                 if bot == 1:
-                    
                     return estrategia_ia_random
                 elif bot == 2:
-                    
                     return estrategia_ia_best_option
                 elif bot == 3:
-                    
                     return estrategia_ia_minimax_nivel2
+                elif bot == 4:
+                    return estrategia_ia_minimax_nivel3
                 else:
                     print("Selección no válida.")
                     continue
@@ -215,46 +252,46 @@ def main():
         estrategia_rival = seleccionar_bot_ia("la IA rival")
         estrategia_jugador = estrategia_humano
         jugador = Entrenador("Topollillo", [
-            Pokemon("hoopa", pokedex["hoopa"], moves_db),
-            Pokemon("gengar", pokedex["gengar"], moves_db),
-            Pokemon("charizard", pokedex["charizard"], moves_db),
-            Pokemon("snorlax", pokedex["snorlax"], moves_db),
+            Pokemon("garchomp",  pokedex["garchomp"],  moves_db),
+            Pokemon("ceruledge", pokedex["ceruledge"], moves_db),
+            Pokemon("sylveon",   pokedex["sylveon"],   moves_db),
+            Pokemon("greninja",  pokedex["greninja"],  moves_db),
         ])
         rival = Entrenador("Sobrevilla", [
-            Pokemon("mewtwo", pokedex["mewtwo"], moves_db),
-            Pokemon("tyranitar", pokedex["tyranitar"], moves_db),
-            Pokemon("typhlosion", pokedex["typhlosion"], moves_db),
-            Pokemon("articuno", pokedex["articuno"], moves_db),
+            Pokemon("salamence", pokedex["salamence"], moves_db),
+            Pokemon("swampert",  pokedex["swampert"],  moves_db),
+            Pokemon("lucario",   pokedex["lucario"],   moves_db),
+            Pokemon("volcarona", pokedex["volcarona"],  moves_db),
         ])
     elif modo == 2:  # IA vs IA
         estrategia_jugador = seleccionar_bot_ia("IA1")
         estrategia_rival = seleccionar_bot_ia("IA2")
         jugador = Entrenador("IA1", [
-            Pokemon("hoopa", pokedex["hoopa"], moves_db),
-            Pokemon("gengar", pokedex["gengar"], moves_db),
-            Pokemon("charizard", pokedex["charizard"], moves_db),
-            Pokemon("snorlax", pokedex["snorlax"], moves_db),
+            Pokemon("garchomp",  pokedex["garchomp"],  moves_db),
+            Pokemon("ceruledge", pokedex["ceruledge"], moves_db),
+            Pokemon("sylveon",   pokedex["sylveon"],   moves_db),
+            Pokemon("greninja",  pokedex["greninja"],  moves_db),
         ])
         rival = Entrenador("IA2", [
-            Pokemon("mewtwo", pokedex["mewtwo"], moves_db),
-            Pokemon("tyranitar", pokedex["tyranitar"], moves_db),
-            Pokemon("typhlosion", pokedex["typhlosion"], moves_db),
-            Pokemon("articuno", pokedex["articuno"], moves_db),
+            Pokemon("salamence", pokedex["salamence"], moves_db),
+            Pokemon("swampert",  pokedex["swampert"],  moves_db),
+            Pokemon("lucario",   pokedex["lucario"],   moves_db),
+            Pokemon("volcarona", pokedex["volcarona"],  moves_db),
         ])
     elif modo == 3:  # Humano vs Humano
         estrategia_jugador = estrategia_humano
         estrategia_rival = estrategia_humano
         jugador = Entrenador("Jugador1", [
-            Pokemon("hoopa", pokedex["hoopa"], moves_db),
-            Pokemon("gengar", pokedex["gengar"], moves_db),
-            Pokemon("charizard", pokedex["charizard"], moves_db),
-            Pokemon("snorlax", pokedex["snorlax"], moves_db),
+            Pokemon("garchomp",  pokedex["garchomp"],  moves_db),
+            Pokemon("ceruledge", pokedex["ceruledge"], moves_db),
+            Pokemon("sylveon",   pokedex["sylveon"],   moves_db),
+            Pokemon("greninja",  pokedex["greninja"],  moves_db),
         ])
         rival = Entrenador("Jugador2", [
-            Pokemon("mewtwo", pokedex["mewtwo"], moves_db),
-            Pokemon("tyranitar", pokedex["tyranitar"], moves_db),
-            Pokemon("typhlosion", pokedex["typhlosion"], moves_db),
-            Pokemon("articuno", pokedex["articuno"], moves_db),
+            Pokemon("salamence", pokedex["salamence"], moves_db),
+            Pokemon("swampert",  pokedex["swampert"],  moves_db),
+            Pokemon("lucario",   pokedex["lucario"],   moves_db),
+            Pokemon("volcarona", pokedex["volcarona"],  moves_db),
         ])
     
     batalla = Battle(jugador, rival)
