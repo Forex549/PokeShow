@@ -1,3 +1,83 @@
+# ============================================================
+# PROPÓSITO DEL ALGORITMO GENÉTICO
+# ============================================================
+#
+# Este módulo utiliza un Algoritmo Genético (GA) para optimizar
+# los pesos de la heurística de nivel 3 utilizada por la IA de
+# Pokémon para tomar decisiones durante una batalla.
+#
+# Cada individuo de la población representa una estrategia
+# candidata y está codificado mediante un cromosoma:
+#
+#     [w1, w2, w3, w4]
+#
+# donde cada gen es un peso utilizado por la función de
+# evaluación de movimientos.
+#
+# Ejemplo:
+#
+#     [1.5, -0.3, 0.8, 2.1]
+#
+# El significado exacto de cada gen depende de la heurística,
+# pudiendo representar factores como daño esperado,
+# efectividad de tipo, riesgo, velocidad, etc.
+#
+# ------------------------------------------------------------
+# FUNCIÓN OBJETIVO (FITNESS)
+# ------------------------------------------------------------
+#
+# El objetivo del algoritmo NO es maximizar daño,
+# HP restante o cualquier métrica aislada.
+#
+# La meta es maximizar la tasa de victorias obtenida por la IA
+# en batallas simuladas.
+#
+# Para evaluar un cromosoma:
+#
+# 1. Se construye una IA Nivel 3 utilizando esos pesos.
+# 2. La IA juega múltiples batallas contra distintos rivales.
+# 3. Se calcula el porcentaje de victorias obtenido.
+# 4. Ese porcentaje se utiliza como fitness.
+#
+# Cuanto mayor sea el fitness, mejor es la estrategia.
+#
+# ------------------------------------------------------------
+# EVOLUCIÓN
+# ------------------------------------------------------------
+#
+# En cada generación:
+#
+# - Los mejores individuos son seleccionados.
+# - Se cruzan sus genes (crossover).
+# - Se aplican pequeñas mutaciones.
+# - Se generan nuevas estrategias.
+#
+# Con el paso de las generaciones, la población debería
+# converger hacia configuraciones de pesos que permitan a la
+# IA ganar más batallas.
+#
+# ------------------------------------------------------------
+# LIMITACIONES DEL MODELO ACTUAL
+# ------------------------------------------------------------
+#
+# Actualmente el GA únicamente optimiza los pesos de la
+# heurística de selección de movimientos.
+#
+# La IA no aprende nuevas reglas ni descubre nuevos criterios.
+# Solamente ajusta la importancia relativa de los criterios
+# definidos manualmente por el desarrollador.
+#
+# Posibles mejoras futuras:
+#
+# - Aprender cuándo cambiar de Pokémon.
+# - Incorporar memoria de combate.
+# - Entrenamiento mediante self-play.
+# - Evolución de funciones heurísticas completas mediante
+#   Genetic Programming.
+# - Uso de redes neuronales para aprender políticas de juego.
+#
+# ============================================================
+
 # Algoritmo genético para optimizar los pesos de la heurística de nivel 3
 from __future__ import annotations
 
