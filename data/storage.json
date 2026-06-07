@@ -855,6 +855,22 @@
         "448a58fb-90bb-4ff6-aa9a-bbd1deb5897b"
       ],
       "created_at": "2026-05-07T19:26:04.100985Z"
+    },
+    "305ce7c3-d06d-47ca-a987-45e17fcada9a": {
+      "id": "305ce7c3-d06d-47ca-a987-45e17fcada9a",
+      "username": "Jugador",
+      "battles": [
+        "dc6f262e-f6c9-45a2-b953-1bc7e1c7b51c"
+      ],
+      "created_at": "2026-06-07T22:59:08.981066Z"
+    },
+    "c8ba6904-cdc3-4e4d-a4f4-047f650c5df2": {
+      "id": "c8ba6904-cdc3-4e4d-a4f4-047f650c5df2",
+      "username": "Jugador",
+      "battles": [
+        "0587fce7-3e3f-4944-9cfc-41f33c6b56f9"
+      ],
+      "created_at": "2026-06-07T22:59:08.996917Z"
     }
   },
   "battles": {
@@ -5706,6 +5722,376 @@
       },
       "created_at": "2026-05-07T19:26:04.130409Z",
       "updated_at": "2026-05-07T19:26:14.673405Z"
+    },
+    "dc6f262e-f6c9-45a2-b953-1bc7e1c7b51c": {
+      "id": "dc6f262e-f6c9-45a2-b953-1bc7e1c7b51c",
+      "user_id": "305ce7c3-d06d-47ca-a987-45e17fcada9a",
+      "state": {
+        "battle_id": "dc6f262e-f6c9-45a2-b953-1bc7e1c7b51c",
+        "user_id": "305ce7c3-d06d-47ca-a987-45e17fcada9a",
+        "player": {
+          "name": "Gengar",
+          "hp": 120,
+          "max_hp": 120,
+          "types": [
+            "Ghost",
+            "Poison"
+          ],
+          "moves": [
+            "Energy Ball",
+            "Psychic",
+            "Thunderbolt",
+            "Dark Pulse"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Articuno",
+          "hp": 150,
+          "max_hp": 150,
+          "types": [
+            "Ice",
+            "Flying"
+          ],
+          "moves": [
+            "Ancient Power",
+            "Air Slash",
+            "Ice Beam",
+            "Freeze-Dry"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Gengar",
+            "hp": 120,
+            "max_hp": 120,
+            "types": [
+              "Ghost",
+              "Poison"
+            ],
+            "moves": [
+              "Energy Ball",
+              "Psychic",
+              "Thunderbolt",
+              "Dark Pulse"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Articuno",
+            "hp": 150,
+            "max_hp": 150,
+            "types": [
+              "Ice",
+              "Flying"
+            ],
+            "moves": [
+              "Blizzard",
+              "Icy Wind",
+              "Air Slash",
+              "U-turn"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Haxorus",
+            "hp": 136,
+            "max_hp": 136,
+            "types": [
+              "Dragon"
+            ],
+            "moves": [
+              "Close Combat",
+              "Earthquake",
+              "Aqua Tail",
+              "Stone Edge"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Excadrill",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ground",
+              "Steel"
+            ],
+            "moves": [
+              "Rock Slide",
+              "Iron Head",
+              "Earthquake",
+              "Poison Jab"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Articuno",
+            "hp": 150,
+            "max_hp": 150,
+            "types": [
+              "Ice",
+              "Flying"
+            ],
+            "moves": [
+              "Ancient Power",
+              "Air Slash",
+              "Ice Beam",
+              "Freeze-Dry"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Fire Blast",
+              "Dragon Pulse",
+              "Air Slash",
+              "Heat Wave"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Mamoswine",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ice",
+              "Ground"
+            ],
+            "moves": [
+              "Bulldoze",
+              "Ice Shard",
+              "Iron Head",
+              "Knock Off"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Infernape",
+            "hp": 136,
+            "max_hp": 136,
+            "types": [
+              "Fire",
+              "Fighting"
+            ],
+            "moves": [
+              "Thunder Punch",
+              "Stone Edge",
+              "U-turn",
+              "Flamethrower"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 0,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Gengar vs Articuno"
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": null,
+        "needs_switch": false
+      },
+      "created_at": "2026-06-07T22:59:09.013276Z",
+      "updated_at": "2026-06-07T22:59:09.013276Z"
+    },
+    "0587fce7-3e3f-4944-9cfc-41f33c6b56f9": {
+      "id": "0587fce7-3e3f-4944-9cfc-41f33c6b56f9",
+      "user_id": "c8ba6904-cdc3-4e4d-a4f4-047f650c5df2",
+      "state": {
+        "battle_id": "0587fce7-3e3f-4944-9cfc-41f33c6b56f9",
+        "user_id": "c8ba6904-cdc3-4e4d-a4f4-047f650c5df2",
+        "player": {
+          "name": "Gengar",
+          "hp": 96,
+          "max_hp": 120,
+          "types": [
+            "Ghost",
+            "Poison"
+          ],
+          "moves": [
+            "Shadow Ball",
+            "Focus Blast",
+            "Dark Pulse",
+            "Sludge Bomb"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Articuno",
+          "hp": 110,
+          "max_hp": 150,
+          "types": [
+            "Ice",
+            "Flying"
+          ],
+          "moves": [
+            "U-turn",
+            "Freeze-Dry",
+            "Blizzard",
+            "Icy Wind"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Gengar",
+            "hp": 96,
+            "max_hp": 120,
+            "types": [
+              "Ghost",
+              "Poison"
+            ],
+            "moves": [
+              "Shadow Ball",
+              "Focus Blast",
+              "Dark Pulse",
+              "Sludge Bomb"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Articuno",
+            "hp": 150,
+            "max_hp": 150,
+            "types": [
+              "Ice",
+              "Flying"
+            ],
+            "moves": [
+              "Blizzard",
+              "Icy Wind",
+              "Air Slash",
+              "Ice Beam"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Haxorus",
+            "hp": 136,
+            "max_hp": 136,
+            "types": [
+              "Dragon"
+            ],
+            "moves": [
+              "Aqua Tail",
+              "Close Combat",
+              "Poison Jab",
+              "Stone Edge"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Excadrill",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ground",
+              "Steel"
+            ],
+            "moves": [
+              "Drill Run",
+              "Brick Break",
+              "X-Scissor",
+              "Rapid Spin"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Articuno",
+            "hp": 110,
+            "max_hp": 150,
+            "types": [
+              "Ice",
+              "Flying"
+            ],
+            "moves": [
+              "U-turn",
+              "Freeze-Dry",
+              "Blizzard",
+              "Icy Wind"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Fire Blast",
+              "Dragon Pulse",
+              "Overheat",
+              "Flamethrower"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Mamoswine",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ice",
+              "Ground"
+            ],
+            "moves": [
+              "Superpower",
+              "Icicle Crash",
+              "Stone Edge",
+              "Earthquake"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Infernape",
+            "hp": 136,
+            "max_hp": 136,
+            "types": [
+              "Fire",
+              "Fighting"
+            ],
+            "moves": [
+              "Flamethrower",
+              "Thunder Punch",
+              "Grass Knot",
+              "Fire Blast"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 0,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Gengar vs Articuno",
+          "Gengar es m\u00e1s r\u00e1pido.",
+          "Gengar us\u00f3 Shadow Ball. Hizo 20 de da\u00f1o.",
+          "Articuno us\u00f3 Freeze-Dry. Hizo 21 de da\u00f1o.",
+          "Gengar es m\u00e1s r\u00e1pido.",
+          "Gengar us\u00f3 Shadow Ball. Hizo 20 de da\u00f1o.",
+          "Articuno us\u00f3 U-turn. Hizo 3 de da\u00f1o."
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": "player",
+        "needs_switch": false
+      },
+      "created_at": "2026-06-07T22:59:09.026364Z",
+      "updated_at": "2026-06-07T22:59:22.518286Z"
     }
   }
 }
