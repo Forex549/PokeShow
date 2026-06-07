@@ -24,7 +24,6 @@ PokemonSelect; la IA recibe el equipo enemigo también desde el frontend.
 | POST   | /battle/switch    | Cambia el Pokémon activo del jugador     |
 | GET    | /battle/{id}      | Recupera el estado actual de la batalla  |
 
-### Cambio forzado de Pokémon
 Cuando el Pokémon del jugador cae, el backend devuelve `needs_switch: true`.
 El frontend bloquea los botones de movimiento y muestra el panel de selección
 hasta que el jugador elija un Pokémon vivo. La IA cambia automáticamente.
