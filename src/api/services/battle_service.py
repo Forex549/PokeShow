@@ -1,6 +1,8 @@
 import json
 import copy
 import os
+import random
+
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List, Optional, Callable
@@ -46,6 +48,10 @@ def _cargar_pesos() -> list:
         pass
     return list(_PESOS_DEFAULT)
 
+def _random_team(size: int = 4) -> List[str]:
+    """Elige `size` pokémon al azar del pokedex."""
+    available = list(POKEDEX_DB.keys())
+    return random.sample(available, size)
 
 # ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -230,11 +236,14 @@ def _check_battle_over(battle: BattleState):
 def start_battle(
     user_id: str,
     player_names: List[str],
-    enemy_names: List[str],
+    enemy_names: Optional[List[str]] = None, 
     mode: str = "random",
 ) -> dict:
     get_user(user_id)
-
+    
+    if not enemy_names:
+        enemy_names = _random_team()
+        
     entrenador_player = Entrenador("Jugador", [_get_pokemon(n) for n in player_names])
     entrenador_enemy  = Entrenador("IA",      [_get_pokemon(n) for n in enemy_names])
 
@@ -287,8 +296,7 @@ def play_turn(battle_id: str, player_move_name: str) -> dict:
     return state
 
 
-def switch_pokemon(battle_id: str, pokemon_index: int) -> dict:
-    """El jugador cambia su pokémon activo (obligatorio cuando el actual cayó)."""
+def switch_pokemon(battle_id: str, pokemon_index: int, voluntary: bool = False) -> dict:
     battle = BATTLES.get(battle_id) or _restore_battle(battle_id)
 
     if battle.finished:
@@ -299,17 +307,33 @@ def switch_pokemon(battle_id: str, pokemon_index: int) -> dict:
         raise ValueError("Índice fuera de rango")
     if team[pokemon_index].hp <= 0:
         raise ValueError("Ese Pokémon está debilitado")
-    if pokemon_index == battle.player_index and not battle.needs_switch:
+    if pokemon_index == battle.player_index:
         raise ValueError("Ese Pokémon ya está en batalla")
 
     battle.entrenador_player.switch_pokemon(pokemon_index)
     battle.logs.append(f"¡Enviaste a {battle.player.name}!")
     battle.needs_switch = False
 
+    # Si es voluntario, la IA igual ataca ese turno
+    if voluntary:
+        strategy = _get_enemy_strategy(battle.mode)
+        enemy_move = strategy(battle.entrenador_enemy, battle.entrenador_player)
+        if enemy_move is not None:
+            damage, crit = calculate_damage(battle.enemy, battle.player, enemy_move)
+            battle.player.hp = max(0, battle.player.hp - damage)
+            msg = f"{battle.enemy.name} usó {enemy_move.name}. Hizo {damage} de daño."
+            if crit:
+                msg += " ¡Golpe crítico!"
+            battle.logs.append(msg)
+            if battle.player.hp <= 0:
+                battle.logs.append(f"{battle.player.name} se debilitó.")
+                battle.needs_switch = True
+
+        _check_battle_over(battle)
+
     state = _build_state(battle)
     save_battle_state(battle_id, battle.user_id, state)
     return state
-
 
 def get_battle_state(battle_id: str) -> dict:
     battle = BATTLES.get(battle_id) or _restore_battle(battle_id)

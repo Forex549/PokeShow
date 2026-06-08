@@ -871,6 +871,118 @@
         "0587fce7-3e3f-4944-9cfc-41f33c6b56f9"
       ],
       "created_at": "2026-06-07T22:59:08.996917Z"
+    },
+    "9c42c8fa-a9bd-428c-b0d3-6c4cff134e12": {
+      "id": "9c42c8fa-a9bd-428c-b0d3-6c4cff134e12",
+      "username": "Jugador",
+      "battles": [
+        "224054a2-f137-41f1-9c8e-597d3ef6d61c"
+      ],
+      "created_at": "2026-06-07T23:44:28.802621Z"
+    },
+    "e9ec3e48-a448-44a8-8a55-02616ab68c43": {
+      "id": "e9ec3e48-a448-44a8-8a55-02616ab68c43",
+      "username": "Jugador",
+      "battles": [
+        "103ff080-a61b-4d41-aeb2-f9523c37e814"
+      ],
+      "created_at": "2026-06-07T23:44:28.819548Z"
+    },
+    "006ef672-a705-401e-b862-a3dae507bfa7": {
+      "id": "006ef672-a705-401e-b862-a3dae507bfa7",
+      "username": "Jugador",
+      "battles": [
+        "5bcce959-631f-48af-bf1e-812e1676b2cd"
+      ],
+      "created_at": "2026-06-07T23:58:24.495090Z"
+    },
+    "5d7e9c97-daf8-4c3e-bbf1-a4e0eef70092": {
+      "id": "5d7e9c97-daf8-4c3e-bbf1-a4e0eef70092",
+      "username": "Jugador",
+      "battles": [
+        "951a5346-e3c1-46c9-a957-6da9abe8fc16"
+      ],
+      "created_at": "2026-06-08T00:02:58.426539Z"
+    },
+    "816570a4-0d32-4fb1-a060-d8ad01422e87": {
+      "id": "816570a4-0d32-4fb1-a060-d8ad01422e87",
+      "username": "Jugador",
+      "battles": [
+        "81119785-85ee-4e59-84b7-9cd37acbd660"
+      ],
+      "created_at": "2026-06-08T00:02:58.455537Z"
+    },
+    "facec3e2-b0f5-46a4-9e35-6353733e468c": {
+      "id": "facec3e2-b0f5-46a4-9e35-6353733e468c",
+      "username": "Jugador",
+      "battles": [],
+      "created_at": "2026-06-08T00:10:37.450820Z"
+    },
+    "a01ee1b4-bcf3-4b44-967a-c96a1aae4347": {
+      "id": "a01ee1b4-bcf3-4b44-967a-c96a1aae4347",
+      "username": "Jugador",
+      "battles": [],
+      "created_at": "2026-06-08T00:11:14.074557Z"
+    },
+    "455241d0-d3fc-4151-a69c-9cbdfc2e6d25": {
+      "id": "455241d0-d3fc-4151-a69c-9cbdfc2e6d25",
+      "username": "Jugador",
+      "battles": [],
+      "created_at": "2026-06-08T00:17:20.538153Z"
+    },
+    "08352e5b-dbf6-4b1f-97cb-76bfad8b7842": {
+      "id": "08352e5b-dbf6-4b1f-97cb-76bfad8b7842",
+      "username": "Jugador",
+      "battles": [],
+      "created_at": "2026-06-08T00:17:20.578416Z"
+    },
+    "1fb937ef-5929-46fd-abf4-3c433c7cd422": {
+      "id": "1fb937ef-5929-46fd-abf4-3c433c7cd422",
+      "username": "Jugador",
+      "battles": [
+        "305ff218-ddea-48f5-ba0f-23c936c5ca18"
+      ],
+      "created_at": "2026-06-08T00:20:10.795128Z"
+    },
+    "1f442ccd-36dc-4e7f-b60d-345155870946": {
+      "id": "1f442ccd-36dc-4e7f-b60d-345155870946",
+      "username": "Jugador",
+      "battles": [
+        "b1f1d8cf-7d75-4889-9ca3-f88bfd7e516c"
+      ],
+      "created_at": "2026-06-08T00:20:10.812871Z"
+    },
+    "fdedbb5f-b5a9-4627-88b1-fd0c71ef4b69": {
+      "id": "fdedbb5f-b5a9-4627-88b1-fd0c71ef4b69",
+      "username": "Jugador",
+      "battles": [
+        "a62defd3-2e57-4982-86fa-4dcf7a7640ff"
+      ],
+      "created_at": "2026-06-08T00:23:13.570428Z"
+    },
+    "d4df0a8d-fbb6-4617-918c-2739f3b34ae5": {
+      "id": "d4df0a8d-fbb6-4617-918c-2739f3b34ae5",
+      "username": "Jugador",
+      "battles": [
+        "1013c690-54a1-455b-b4c6-b2f4a8e6154d"
+      ],
+      "created_at": "2026-06-08T00:23:13.588600Z"
+    },
+    "7a7a65f1-b847-46fe-93ff-39c2f189f633": {
+      "id": "7a7a65f1-b847-46fe-93ff-39c2f189f633",
+      "username": "Jugador",
+      "battles": [
+        "36f920d8-4dbe-4c66-8cd4-5d2559276704"
+      ],
+      "created_at": "2026-06-08T00:23:56.384927Z"
+    },
+    "06e5cd06-ab8d-4650-aedd-f9c039988ecd": {
+      "id": "06e5cd06-ab8d-4650-aedd-f9c039988ecd",
+      "username": "Jugador",
+      "battles": [
+        "a63b5ac1-9809-49cc-b9ef-58d4e99b433e"
+      ],
+      "created_at": "2026-06-08T00:23:56.402683Z"
     }
   },
   "battles": {
@@ -6092,6 +6204,2035 @@
       },
       "created_at": "2026-06-07T22:59:09.026364Z",
       "updated_at": "2026-06-07T22:59:22.518286Z"
+    },
+    "224054a2-f137-41f1-9c8e-597d3ef6d61c": {
+      "id": "224054a2-f137-41f1-9c8e-597d3ef6d61c",
+      "user_id": "9c42c8fa-a9bd-428c-b0d3-6c4cff134e12",
+      "state": {
+        "battle_id": "224054a2-f137-41f1-9c8e-597d3ef6d61c",
+        "user_id": "9c42c8fa-a9bd-428c-b0d3-6c4cff134e12",
+        "player": {
+          "name": "Articuno",
+          "hp": 150,
+          "max_hp": 150,
+          "types": [
+            "Ice",
+            "Flying"
+          ],
+          "moves": [
+            "Air Slash",
+            "Icy Wind",
+            "U-turn",
+            "Hurricane"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Flamethrower",
+            "Air Slash",
+            "Focus Blast",
+            "Solar Beam"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Articuno",
+            "hp": 150,
+            "max_hp": 150,
+            "types": [
+              "Ice",
+              "Flying"
+            ],
+            "moves": [
+              "Air Slash",
+              "Icy Wind",
+              "U-turn",
+              "Hurricane"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Tyranitar",
+            "hp": 160,
+            "max_hp": 160,
+            "types": [
+              "Rock",
+              "Dark"
+            ],
+            "moves": [
+              "Ice Punch",
+              "Crunch",
+              "Fire Blast",
+              "Dark Pulse"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Haxorus",
+            "hp": 136,
+            "max_hp": 136,
+            "types": [
+              "Dragon"
+            ],
+            "moves": [
+              "Iron Tail",
+              "Earthquake",
+              "Close Combat",
+              "Stone Edge"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Lucario",
+            "hp": 130,
+            "max_hp": 130,
+            "types": [
+              "Fighting",
+              "Steel"
+            ],
+            "moves": [
+              "Extreme Speed",
+              "Close Combat",
+              "Aura Sphere",
+              "Dark Pulse"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Flamethrower",
+              "Air Slash",
+              "Focus Blast",
+              "Solar Beam"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Articuno",
+            "hp": 150,
+            "max_hp": 150,
+            "types": [
+              "Ice",
+              "Flying"
+            ],
+            "moves": [
+              "Hurricane",
+              "U-turn",
+              "Freeze-Dry",
+              "Blizzard"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Excadrill",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ground",
+              "Steel"
+            ],
+            "moves": [
+              "Poison Jab",
+              "X-Scissor",
+              "Rock Slide",
+              "Brick Break"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Garchomp",
+            "hp": 168,
+            "max_hp": 168,
+            "types": [
+              "Dragon",
+              "Ground"
+            ],
+            "moves": [
+              "Fire Fang",
+              "Iron Head",
+              "Stone Edge",
+              "Poison Jab"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 0,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Articuno vs Charizard"
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": null,
+        "needs_switch": false
+      },
+      "created_at": "2026-06-07T23:44:28.835991Z",
+      "updated_at": "2026-06-07T23:44:28.835991Z"
+    },
+    "103ff080-a61b-4d41-aeb2-f9523c37e814": {
+      "id": "103ff080-a61b-4d41-aeb2-f9523c37e814",
+      "user_id": "e9ec3e48-a448-44a8-8a55-02616ab68c43",
+      "state": {
+        "battle_id": "103ff080-a61b-4d41-aeb2-f9523c37e814",
+        "user_id": "e9ec3e48-a448-44a8-8a55-02616ab68c43",
+        "player": {
+          "name": "Articuno",
+          "hp": 0,
+          "max_hp": 150,
+          "types": [
+            "Ice",
+            "Flying"
+          ],
+          "moves": [
+            "Hurricane",
+            "U-turn",
+            "Icy Wind",
+            "Freeze-Dry"
+          ],
+          "is_fainted": true
+        },
+        "enemy": {
+          "name": "Charizard",
+          "hp": 51,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Heat Wave",
+            "Fire Blast",
+            "Overheat",
+            "Flamethrower"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Articuno",
+            "hp": 0,
+            "max_hp": 150,
+            "types": [
+              "Ice",
+              "Flying"
+            ],
+            "moves": [
+              "Hurricane",
+              "U-turn",
+              "Icy Wind",
+              "Freeze-Dry"
+            ],
+            "is_fainted": true
+          },
+          {
+            "name": "Tyranitar",
+            "hp": 160,
+            "max_hp": 160,
+            "types": [
+              "Rock",
+              "Dark"
+            ],
+            "moves": [
+              "Earthquake",
+              "Stone Edge",
+              "Dark Pulse",
+              "Rock Slide"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Haxorus",
+            "hp": 136,
+            "max_hp": 136,
+            "types": [
+              "Dragon"
+            ],
+            "moves": [
+              "Earthquake",
+              "Close Combat",
+              "Outrage",
+              "Iron Tail"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Lucario",
+            "hp": 130,
+            "max_hp": 130,
+            "types": [
+              "Fighting",
+              "Steel"
+            ],
+            "moves": [
+              "Ice Punch",
+              "Extreme Speed",
+              "Dark Pulse",
+              "Meteor Mash"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Charizard",
+            "hp": 51,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Heat Wave",
+              "Fire Blast",
+              "Overheat",
+              "Flamethrower"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Articuno",
+            "hp": 150,
+            "max_hp": 150,
+            "types": [
+              "Ice",
+              "Flying"
+            ],
+            "moves": [
+              "Hurricane",
+              "Ice Beam",
+              "U-turn",
+              "Air Slash"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Excadrill",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ground",
+              "Steel"
+            ],
+            "moves": [
+              "Iron Head",
+              "X-Scissor",
+              "Drill Run",
+              "Rock Slide"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Garchomp",
+            "hp": 168,
+            "max_hp": 168,
+            "types": [
+              "Dragon",
+              "Ground"
+            ],
+            "moves": [
+              "Dragon Claw",
+              "Outrage",
+              "Poison Jab",
+              "Stone Edge"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 0,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Articuno vs Charizard",
+          "Charizard es m\u00e1s r\u00e1pido.",
+          "Charizard us\u00f3 Fire Blast. Hizo 46 de da\u00f1o.",
+          "Articuno us\u00f3 Hurricane. Hizo 29 de da\u00f1o.",
+          "Charizard es m\u00e1s r\u00e1pido.",
+          "Charizard us\u00f3 Fire Blast. Hizo 46 de da\u00f1o.",
+          "Articuno us\u00f3 Hurricane. Hizo 29 de da\u00f1o.",
+          "Charizard es m\u00e1s r\u00e1pido.",
+          "Charizard us\u00f3 Overheat. Hizo 54 de da\u00f1o.",
+          "Articuno us\u00f3 Hurricane. Hizo 29 de da\u00f1o.",
+          "Charizard es m\u00e1s r\u00e1pido.",
+          "Charizard us\u00f3 Flamethrower. Hizo 38 de da\u00f1o.",
+          "Articuno se debilit\u00f3.",
+          "\u00a1Articuno se debilit\u00f3! Elige tu siguiente Pok\u00e9mon."
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": "enemy",
+        "needs_switch": true
+      },
+      "created_at": "2026-06-07T23:44:28.849889Z",
+      "updated_at": "2026-06-07T23:44:51.701342Z"
+    },
+    "5bcce959-631f-48af-bf1e-812e1676b2cd": {
+      "id": "5bcce959-631f-48af-bf1e-812e1676b2cd",
+      "user_id": "006ef672-a705-401e-b862-a3dae507bfa7",
+      "state": {
+        "battle_id": "5bcce959-631f-48af-bf1e-812e1676b2cd",
+        "user_id": "006ef672-a705-401e-b862-a3dae507bfa7",
+        "player": {
+          "name": "Articuno",
+          "hp": 150,
+          "max_hp": 150,
+          "types": [
+            "Ice",
+            "Flying"
+          ],
+          "moves": [
+            "Icy Wind",
+            "Air Slash",
+            "Freeze-Dry",
+            "Blizzard"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Solar Beam",
+            "Focus Blast",
+            "Air Slash",
+            "Flamethrower"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Articuno",
+            "hp": 150,
+            "max_hp": 150,
+            "types": [
+              "Ice",
+              "Flying"
+            ],
+            "moves": [
+              "Icy Wind",
+              "Air Slash",
+              "Freeze-Dry",
+              "Blizzard"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Tyranitar",
+            "hp": 160,
+            "max_hp": 160,
+            "types": [
+              "Rock",
+              "Dark"
+            ],
+            "moves": [
+              "Ice Punch",
+              "Crunch",
+              "Dark Pulse",
+              "Earthquake"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Haxorus",
+            "hp": 136,
+            "max_hp": 136,
+            "types": [
+              "Dragon"
+            ],
+            "moves": [
+              "Dragon Claw",
+              "Earthquake",
+              "Iron Tail",
+              "Close Combat"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Lucario",
+            "hp": 130,
+            "max_hp": 130,
+            "types": [
+              "Fighting",
+              "Steel"
+            ],
+            "moves": [
+              "Flash Cannon",
+              "Dark Pulse",
+              "Ice Punch",
+              "Extreme Speed"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Solar Beam",
+              "Focus Blast",
+              "Air Slash",
+              "Flamethrower"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Articuno",
+            "hp": 150,
+            "max_hp": 150,
+            "types": [
+              "Ice",
+              "Flying"
+            ],
+            "moves": [
+              "Freeze-Dry",
+              "Ancient Power",
+              "U-turn",
+              "Air Slash"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Excadrill",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ground",
+              "Steel"
+            ],
+            "moves": [
+              "Rapid Spin",
+              "Earthquake",
+              "Rock Slide",
+              "Drill Run"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Garchomp",
+            "hp": 168,
+            "max_hp": 168,
+            "types": [
+              "Dragon",
+              "Ground"
+            ],
+            "moves": [
+              "Fire Fang",
+              "Stone Edge",
+              "Outrage",
+              "Earthquake"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 0,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Articuno vs Charizard"
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": null,
+        "needs_switch": false
+      },
+      "created_at": "2026-06-07T23:58:24.518183Z",
+      "updated_at": "2026-06-07T23:58:24.518183Z"
+    },
+    "951a5346-e3c1-46c9-a957-6da9abe8fc16": {
+      "id": "951a5346-e3c1-46c9-a957-6da9abe8fc16",
+      "user_id": "5d7e9c97-daf8-4c3e-bbf1-a4e0eef70092",
+      "state": {
+        "battle_id": "951a5346-e3c1-46c9-a957-6da9abe8fc16",
+        "user_id": "5d7e9c97-daf8-4c3e-bbf1-a4e0eef70092",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Dragon Pulse",
+            "Fire Blast",
+            "Overheat",
+            "Flamethrower"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Heat Wave",
+            "Fire Blast",
+            "Overheat",
+            "Solar Beam"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Dragon Pulse",
+              "Fire Blast",
+              "Overheat",
+              "Flamethrower"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Tyranitar",
+            "hp": 160,
+            "max_hp": 160,
+            "types": [
+              "Rock",
+              "Dark"
+            ],
+            "moves": [
+              "Fire Blast",
+              "Thunder Punch",
+              "Crunch",
+              "Earthquake"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Excadrill",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ground",
+              "Steel"
+            ],
+            "moves": [
+              "Earthquake",
+              "Iron Head",
+              "Brick Break",
+              "Rock Slide"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Lucario",
+            "hp": 130,
+            "max_hp": 130,
+            "types": [
+              "Fighting",
+              "Steel"
+            ],
+            "moves": [
+              "Aura Sphere",
+              "Extreme Speed",
+              "Bullet Punch",
+              "Close Combat"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Heat Wave",
+              "Fire Blast",
+              "Overheat",
+              "Solar Beam"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Snorlax",
+            "hp": 220,
+            "max_hp": 220,
+            "types": [
+              "Normal"
+            ],
+            "moves": [
+              "Thunder Punch",
+              "Fire Punch",
+              "Crunch",
+              "Heavy Slam"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Mamoswine",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ice",
+              "Ground"
+            ],
+            "moves": [
+              "Knock Off",
+              "Iron Head",
+              "Superpower",
+              "Ice Shard"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Lucario",
+            "hp": 130,
+            "max_hp": 130,
+            "types": [
+              "Fighting",
+              "Steel"
+            ],
+            "moves": [
+              "Close Combat",
+              "Bullet Punch",
+              "Extreme Speed",
+              "Dark Pulse"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 0,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Charizard vs Charizard"
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": null,
+        "needs_switch": false
+      },
+      "created_at": "2026-06-08T00:02:58.473965Z",
+      "updated_at": "2026-06-08T00:02:58.473965Z"
+    },
+    "81119785-85ee-4e59-84b7-9cd37acbd660": {
+      "id": "81119785-85ee-4e59-84b7-9cd37acbd660",
+      "user_id": "816570a4-0d32-4fb1-a060-d8ad01422e87",
+      "state": {
+        "battle_id": "81119785-85ee-4e59-84b7-9cd37acbd660",
+        "user_id": "816570a4-0d32-4fb1-a060-d8ad01422e87",
+        "player": {
+          "name": "Charizard",
+          "hp": 105,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Fire Blast",
+            "Solar Beam",
+            "Flamethrower",
+            "Air Slash"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Charizard",
+          "hp": 122,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Focus Blast",
+            "Dragon Pulse",
+            "Solar Beam",
+            "Heat Wave"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Charizard",
+            "hp": 105,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Fire Blast",
+              "Solar Beam",
+              "Flamethrower",
+              "Air Slash"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Tyranitar",
+            "hp": 160,
+            "max_hp": 160,
+            "types": [
+              "Rock",
+              "Dark"
+            ],
+            "moves": [
+              "Stone Edge",
+              "Crunch",
+              "Thunder Punch",
+              "Ice Punch"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Excadrill",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ground",
+              "Steel"
+            ],
+            "moves": [
+              "Rapid Spin",
+              "Earthquake",
+              "Iron Head",
+              "Drill Run"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Lucario",
+            "hp": 130,
+            "max_hp": 130,
+            "types": [
+              "Fighting",
+              "Steel"
+            ],
+            "moves": [
+              "Extreme Speed",
+              "Meteor Mash",
+              "Aura Sphere",
+              "Close Combat"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Charizard",
+            "hp": 122,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Focus Blast",
+              "Dragon Pulse",
+              "Solar Beam",
+              "Heat Wave"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Snorlax",
+            "hp": 220,
+            "max_hp": 220,
+            "types": [
+              "Normal"
+            ],
+            "moves": [
+              "Thunder Punch",
+              "Heavy Slam",
+              "Fire Punch",
+              "Body Slam"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Mamoswine",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ice",
+              "Ground"
+            ],
+            "moves": [
+              "Knock Off",
+              "Superpower",
+              "Ice Shard",
+              "Iron Head"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Lucario",
+            "hp": 130,
+            "max_hp": 130,
+            "types": [
+              "Fighting",
+              "Steel"
+            ],
+            "moves": [
+              "Extreme Speed",
+              "Ice Punch",
+              "Bullet Punch",
+              "Close Combat"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 0,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Charizard vs Charizard",
+          "Charizard es m\u00e1s r\u00e1pido.",
+          "Charizard us\u00f3 Fire Blast. Hizo 16 de da\u00f1o.",
+          "Charizard us\u00f3 Dragon Pulse. Hizo 33 de da\u00f1o. \u00a1Golpe cr\u00edtico!"
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": "player",
+        "needs_switch": false
+      },
+      "created_at": "2026-06-08T00:02:58.489150Z",
+      "updated_at": "2026-06-08T00:03:00.725471Z"
+    },
+    "305ff218-ddea-48f5-ba0f-23c936c5ca18": {
+      "id": "305ff218-ddea-48f5-ba0f-23c936c5ca18",
+      "user_id": "1fb937ef-5929-46fd-abf4-3c433c7cd422",
+      "state": {
+        "battle_id": "305ff218-ddea-48f5-ba0f-23c936c5ca18",
+        "user_id": "1fb937ef-5929-46fd-abf4-3c433c7cd422",
+        "player": {
+          "name": "Scizor",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Bug",
+            "Steel"
+          ],
+          "moves": [
+            "Dual Wingbeat",
+            "Knock Off",
+            "Superpower",
+            "Iron Head"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Tinkaton",
+          "hp": 145,
+          "max_hp": 145,
+          "types": [
+            "Fairy",
+            "Steel"
+          ],
+          "moves": [
+            "Brick Break",
+            "Rock Slide",
+            "Iron Head",
+            "Play Rough"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Scizor",
+            "hp": 130,
+            "max_hp": 130,
+            "types": [
+              "Bug",
+              "Steel"
+            ],
+            "moves": [
+              "Dual Wingbeat",
+              "Knock Off",
+              "Superpower",
+              "Iron Head"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Salamence",
+            "hp": 155,
+            "max_hp": 155,
+            "types": [
+              "Dragon",
+              "Flying"
+            ],
+            "moves": [
+              "Earthquake",
+              "Fly",
+              "Outrage",
+              "Hydro Pump"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Flamethrower",
+              "Air Slash",
+              "Dragon Pulse",
+              "Heat Wave"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Zeraora",
+            "hp": 148,
+            "max_hp": 148,
+            "types": [
+              "Electric"
+            ],
+            "moves": [
+              "Play Rough",
+              "Volt Switch",
+              "Plasma Fists",
+              "Knock Off"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Tinkaton",
+            "hp": 145,
+            "max_hp": 145,
+            "types": [
+              "Fairy",
+              "Steel"
+            ],
+            "moves": [
+              "Brick Break",
+              "Rock Slide",
+              "Iron Head",
+              "Play Rough"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Mamoswine",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ice",
+              "Ground"
+            ],
+            "moves": [
+              "Superpower",
+              "Knock Off",
+              "Earthquake",
+              "Ice Shard"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Swampert",
+            "hp": 160,
+            "max_hp": 160,
+            "types": [
+              "Water",
+              "Ground"
+            ],
+            "moves": [
+              "Rock Slide",
+              "Ice Punch",
+              "Liquidation",
+              "Earthquake"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Ceruledge",
+            "hp": 135,
+            "max_hp": 135,
+            "types": [
+              "Fire",
+              "Ghost"
+            ],
+            "moves": [
+              "Shadow Sneak",
+              "Flame Charge",
+              "Psycho Cut",
+              "Shadow Claw"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 0,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Scizor vs Tinkaton"
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": null,
+        "needs_switch": false
+      },
+      "created_at": "2026-06-08T00:20:10.830855Z",
+      "updated_at": "2026-06-08T00:20:10.830855Z"
+    },
+    "b1f1d8cf-7d75-4889-9ca3-f88bfd7e516c": {
+      "id": "b1f1d8cf-7d75-4889-9ca3-f88bfd7e516c",
+      "user_id": "1f442ccd-36dc-4e7f-b60d-345155870946",
+      "state": {
+        "battle_id": "b1f1d8cf-7d75-4889-9ca3-f88bfd7e516c",
+        "user_id": "1f442ccd-36dc-4e7f-b60d-345155870946",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Heat Wave",
+            "Air Slash",
+            "Fire Blast",
+            "Overheat"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Articuno",
+          "hp": 127,
+          "max_hp": 150,
+          "types": [
+            "Ice",
+            "Flying"
+          ],
+          "moves": [
+            "Freeze-Dry",
+            "Hurricane",
+            "Ice Beam",
+            "Ancient Power"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Scizor",
+            "hp": 68,
+            "max_hp": 130,
+            "types": [
+              "Bug",
+              "Steel"
+            ],
+            "moves": [
+              "U-turn",
+              "Dual Wingbeat",
+              "Bug Bite",
+              "X-Scissor"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Salamence",
+            "hp": 155,
+            "max_hp": 155,
+            "types": [
+              "Dragon",
+              "Flying"
+            ],
+            "moves": [
+              "Fly",
+              "Outrage",
+              "Dragon Claw",
+              "Hydro Pump"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Heat Wave",
+              "Air Slash",
+              "Fire Blast",
+              "Overheat"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Zeraora",
+            "hp": 148,
+            "max_hp": 148,
+            "types": [
+              "Electric"
+            ],
+            "moves": [
+              "Close Combat",
+              "Play Rough",
+              "Volt Switch",
+              "Knock Off"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Articuno",
+            "hp": 127,
+            "max_hp": 150,
+            "types": [
+              "Ice",
+              "Flying"
+            ],
+            "moves": [
+              "Freeze-Dry",
+              "Hurricane",
+              "Ice Beam",
+              "Ancient Power"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Metagross",
+            "hp": 140,
+            "max_hp": 140,
+            "types": [
+              "Steel",
+              "Psychic"
+            ],
+            "moves": [
+              "Psychic",
+              "Hammer Arm",
+              "Bullet Punch",
+              "Zen Headbutt"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Mewtwo",
+            "hp": 166,
+            "max_hp": 166,
+            "types": [
+              "Psychic"
+            ],
+            "moves": [
+              "Ice Beam",
+              "Aura Sphere",
+              "Psystrike",
+              "Flamethrower"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Scizor",
+            "hp": 130,
+            "max_hp": 130,
+            "types": [
+              "Bug",
+              "Steel"
+            ],
+            "moves": [
+              "Iron Head",
+              "Dual Wingbeat",
+              "Bug Bite",
+              "Superpower"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 2,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Scizor vs Articuno",
+          "Articuno es m\u00e1s r\u00e1pido.",
+          "Articuno us\u00f3 Hurricane. Hizo 31 de da\u00f1o.",
+          "Scizor us\u00f3 U-turn. Hizo 11 de da\u00f1o.",
+          "Articuno es m\u00e1s r\u00e1pido.",
+          "Articuno us\u00f3 Hurricane. Hizo 31 de da\u00f1o.",
+          "Scizor us\u00f3 X-Scissor. Hizo 12 de da\u00f1o.",
+          "\u00a1Enviaste a Salamence!",
+          "\u00a1Enviaste a Scizor!",
+          "\u00a1Enviaste a Salamence!",
+          "\u00a1Enviaste a Charizard!"
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": "enemy",
+        "needs_switch": false
+      },
+      "created_at": "2026-06-08T00:20:10.845374Z",
+      "updated_at": "2026-06-08T00:20:43.271110Z"
+    },
+    "a62defd3-2e57-4982-86fa-4dcf7a7640ff": {
+      "id": "a62defd3-2e57-4982-86fa-4dcf7a7640ff",
+      "user_id": "fdedbb5f-b5a9-4627-88b1-fd0c71ef4b69",
+      "state": {
+        "battle_id": "a62defd3-2e57-4982-86fa-4dcf7a7640ff",
+        "user_id": "fdedbb5f-b5a9-4627-88b1-fd0c71ef4b69",
+        "player": {
+          "name": "Scizor",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Bug",
+            "Steel"
+          ],
+          "moves": [
+            "Superpower",
+            "Knock Off",
+            "Bug Bite",
+            "Dual Wingbeat"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Mewtwo",
+          "hp": 166,
+          "max_hp": 166,
+          "types": [
+            "Psychic"
+          ],
+          "moves": [
+            "Psycho Cut",
+            "Thunderbolt",
+            "Ice Punch",
+            "Flamethrower"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Scizor",
+            "hp": 130,
+            "max_hp": 130,
+            "types": [
+              "Bug",
+              "Steel"
+            ],
+            "moves": [
+              "Superpower",
+              "Knock Off",
+              "Bug Bite",
+              "Dual Wingbeat"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Salamence",
+            "hp": 155,
+            "max_hp": 155,
+            "types": [
+              "Dragon",
+              "Flying"
+            ],
+            "moves": [
+              "Dragon Claw",
+              "Dual Wingbeat",
+              "Outrage",
+              "Earthquake"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Overheat",
+              "Dragon Pulse",
+              "Heat Wave",
+              "Air Slash"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Zeraora",
+            "hp": 148,
+            "max_hp": 148,
+            "types": [
+              "Electric"
+            ],
+            "moves": [
+              "Volt Switch",
+              "Play Rough",
+              "Wild Charge",
+              "Plasma Fists"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Mewtwo",
+            "hp": 166,
+            "max_hp": 166,
+            "types": [
+              "Psychic"
+            ],
+            "moves": [
+              "Psycho Cut",
+              "Thunderbolt",
+              "Ice Punch",
+              "Flamethrower"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Rillaboom",
+            "hp": 160,
+            "max_hp": 160,
+            "types": [
+              "Grass"
+            ],
+            "moves": [
+              "Knock Off",
+              "Drain Punch",
+              "U-turn",
+              "High Horsepower"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Ceruledge",
+            "hp": 135,
+            "max_hp": 135,
+            "types": [
+              "Fire",
+              "Ghost"
+            ],
+            "moves": [
+              "Psycho Cut",
+              "Flare Blitz",
+              "Flame Charge",
+              "Shadow Claw"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Haxorus",
+            "hp": 136,
+            "max_hp": 136,
+            "types": [
+              "Dragon"
+            ],
+            "moves": [
+              "Outrage",
+              "Close Combat",
+              "Iron Tail",
+              "Dragon Claw"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 0,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Scizor vs Mewtwo"
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": null,
+        "needs_switch": false
+      },
+      "created_at": "2026-06-08T00:23:13.607436Z",
+      "updated_at": "2026-06-08T00:23:13.607436Z"
+    },
+    "1013c690-54a1-455b-b4c6-b2f4a8e6154d": {
+      "id": "1013c690-54a1-455b-b4c6-b2f4a8e6154d",
+      "user_id": "d4df0a8d-fbb6-4617-918c-2739f3b34ae5",
+      "state": {
+        "battle_id": "1013c690-54a1-455b-b4c6-b2f4a8e6154d",
+        "user_id": "d4df0a8d-fbb6-4617-918c-2739f3b34ae5",
+        "player": {
+          "name": "Charizard",
+          "hp": 138,
+          "max_hp": 138,
+          "types": [
+            "Fire",
+            "Flying"
+          ],
+          "moves": [
+            "Flamethrower",
+            "Dragon Pulse",
+            "Overheat",
+            "Fire Blast"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Dragapult",
+          "hp": 116,
+          "max_hp": 148,
+          "types": [
+            "Dragon",
+            "Ghost"
+          ],
+          "moves": [
+            "Dragon Darts",
+            "Shadow Ball",
+            "U-turn",
+            "Hex"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Scizor",
+            "hp": 111,
+            "max_hp": 130,
+            "types": [
+              "Bug",
+              "Steel"
+            ],
+            "moves": [
+              "Knock Off",
+              "Iron Head",
+              "Bullet Punch",
+              "U-turn"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Salamence",
+            "hp": 155,
+            "max_hp": 155,
+            "types": [
+              "Dragon",
+              "Flying"
+            ],
+            "moves": [
+              "Hydro Pump",
+              "Dual Wingbeat",
+              "Dragon Claw",
+              "Earthquake"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Flamethrower",
+              "Dragon Pulse",
+              "Overheat",
+              "Fire Blast"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Zeraora",
+            "hp": 148,
+            "max_hp": 148,
+            "types": [
+              "Electric"
+            ],
+            "moves": [
+              "Knock Off",
+              "Close Combat",
+              "Thunderbolt",
+              "Play Rough"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Dragapult",
+            "hp": 116,
+            "max_hp": 148,
+            "types": [
+              "Dragon",
+              "Ghost"
+            ],
+            "moves": [
+              "Dragon Darts",
+              "Shadow Ball",
+              "U-turn",
+              "Hex"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Rillaboom",
+            "hp": 160,
+            "max_hp": 160,
+            "types": [
+              "Grass"
+            ],
+            "moves": [
+              "High Horsepower",
+              "Grassy Glide",
+              "Earthquake",
+              "Wood Hammer"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Excadrill",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ground",
+              "Steel"
+            ],
+            "moves": [
+              "Rapid Spin",
+              "Drill Run",
+              "Earthquake",
+              "Iron Head"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Sylveon",
+            "hp": 155,
+            "max_hp": 155,
+            "types": [
+              "Fairy"
+            ],
+            "moves": [
+              "Stored Power",
+              "Draining Kiss",
+              "Hyper Voice",
+              "Psyshock"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 2,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Scizor vs Dragapult",
+          "Dragapult es m\u00e1s r\u00e1pido.",
+          "Dragapult us\u00f3 Hex. Hizo 19 de da\u00f1o.",
+          "Scizor us\u00f3 Bullet Punch. Hizo 32 de da\u00f1o. \u00a1Golpe cr\u00edtico!",
+          "\u00a1Enviaste a Zeraora!",
+          "\u00a1Enviaste a Charizard!"
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": "enemy",
+        "needs_switch": false
+      },
+      "created_at": "2026-06-08T00:23:13.623178Z",
+      "updated_at": "2026-06-08T00:23:26.941724Z"
+    },
+    "36f920d8-4dbe-4c66-8cd4-5d2559276704": {
+      "id": "36f920d8-4dbe-4c66-8cd4-5d2559276704",
+      "user_id": "7a7a65f1-b847-46fe-93ff-39c2f189f633",
+      "state": {
+        "battle_id": "36f920d8-4dbe-4c66-8cd4-5d2559276704",
+        "user_id": "7a7a65f1-b847-46fe-93ff-39c2f189f633",
+        "player": {
+          "name": "Scizor",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Bug",
+            "Steel"
+          ],
+          "moves": [
+            "U-turn",
+            "Iron Head",
+            "Bug Bite",
+            "X-Scissor"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Excadrill",
+          "hp": 170,
+          "max_hp": 170,
+          "types": [
+            "Ground",
+            "Steel"
+          ],
+          "moves": [
+            "Rock Slide",
+            "Rapid Spin",
+            "Brick Break",
+            "Iron Head"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Scizor",
+            "hp": 130,
+            "max_hp": 130,
+            "types": [
+              "Bug",
+              "Steel"
+            ],
+            "moves": [
+              "U-turn",
+              "Iron Head",
+              "Bug Bite",
+              "X-Scissor"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Salamence",
+            "hp": 155,
+            "max_hp": 155,
+            "types": [
+              "Dragon",
+              "Flying"
+            ],
+            "moves": [
+              "Hydro Pump",
+              "Earthquake",
+              "Fly",
+              "Dual Wingbeat"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Solar Beam",
+              "Focus Blast",
+              "Heat Wave",
+              "Air Slash"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Zeraora",
+            "hp": 148,
+            "max_hp": 148,
+            "types": [
+              "Electric"
+            ],
+            "moves": [
+              "Close Combat",
+              "Wild Charge",
+              "Volt Switch",
+              "Plasma Fists"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Excadrill",
+            "hp": 170,
+            "max_hp": 170,
+            "types": [
+              "Ground",
+              "Steel"
+            ],
+            "moves": [
+              "Rock Slide",
+              "Rapid Spin",
+              "Brick Break",
+              "Iron Head"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Baxcalibur",
+            "hp": 175,
+            "max_hp": 175,
+            "types": [
+              "Dragon",
+              "Ice"
+            ],
+            "moves": [
+              "Dragon Claw",
+              "Outrage",
+              "Glaive Rush",
+              "Crunch"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Tyranitar",
+            "hp": 160,
+            "max_hp": 160,
+            "types": [
+              "Rock",
+              "Dark"
+            ],
+            "moves": [
+              "Dark Pulse",
+              "Ice Punch",
+              "Fire Blast",
+              "Earthquake"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Dragapult",
+            "hp": 148,
+            "max_hp": 148,
+            "types": [
+              "Dragon",
+              "Ghost"
+            ],
+            "moves": [
+              "Draco Meteor",
+              "Dragon Pulse",
+              "Flamethrower",
+              "Dragon Darts"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 0,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Scizor vs Excadrill"
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": null,
+        "needs_switch": false
+      },
+      "created_at": "2026-06-08T00:23:56.423386Z",
+      "updated_at": "2026-06-08T00:23:56.423386Z"
+    },
+    "a63b5ac1-9809-49cc-b9ef-58d4e99b433e": {
+      "id": "a63b5ac1-9809-49cc-b9ef-58d4e99b433e",
+      "user_id": "06e5cd06-ab8d-4650-aedd-f9c039988ecd",
+      "state": {
+        "battle_id": "a63b5ac1-9809-49cc-b9ef-58d4e99b433e",
+        "user_id": "06e5cd06-ab8d-4650-aedd-f9c039988ecd",
+        "player": {
+          "name": "Scizor",
+          "hp": 122,
+          "max_hp": 130,
+          "types": [
+            "Bug",
+            "Steel"
+          ],
+          "moves": [
+            "Superpower",
+            "Dual Wingbeat",
+            "Knock Off",
+            "Iron Head"
+          ],
+          "is_fainted": false
+        },
+        "enemy": {
+          "name": "Scizor",
+          "hp": 83,
+          "max_hp": 130,
+          "types": [
+            "Bug",
+            "Steel"
+          ],
+          "moves": [
+            "Dual Wingbeat",
+            "Iron Head",
+            "X-Scissor",
+            "Bullet Punch"
+          ],
+          "is_fainted": false
+        },
+        "player_team": [
+          {
+            "name": "Scizor",
+            "hp": 122,
+            "max_hp": 130,
+            "types": [
+              "Bug",
+              "Steel"
+            ],
+            "moves": [
+              "Superpower",
+              "Dual Wingbeat",
+              "Knock Off",
+              "Iron Head"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Salamence",
+            "hp": 155,
+            "max_hp": 155,
+            "types": [
+              "Dragon",
+              "Flying"
+            ],
+            "moves": [
+              "Earthquake",
+              "Draco Meteor",
+              "Outrage",
+              "Hydro Pump"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Charizard",
+            "hp": 138,
+            "max_hp": 138,
+            "types": [
+              "Fire",
+              "Flying"
+            ],
+            "moves": [
+              "Focus Blast",
+              "Heat Wave",
+              "Fire Blast",
+              "Solar Beam"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Zeraora",
+            "hp": 148,
+            "max_hp": 148,
+            "types": [
+              "Electric"
+            ],
+            "moves": [
+              "Grass Knot",
+              "Thunderbolt",
+              "Close Combat",
+              "Play Rough"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "enemy_team": [
+          {
+            "name": "Scizor",
+            "hp": 83,
+            "max_hp": 130,
+            "types": [
+              "Bug",
+              "Steel"
+            ],
+            "moves": [
+              "Dual Wingbeat",
+              "Iron Head",
+              "X-Scissor",
+              "Bullet Punch"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Greninja",
+            "hp": 132,
+            "max_hp": 132,
+            "types": [
+              "Water",
+              "Dark"
+            ],
+            "moves": [
+              "Surf",
+              "Extrasensory",
+              "Water Shuriken",
+              "Grass Knot"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Dragapult",
+            "hp": 148,
+            "max_hp": 148,
+            "types": [
+              "Dragon",
+              "Ghost"
+            ],
+            "moves": [
+              "Thunderbolt",
+              "Shadow Ball",
+              "Draco Meteor",
+              "Flamethrower"
+            ],
+            "is_fainted": false
+          },
+          {
+            "name": "Volcarona",
+            "hp": 145,
+            "max_hp": 145,
+            "types": [
+              "Bug",
+              "Fire"
+            ],
+            "moves": [
+              "Fire Blast",
+              "Heat Wave",
+              "Fiery Dance",
+              "Psychic"
+            ],
+            "is_fainted": false
+          }
+        ],
+        "player_index": 0,
+        "enemy_index": 0,
+        "logs": [
+          "\u00a1Inicia la batalla! Scizor vs Scizor",
+          "Scizor es m\u00e1s r\u00e1pido.",
+          "Scizor us\u00f3 Superpower. Hizo 47 de da\u00f1o. \u00a1Golpe cr\u00edtico!",
+          "Scizor us\u00f3 Dual Wingbeat. Hizo 8 de da\u00f1o."
+        ],
+        "finished": false,
+        "winner": null,
+        "first_turn": "player",
+        "needs_switch": false
+      },
+      "created_at": "2026-06-08T00:23:56.438856Z",
+      "updated_at": "2026-06-08T00:26:40.989145Z"
     }
   }
 }

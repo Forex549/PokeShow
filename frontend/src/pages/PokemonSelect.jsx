@@ -45,7 +45,7 @@ function SlotCard({ slot, index, team, onChange, isPlayer }) {
             <div className="bg-slate-50 rounded-2xl flex justify-center items-center h-24">
                 {slot ? (
                     <img
-                        src={getPokemonSprite(slot, isPlayer)}
+                        src={getPokemonSprite(slot, false)}
                         alt={slot}
                         className="h-20 hover:scale-110 transition-all duration-300"
                     />
@@ -98,57 +98,45 @@ function PokemonSelect() {
     const mode = location.state?.mode;
 
     const [playerTeam, setPlayerTeam] = useState(Array(TEAM_SIZE).fill(EMPTY));
-    const [enemyTeam, setEnemyTeam] = useState(Array(TEAM_SIZE).fill(EMPTY));
-
-    const updateTeam = (setter) => (index, value) => {
-        setter((prev) => {
-            const next = [...prev];
-            next[index] = value;
-            return next;
-        });
-    };
 
     const teamComplete = (team) => team.every((p) => p !== EMPTY);
-    const canStart = teamComplete(playerTeam) && teamComplete(enemyTeam);
+    const canStart = teamComplete(playerTeam);
 
     const startBattle = () => {
         if (!canStart) return;
         navigate("/battle", {
-            state: { mode, playerTeam, enemyTeam },
+            state: { mode, playerTeam },
         });
     };
 
     return (
         <div className="min-h-screen bg-slate-100 px-6 py-10">
-
             <div className="text-center mb-10">
                 <h1 className="text-5xl font-black text-slate-800 mb-3">
                     Seleccionar Equipo
                 </h1>
                 <p className="text-slate-500 text-lg">
-                    Elige 4 Pokémon para cada lado
+                    Elige tus 4 Pokémon
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="max-w-2xl mx-auto">
                 <TeamPanel
-                    label="Jugador"
+                    label="Tu equipo"
                     team={playerTeam}
-                    onChange={updateTeam(setPlayerTeam)}
+                    onChange={(i, v) => setPlayerTeam(prev => {
+                        const next = [...prev];
+                        next[i] = v;
+                        return next;
+                    })}
                     isPlayer={true}
-                />
-                <TeamPanel
-                    label="Enemigo"
-                    team={enemyTeam}
-                    onChange={updateTeam(setEnemyTeam)}
-                    isPlayer={false}
                 />
             </div>
 
             <div className="flex flex-col items-center mt-10 gap-3">
                 {!canStart && (
                     <p className="text-slate-400 text-sm">
-                        Completa los 4 slots de cada equipo para continuar
+                        Completa los 4 slots para continuar
                     </p>
                 )}
                 <button

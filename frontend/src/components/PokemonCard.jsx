@@ -27,6 +27,7 @@ function PokemonCard({
         >
             <div className="flex justify-center">
                 <img
+                    key={pokemon.name}
                     src={getPokemonSprite(
                         pokemon.name,
                         back

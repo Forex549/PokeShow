@@ -91,6 +91,7 @@ function Battle() {
     const [attacking, setAttacking] = useState(null);
     const [damaged, setDamaged] = useState(null);
     const [battleMessage, setBattleMessage] = useState("Elige un movimiento");
+    const [showVoluntarySwitch, setShowVoluntarySwitch] = useState(false);
 
     useEffect(() => {
         startBattle();
@@ -103,7 +104,6 @@ function Battle() {
         const battleResponse = await api.post("/battle/start", {
             user_id: userId,
             player_team: playerTeam,   // ["garchomp", "sylveon", "greninja", "ceruledge"]
-            enemy_team: enemyTeam,
             mode: mode,
         });
 
@@ -134,18 +134,26 @@ function Battle() {
         }
     };
 
-    const switchPokemon = async (index) => {
+    const switchPokemon = async (index, voluntary = false) => {
         if (isAnimating || !battle) return;
 
         setIsAnimating(true);
+        setShowVoluntarySwitch(false);
+
         const response = await api.post("/battle/switch", {
             battle_id: battle.battle_id,
             pokemon_index: index,
+            voluntary,
         });
-        setBattle(response.data);
-        setVisibleLogs(response.data.logs || []);
-        setBattleMessage("Elige un movimiento");
+
+        await animateTurn(response.data, battle.logs);
         setIsAnimating(false);
+
+        if (response.data.winner) {
+            setTimeout(() => navigate("/result", {
+                state: { winner: response.data.winner, turns: response.data.logs, mode }
+            }), 2000);
+        }
     };
 
     const animateTurn = async (updatedBattle, previousLogs) => {
@@ -201,11 +209,13 @@ function Battle() {
 
     // ── Render ───────────────────────────────────────────────────────────────
     return (
-        <div className="min-h-screen bg-slate-100 p-6">
+        <div className="min-h-screen bg-slate-100 p-8">
 
-            <h1 className="text-4xl font-extrabold text-slate-800 mb-6">
-                Pokémon Battle
-            </h1>
+            <div className="flex justify-center">
+                <h1 className="text-4xl font-extrabold text-slate-800 mb-8">
+                    Pokémon Battle
+                </h1>
+            </div>
 
             {/* BARRAS DE EQUIPO */}
             <div className="flex justify-between items-center bg-white rounded-2xl px-6 py-4 shadow mb-6">
@@ -265,14 +275,64 @@ function Battle() {
                 <SwitchPanel
                     team={battle.player_team}
                     activeIndex={battle.player_index}
-                    onSwitch={switchPokemon}
+                    onSwitch={(i) => switchPokemon(i, false)}
                 />
             ) : (
-                <MoveButtons
-                    moves={battle.player.moves}
-                    onMove={playTurn}
-                    disabled={isAnimating || battle.finished}
-                />
+                <div className="flex flex-col gap-4">
+                    <MoveButtons
+                        moves={battle.player.moves}
+                        onMove={playTurn}
+                        disabled={isAnimating || battle.finished}
+                    />
+
+                    {/* Botón cambio voluntario */}
+                    {!battle.finished && (
+                        <div className="flex justify-center">
+                            <button
+                                onClick={() => setShowVoluntarySwitch(!showVoluntarySwitch)}
+                                disabled={isAnimating}
+                                className="bg-amber-100 hover:bg-amber-200 text-amber-800
+                        font-bold px-6 py-3 rounded-2xl border border-amber-300
+                        transition-all duration-200 disabled:opacity-40"
+                            >
+                                {showVoluntarySwitch ? "Cancelar" : "⇄ Cambiar Pokémon"}
+                            </button>
+                        </div>
+                    )}
+
+                    {/* Panel de cambio voluntario */}
+                    {showVoluntarySwitch && (
+                        <div className="bg-white rounded-3xl p-6 shadow-xl border border-amber-200">
+                            <h3 className="text-lg font-black text-amber-700 mb-2 text-center">
+                                Cambiar Pokémon
+                            </h3>
+                            <p className="text-slate-400 text-sm text-center mb-4">
+                                La IA atacará este turno igualmente
+                            </p>
+                            <div className="grid grid-cols-2 gap-3">
+                                {battle.player_team.map((p, i) => {
+                                    const canSwitch = p.hp > 0 && i !== battle.player_index;
+                                    return (
+                                        <button
+                                            key={i}
+                                            disabled={!canSwitch}
+                                            onClick={() => switchPokemon(i, true)}  // voluntario
+                                            className={`p-3 rounded-2xl border text-left transition-all duration-200
+                                    ${canSwitch
+                                                    ? "bg-amber-50 border-amber-300 hover:bg-amber-100 hover:scale-105"
+                                                    : "bg-slate-50 border-slate-200 opacity-40 cursor-not-allowed"}`}
+                                        >
+                                            <p className="font-bold text-slate-800 capitalize text-sm">{p.name}</p>
+                                            <p className="text-xs text-slate-500">
+                                                {p.hp <= 0 ? "Debilitado" : `${p.hp}/${p.max_hp} HP`}
+                                            </p>
+                                        </button>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    )}
+                </div>
             )}
         </div>
     );
