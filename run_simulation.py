@@ -8,7 +8,7 @@ from src.engine.logic.damage_calc import calculate_damage
 from src.engine.models.pokemon import Pokemon
 from src.engine.models.entrenador import Entrenador
 from src.engine.models.battle import Battle
-from src.engine.logic.heuristic import choose_best_move, chose_random_move, minimax_alfa_beta, elegir_movimiento_nivel3
+from src.engine.logic.heuristic import choose_best_move, chose_random_move, minimax_alfa_beta, elegir_movimiento_nivel3, elegir_mejor_sustituto, elegir_mejor_sustituto_n2, elegir_mejor_sustituto_n3, elegir_accion_nivel4, elegir_mejor_sustituto_n4
 import copy
 import traceback
 
@@ -22,6 +22,27 @@ with open(os.path.join(BASE_DIR, "data", "pokedex_con_moves.json")) as f:
 
 _PESOS_N3_DEFAULT = [1.0, 1.0, 0.5, 1.0]
 _pesos_nivel3_cache: Optional[list] = None
+
+_PESOS_N4_DEFAULT = [1.0, 1.0, 0.5, 1.0, 0.8]
+_pesos_nivel4_cache: Optional[list] = None
+
+
+def cargar_pesos_nivel4() -> list:
+    global _pesos_nivel4_cache
+    if _pesos_nivel4_cache is not None:
+        return _pesos_nivel4_cache
+    path = os.path.join(BASE_DIR, "data", "best_weights_n4.json")
+    try:
+        with open(path) as f:
+            data = json.load(f)
+        pesos = data["pesos"] if isinstance(data, dict) else data
+        if not (isinstance(pesos, list) and len(pesos) == 5 and all(isinstance(x, (int, float)) for x in pesos)):
+            raise ValueError("formato inválido")
+        _pesos_nivel4_cache = [float(x) for x in pesos]
+    except (FileNotFoundError, ValueError, json.JSONDecodeError):
+        print("[nivel4] best_weights_n4.json no encontrado o corrupto — usando pesos por defecto.")
+        _pesos_nivel4_cache = list(_PESOS_N4_DEFAULT)
+    return _pesos_nivel4_cache
 
 
 def cargar_pesos_nivel3() -> list:
@@ -114,11 +135,11 @@ def estrategia_ia_best_option(entrenador: Entrenador, rival: Entrenador):
     poke = entrenador.get_current_pokemon()
 
     if poke.hp <= 0:
-        for i, p in enumerate(entrenador.pokemones):
-            if p.hp > 0:
-                entrenador.switch_pokemon(i)
-                print(f"¡{entrenador.name} envió a {p.name}!")
-                return None
+        idx = elegir_mejor_sustituto(entrenador, rival)
+        if idx is not None:
+            entrenador.switch_pokemon(idx)
+            print(f"¡{entrenador.name} envió a {entrenador.get_current_pokemon().name}!")
+        return None
 
     return choose_best_move(poke, rival.get_current_pokemon())
 
@@ -138,13 +159,11 @@ def estrategia_ia_random(entrenador: Entrenador, rival: Entrenador):
 def estrategia_ia_minimax_nivel2(entrenador: Entrenador, rival: Entrenador) -> Optional[Movimiento]:
     poke_real = entrenador.get_current_pokemon()
 
-    # Si nuestro Pokémon está muerto, obligamos al cambio
     if poke_real.hp <= 0:
-        for i, p in enumerate(entrenador.pokemones): # Cambia al siguiente pokemon disponible
-            if p.hp > 0:
-                entrenador.switch_pokemon(i)
-                print(f"¡{entrenador.name} envió a {p.name} debido a debilitación!")
-                return None
+        idx = elegir_mejor_sustituto_n2(entrenador, rival)
+        if idx is not None:
+            entrenador.switch_pokemon(idx)
+            print(f"¡{entrenador.name} envió a {entrenador.get_current_pokemon().name} debido a debilitación!")
         return None
 
     
@@ -195,15 +214,34 @@ def estrategia_ia_minimax_nivel3(entrenador: Entrenador, rival: Entrenador) -> O
     poke_real = entrenador.get_current_pokemon()
 
     if poke_real.hp <= 0:
-        for i, p in enumerate(entrenador.pokemones):
-            if p.hp > 0:
-                entrenador.switch_pokemon(i)
-                print(f"¡{entrenador.name} envió a {p.name} debido a debilitación!")
-                return None
+        pesos = cargar_pesos_nivel3()
+        idx = elegir_mejor_sustituto_n3(entrenador, rival, pesos)
+        if idx is not None:
+            entrenador.switch_pokemon(idx)
+            print(f"¡{entrenador.name} envió a {entrenador.get_current_pokemon().name} debido a debilitación!")
         return None
 
     pesos = cargar_pesos_nivel3()
     return elegir_movimiento_nivel3(entrenador, rival, pesos)
+
+
+def estrategia_ia_minimax_nivel4(entrenador: Entrenador, rival: Entrenador):
+    poke_real = entrenador.get_current_pokemon()
+    pesos = cargar_pesos_nivel4()
+
+    if poke_real.hp <= 0:
+        idx = elegir_mejor_sustituto_n4(entrenador, rival, pesos)
+        if idx is not None:
+            entrenador.switch_pokemon(idx)
+            print(f"¡{entrenador.name} envió a {entrenador.get_current_pokemon().name} (N4)!")
+        return None
+
+    accion = elegir_accion_nivel4(entrenador, rival, pesos)
+    if isinstance(accion, int):
+        entrenador.switch_pokemon(accion)
+        print(f"¡{entrenador.name} cambia voluntariamente a {entrenador.get_current_pokemon().name} (N4)!")
+        return None
+    return accion
 
 
 def main():
@@ -229,10 +267,11 @@ def main():
         print("1. Aleatorio")
         print("2. Mejor opción")
         print("3. Minimax Nivel 2")
-        print("4. Minimax Nivel 3 (pesos GA)")
+        print("4. Minimax Nivel 3 (pesos GA, sin cambio voluntario)")
+        print("5. Minimax Nivel 4 (pesos GA, con cambio voluntario + estados)")
         while True:
             try:
-                bot = int(input("Elige un bot (1-4): "))
+                bot = int(input("Elige un bot (1-5): "))
                 if bot == 1:
                     return estrategia_ia_random
                 elif bot == 2:
@@ -241,6 +280,8 @@ def main():
                     return estrategia_ia_minimax_nivel2
                 elif bot == 4:
                     return estrategia_ia_minimax_nivel3
+                elif bot == 5:
+                    return estrategia_ia_minimax_nivel4
                 else:
                     print("Selección no válida.")
                     continue
