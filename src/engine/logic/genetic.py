@@ -167,17 +167,41 @@ def gaussian_mutate(
     return clamp_chromosome(mutated)
 
 
-def _make_nivel3_strategy(pesos: List[float]) -> Callable:
-    # Importamos aquí para evitar dependencia circular entre genetic y heuristic
-    from src.engine.logic.heuristic import elegir_movimiento_nivel3
+def random_chromosome_n4(rng: _stdlib_random.Random = None) -> List[float]:
+    if rng is None:
+        rng = _stdlib_random
+    return [rng.uniform(_GENE_INIT_LO, _GENE_INIT_HI) for _ in range(5)]
+
+
+def _make_nivel4_strategy(pesos: List[float]) -> Callable:
+    from src.engine.logic.heuristic import elegir_accion_nivel4, elegir_mejor_sustituto_n4
 
     def strategy(entrenador, rival):
         poke = entrenador.get_current_pokemon()
         if poke.hp <= 0:
-            for idx, p in enumerate(entrenador.pokemones):
-                if p.hp > 0:
-                    entrenador.switch_pokemon(idx)
-                    break
+            idx = elegir_mejor_sustituto_n4(entrenador, rival, pesos)
+            if idx is not None:
+                entrenador.switch_pokemon(idx)
+            return None
+        accion = elegir_accion_nivel4(entrenador, rival, pesos)
+        if isinstance(accion, int):
+            entrenador.switch_pokemon(accion)
+            return None
+        return accion
+
+    return strategy
+
+
+def _make_nivel3_strategy(pesos: List[float]) -> Callable:
+    # Importamos aquí para evitar dependencia circular entre genetic y heuristic
+    from src.engine.logic.heuristic import elegir_movimiento_nivel3, elegir_mejor_sustituto_n3
+
+    def strategy(entrenador, rival):
+        poke = entrenador.get_current_pokemon()
+        if poke.hp <= 0:
+            idx = elegir_mejor_sustituto_n3(entrenador, rival, pesos)
+            if idx is not None:
+                entrenador.switch_pokemon(idx)
             return None
         return elegir_movimiento_nivel3(entrenador, rival, pesos)
 
@@ -308,6 +332,144 @@ def calcular_fitness(
             wins += 1
 
     return wins / config.n_battles
+
+
+def calcular_fitness_n4(
+    cromosoma: List[float],
+    equipo_factory: Callable[[], Tuple],
+    config: GAConfig,
+) -> float:
+    from src.engine.logic.battle_runner import run_silent_battle
+
+    strat_n4 = _make_nivel4_strategy(cromosoma)
+    rivales = [
+        (1, _make_random_strategy()),
+        (2, _make_best_option_strategy()),
+        (3, _make_nivel2_strategy()),
+        (4, _make_nivel3_strategy([1.0, 1.0, 0.5, 1.0])),
+    ]
+
+    total_peso = 0
+    victorias_ponderadas = 0.0
+
+    for peso, strat_rival in rivales:
+        half = config.n_battles // 2
+        remainder = config.n_battles - half
+        wins = 0
+
+        for i in range(half):
+            t1, t2 = equipo_factory()
+            seed = config.seed * 1000 + peso * 100 + i
+            winner = run_silent_battle(t1, t2, strat_n4, strat_rival, seed=seed)
+            if winner == t1.name:
+                wins += 1
+
+        for i in range(remainder):
+            t1, t2 = equipo_factory()
+            seed = config.seed * 1000 + peso * 100 + half + i
+            winner = run_silent_battle(t1, t2, strat_rival, strat_n4, seed=seed)
+            if winner == t2.name:
+                wins += 1
+
+        win_rate = wins / config.n_battles
+        victorias_ponderadas += peso * win_rate
+        total_peso += peso
+
+    return victorias_ponderadas / total_peso
+
+
+def save_best_weights_n4(
+    best_cromosoma: List[float],
+    best_fitness: float,
+    generations_run: int,
+    output_dir: Optional[Path] = None,
+) -> None:
+    if output_dir is None:
+        output_dir = Path(__file__).parent.parent.parent.parent / "data"
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "pesos": best_cromosoma,
+        "fitness": float(best_fitness),
+        "generaciones": int(generations_run),
+    }
+    out_path = output_dir / "best_weights_n4.json"
+    out_path.write_text(json.dumps(payload, indent=2))
+
+
+def optimizar_pesos_n4_ga(
+    equipo_factory: Callable[[], Tuple],
+    config: Optional[GAConfig] = None,
+    fitness_fn: Optional[Callable[[List[float]], float]] = None,
+    output_dir: Optional[Path] = None,
+) -> List[float]:
+    if config is None:
+        config = GAConfig()
+
+    rng = _stdlib_random.Random(config.seed)
+
+    if fitness_fn is not None:
+        def evaluate(c: List[float]) -> float:
+            return fitness_fn(c)
+    else:
+        def evaluate(c: List[float]) -> float:
+            return calcular_fitness_n4(c, equipo_factory, config)
+
+    population = [random_chromosome_n4(rng=rng) for _ in range(config.pop_size)]
+
+    best_cromosoma: List[float] = population[0]
+    best_fitness: float = -1.0
+    no_improvement_streak: int = 0
+    actual_generations: int = 0
+
+    for gen in range(config.generations):
+        actual_generations = gen + 1
+        fitnesses = [evaluate(c) for c in population]
+
+        gen_best_idx = max(range(len(fitnesses)), key=lambda i: fitnesses[i])
+        gen_best_fitness = fitnesses[gen_best_idx]
+        gen_best_cromosoma = population[gen_best_idx]
+
+        if gen_best_fitness > best_fitness:
+            best_fitness = gen_best_fitness
+            best_cromosoma = gen_best_cromosoma[:]
+            no_improvement_streak = 0
+        else:
+            no_improvement_streak += 1
+
+        print(f"  Gen {gen + 1:>2}/{config.generations} — mejor fitness: {best_fitness:.3f} (esta gen: {gen_best_fitness:.3f})")
+
+        if best_fitness >= _EARLY_STOP_THRESHOLD or no_improvement_streak >= _EARLY_STOP_PATIENCE:
+            print(f"  Parada temprana en generación {gen + 1}.")
+            break
+
+        sorted_pairs = sorted(zip(fitnesses, population), key=lambda x: x[0], reverse=True)
+        sorted_pop = [c for _, c in sorted_pairs]
+
+        next_pop: List[List[float]] = []
+        for i in range(min(config.elitism, len(sorted_pop))):
+            next_pop.append(sorted_pop[i][:])
+
+        while len(next_pop) < config.pop_size:
+            sorted_fitnesses = sorted(fitnesses, reverse=True)
+            parent1 = tournament_select(sorted_pop, sorted_fitnesses, config.tournament_k, rng=rng)
+            parent2 = tournament_select(sorted_pop, sorted_fitnesses, config.tournament_k, rng=rng)
+            if rng.random() < config.crossover_rate:
+                # Cruce uniforme sobre 5 genes
+                child = [parent1[i] if rng.random() < 0.5 else parent2[i] for i in range(5)]
+            else:
+                child = parent1[:]
+            child = gaussian_mutate(child, config.sigma, config.mutation_rate, rng=rng)
+            next_pop.append(child)
+
+        population = next_pop[:config.pop_size]
+
+    if best_fitness < 0.0:
+        best_fitness = evaluate(population[0])
+        best_cromosoma = population[0]
+
+    save_best_weights_n4(best_cromosoma, best_fitness, actual_generations, output_dir=output_dir)
+    return best_cromosoma
 
 
 def save_best_weights(
