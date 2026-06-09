@@ -88,9 +88,9 @@ def estrategia_humano(entrenador: Entrenador, rival: Entrenador):
         seleccionar_pokemon(entrenador, forzado=True)
         return None
 
-    print(f"\nTurno de {entrenador.name}. Pokémon: {poke.name}")
+    print(f"\nTurno de {entrenador.name}. Pokémon: {poke.name} types: {poke.types} HP: {poke.hp}/{poke.max_hp}")
     for i, move in enumerate(poke.moves):
-        print(f"{i+1}. {move.name} | power: {move.power} priority: {move.priority} ")
+        print(f"{i+1}. {move.name} | power: {move.power} priority: {move.priority} type: {move.type}")
     print("5. Cambiar Pokémon")
     print("6. Rendirse")
 
@@ -253,45 +253,45 @@ def main():
         estrategia_jugador = estrategia_humano
         jugador = Entrenador("Topollillo", [
             Pokemon("garchomp",  pokedex["garchomp"],  moves_db),
-            Pokemon("ceruledge", pokedex["ceruledge"], moves_db),
-            Pokemon("sylveon",   pokedex["sylveon"],   moves_db),
-            Pokemon("greninja",  pokedex["greninja"],  moves_db),
+            Pokemon("lucario", pokedex["lucario"], moves_db),
+            Pokemon("gengar",   pokedex["gengar"],   moves_db),
+            Pokemon("swampert",  pokedex["swampert"],  moves_db),
         ])
         rival = Entrenador("Sobrevilla", [
-            Pokemon("salamence", pokedex["salamence"], moves_db),
-            Pokemon("swampert",  pokedex["swampert"],  moves_db),
-            Pokemon("lucario",   pokedex["lucario"],   moves_db),
-            Pokemon("volcarona", pokedex["volcarona"],  moves_db),
+            Pokemon("zeraora", pokedex["zeraora"], moves_db),
+            Pokemon("baxcalibur",  pokedex["baxcalibur"],  moves_db),
+            Pokemon("snorlax",   pokedex["snorlax"],   moves_db),
+            Pokemon("metagross", pokedex["metagross"],  moves_db),
         ])
     elif modo == 2:  # IA vs IA
         estrategia_jugador = seleccionar_bot_ia("IA1")
         estrategia_rival = seleccionar_bot_ia("IA2")
         jugador = Entrenador("IA1", [
             Pokemon("garchomp",  pokedex["garchomp"],  moves_db),
-            Pokemon("ceruledge", pokedex["ceruledge"], moves_db),
-            Pokemon("sylveon",   pokedex["sylveon"],   moves_db),
-            Pokemon("greninja",  pokedex["greninja"],  moves_db),
+            Pokemon("lucario", pokedex["lucario"], moves_db),
+            Pokemon("gengar",   pokedex["gengar"],   moves_db),
+            Pokemon("swampert",  pokedex["swampert"],  moves_db),
         ])
         rival = Entrenador("IA2", [
-            Pokemon("salamence", pokedex["salamence"], moves_db),
-            Pokemon("swampert",  pokedex["swampert"],  moves_db),
-            Pokemon("lucario",   pokedex["lucario"],   moves_db),
-            Pokemon("volcarona", pokedex["volcarona"],  moves_db),
+            Pokemon("zeraora", pokedex["zeraora"], moves_db),
+            Pokemon("baxcalibur",  pokedex["baxcalibur"],  moves_db),
+            Pokemon("snorlax",   pokedex["snorlax"],   moves_db),
+            Pokemon("metagross", pokedex["metagross"],  moves_db),
         ])
     elif modo == 3:  # Humano vs Humano
         estrategia_jugador = estrategia_humano
         estrategia_rival = estrategia_humano
         jugador = Entrenador("Jugador1", [
             Pokemon("garchomp",  pokedex["garchomp"],  moves_db),
-            Pokemon("ceruledge", pokedex["ceruledge"], moves_db),
-            Pokemon("sylveon",   pokedex["sylveon"],   moves_db),
-            Pokemon("greninja",  pokedex["greninja"],  moves_db),
+            Pokemon("lucario", pokedex["lucario"], moves_db),
+            Pokemon("gengar",   pokedex["gengar"],   moves_db),
+            Pokemon("swampert",  pokedex["swampert"],  moves_db),
         ])
         rival = Entrenador("Jugador2", [
-            Pokemon("salamence", pokedex["salamence"], moves_db),
-            Pokemon("swampert",  pokedex["swampert"],  moves_db),
-            Pokemon("lucario",   pokedex["lucario"],   moves_db),
-            Pokemon("volcarona", pokedex["volcarona"],  moves_db),
+            Pokemon("zeraora", pokedex["zeraora"], moves_db),
+            Pokemon("baxcalibur",  pokedex["baxcalibur"],  moves_db),
+            Pokemon("snorlax",   pokedex["snorlax"],   moves_db),
+            Pokemon("metagross", pokedex["metagross"],  moves_db),
         ])
     
     batalla = Battle(jugador, rival)

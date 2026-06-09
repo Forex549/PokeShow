@@ -1,0 +1,613 @@
+{
+  "results": [
+    {
+      "seed": 12345,
+      "winner": "IA_B",
+      "turns": 23,
+      "time_ms": 15366.404300002614
+    },
+    {
+      "seed": 12346,
+      "winner": "IA_A",
+      "turns": 28,
+      "time_ms": 11265.763800009154
+    },
+    {
+      "seed": 12347,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 10792.885800008662
+    },
+    {
+      "seed": 12348,
+      "winner": "IA_A",
+      "turns": 21,
+      "time_ms": 6239.962999999989
+    },
+    {
+      "seed": 12349,
+      "winner": "IA_A",
+      "turns": 16,
+      "time_ms": 6631.396699987818
+    },
+    {
+      "seed": 12350,
+      "winner": "IA_A",
+      "turns": 14,
+      "time_ms": 4974.895599996671
+    },
+    {
+      "seed": 12351,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 6328.47059998312
+    },
+    {
+      "seed": 12352,
+      "winner": "IA_A",
+      "turns": 19,
+      "time_ms": 6544.050500000594
+    },
+    {
+      "seed": 12353,
+      "winner": "IA_A",
+      "turns": 18,
+      "time_ms": 6486.608500010334
+    },
+    {
+      "seed": 12354,
+      "winner": "IA_A",
+      "turns": 21,
+      "time_ms": 8488.890700013144
+    },
+    {
+      "seed": 12355,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 5356.9663999951445
+    },
+    {
+      "seed": 12356,
+      "winner": "IA_A",
+      "turns": 22,
+      "time_ms": 7527.387800015276
+    },
+    {
+      "seed": 12357,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 10714.41099999356
+    },
+    {
+      "seed": 12358,
+      "winner": "IA_A",
+      "turns": 15,
+      "time_ms": 4460.480900015682
+    },
+    {
+      "seed": 12359,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 5339.3295999849215
+    },
+    {
+      "seed": 12360,
+      "winner": "IA_B",
+      "turns": 22,
+      "time_ms": 20560.2764999785
+    },
+    {
+      "seed": 12361,
+      "winner": "IA_A",
+      "turns": 18,
+      "time_ms": 6729.107099992689
+    },
+    {
+      "seed": 12362,
+      "winner": "IA_A",
+      "turns": 18,
+      "time_ms": 7004.395199997816
+    },
+    {
+      "seed": 12363,
+      "winner": "IA_A",
+      "turns": 19,
+      "time_ms": 8261.190200020792
+    },
+    {
+      "seed": 12364,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 6184.692999988329
+    },
+    {
+      "seed": 12365,
+      "winner": "IA_A",
+      "turns": 26,
+      "time_ms": 9735.858400003053
+    },
+    {
+      "seed": 12366,
+      "winner": "IA_A",
+      "turns": 19,
+      "time_ms": 7268.065500014927
+    },
+    {
+      "seed": 12367,
+      "winner": "IA_A",
+      "turns": 21,
+      "time_ms": 8567.376999999397
+    },
+    {
+      "seed": 12368,
+      "winner": "IA_A",
+      "turns": 19,
+      "time_ms": 6058.161699998891
+    },
+    {
+      "seed": 12369,
+      "winner": "IA_A",
+      "turns": 19,
+      "time_ms": 8458.845299988752
+    },
+    {
+      "seed": 12370,
+      "winner": "IA_A",
+      "turns": 19,
+      "time_ms": 5623.321699997177
+    },
+    {
+      "seed": 12371,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 5411.381199985044
+    },
+    {
+      "seed": 12372,
+      "winner": "IA_A",
+      "turns": 27,
+      "time_ms": 10545.396400004392
+    },
+    {
+      "seed": 12373,
+      "winner": "IA_A",
+      "turns": 15,
+      "time_ms": 5210.565799992764
+    },
+    {
+      "seed": 12374,
+      "winner": "IA_A",
+      "turns": 21,
+      "time_ms": 10971.847800014075
+    },
+    {
+      "seed": 12375,
+      "winner": "IA_A",
+      "turns": 16,
+      "time_ms": 7887.397299986333
+    },
+    {
+      "seed": 12376,
+      "winner": "IA_A",
+      "turns": 14,
+      "time_ms": 5664.245499996468
+    },
+    {
+      "seed": 12377,
+      "winner": "IA_A",
+      "turns": 19,
+      "time_ms": 7204.420599999139
+    },
+    {
+      "seed": 12378,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 7738.825300009921
+    },
+    {
+      "seed": 12379,
+      "winner": "IA_A",
+      "turns": 16,
+      "time_ms": 5952.252800023416
+    },
+    {
+      "seed": 12380,
+      "winner": "IA_A",
+      "turns": 21,
+      "time_ms": 9638.110900006723
+    },
+    {
+      "seed": 12381,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 10388.256300007924
+    },
+    {
+      "seed": 12382,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 10103.650899982313
+    },
+    {
+      "seed": 12383,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 7565.664199995808
+    },
+    {
+      "seed": 12384,
+      "winner": "IA_A",
+      "turns": 19,
+      "time_ms": 7688.551800005371
+    },
+    {
+      "seed": 12385,
+      "winner": "IA_A",
+      "turns": 21,
+      "time_ms": 9036.30149998935
+    },
+    {
+      "seed": 12386,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 9016.49060001364
+    },
+    {
+      "seed": 12387,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 7491.125000000466
+    },
+    {
+      "seed": 12388,
+      "winner": "IA_A",
+      "turns": 22,
+      "time_ms": 6020.439299987629
+    },
+    {
+      "seed": 12389,
+      "winner": "IA_A",
+      "turns": 18,
+      "time_ms": 7084.741800004849
+    },
+    {
+      "seed": 12390,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 5655.319999990752
+    },
+    {
+      "seed": 12391,
+      "winner": "IA_A",
+      "turns": 22,
+      "time_ms": 8183.961500006262
+    },
+    {
+      "seed": 12392,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 9680.856699997094
+    },
+    {
+      "seed": 12393,
+      "winner": "IA_A",
+      "turns": 22,
+      "time_ms": 9830.190999986371
+    },
+    {
+      "seed": 12394,
+      "winner": "IA_A",
+      "turns": 13,
+      "time_ms": 4119.948200008366
+    },
+    {
+      "seed": 12395,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 5607.822699996177
+    },
+    {
+      "seed": 12396,
+      "winner": "IA_A",
+      "turns": 18,
+      "time_ms": 6997.401599976001
+    },
+    {
+      "seed": 12397,
+      "winner": "IA_A",
+      "turns": 19,
+      "time_ms": 7139.090700016823
+    },
+    {
+      "seed": 12398,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 6434.424600010971
+    },
+    {
+      "seed": 12399,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 4821.842700010166
+    },
+    {
+      "seed": 12400,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 5547.757299995283
+    },
+    {
+      "seed": 12401,
+      "winner": "IA_A",
+      "turns": 18,
+      "time_ms": 5918.128499994054
+    },
+    {
+      "seed": 12402,
+      "winner": "IA_A",
+      "turns": 18,
+      "time_ms": 6376.033599983202
+    },
+    {
+      "seed": 12403,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 6403.544600005262
+    },
+    {
+      "seed": 12404,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 8862.69639999955
+    },
+    {
+      "seed": 12405,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 4758.222200005548
+    },
+    {
+      "seed": 12406,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 7550.333600025624
+    },
+    {
+      "seed": 12407,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 8601.593700004742
+    },
+    {
+      "seed": 12408,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 6832.150200003525
+    },
+    {
+      "seed": 12409,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 7871.275999990758
+    },
+    {
+      "seed": 12410,
+      "winner": "IA_A",
+      "turns": 13,
+      "time_ms": 5267.75450000423
+    },
+    {
+      "seed": 12411,
+      "winner": "IA_A",
+      "turns": 22,
+      "time_ms": 9269.320999999763
+    },
+    {
+      "seed": 12412,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 7951.295600010781
+    },
+    {
+      "seed": 12413,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 7254.1057000053115
+    },
+    {
+      "seed": 12414,
+      "winner": "IA_A",
+      "turns": 22,
+      "time_ms": 7968.333099997835
+    },
+    {
+      "seed": 12415,
+      "winner": "IA_B",
+      "turns": 34,
+      "time_ms": 15736.48379999213
+    },
+    {
+      "seed": 12416,
+      "winner": "IA_A",
+      "turns": 16,
+      "time_ms": 5904.76080001099
+    },
+    {
+      "seed": 12417,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 7907.065000006696
+    },
+    {
+      "seed": 12418,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 8008.199000003515
+    },
+    {
+      "seed": 12419,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 9780.36040000734
+    },
+    {
+      "seed": 12420,
+      "winner": "IA_A",
+      "turns": 15,
+      "time_ms": 4353.752600000007
+    },
+    {
+      "seed": 12421,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 11422.248199989554
+    },
+    {
+      "seed": 12422,
+      "winner": "IA_A",
+      "turns": 18,
+      "time_ms": 7285.214500006987
+    },
+    {
+      "seed": 12423,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 7316.547599999467
+    },
+    {
+      "seed": 12424,
+      "winner": "IA_A",
+      "turns": 16,
+      "time_ms": 6756.626100017456
+    },
+    {
+      "seed": 12425,
+      "winner": "IA_A",
+      "turns": 16,
+      "time_ms": 6819.35129998601
+    },
+    {
+      "seed": 12426,
+      "winner": "IA_A",
+      "turns": 27,
+      "time_ms": 7783.602800016524
+    },
+    {
+      "seed": 12427,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 10284.35209998861
+    },
+    {
+      "seed": 12428,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 6291.036000009626
+    },
+    {
+      "seed": 12429,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 5738.692299986724
+    },
+    {
+      "seed": 12430,
+      "winner": "IA_A",
+      "turns": 14,
+      "time_ms": 4097.579699999187
+    },
+    {
+      "seed": 12431,
+      "winner": "IA_A",
+      "turns": 15,
+      "time_ms": 3457.3999000131153
+    },
+    {
+      "seed": 12432,
+      "winner": "IA_A",
+      "turns": 18,
+      "time_ms": 4972.25520000211
+    },
+    {
+      "seed": 12433,
+      "winner": "IA_B",
+      "turns": 18,
+      "time_ms": 5742.050500004552
+    },
+    {
+      "seed": 12434,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 8339.299200015375
+    },
+    {
+      "seed": 12435,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 9384.180699998979
+    },
+    {
+      "seed": 12436,
+      "winner": "IA_A",
+      "turns": 18,
+      "time_ms": 5548.252900014631
+    },
+    {
+      "seed": 12437,
+      "winner": "IA_A",
+      "turns": 25,
+      "time_ms": 7413.896800018847
+    },
+    {
+      "seed": 12438,
+      "winner": "IA_A",
+      "turns": 15,
+      "time_ms": 4534.636399999727
+    },
+    {
+      "seed": 12439,
+      "winner": "IA_B",
+      "turns": 27,
+      "time_ms": 18214.75990000181
+    },
+    {
+      "seed": 12440,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 7488.24850001256
+    },
+    {
+      "seed": 12441,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 9179.099400003906
+    },
+    {
+      "seed": 12442,
+      "winner": "IA_A",
+      "turns": 16,
+      "time_ms": 4825.494899996556
+    },
+    {
+      "seed": 12443,
+      "winner": "IA_A",
+      "turns": 17,
+      "time_ms": 6344.857899995986
+    },
+    {
+      "seed": 12444,
+      "winner": "IA_A",
+      "turns": 16,
+      "time_ms": 4787.224099971354
+    }
+  ],
+  "summary": {
+    "n": 100,
+    "wins": {
+      "IA_B": 7,
+      "IA_A": 93
+    },
+    "avg_turns": 19.66,
+    "avg_time_ms": 7622.097960000974
+  }
+}

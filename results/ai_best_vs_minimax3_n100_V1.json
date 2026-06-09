@@ -1,0 +1,1169 @@
+{
+  "results": [
+    {
+      "seed": 12345,
+      "winner": "IA_B",
+      "turns": 27,
+      "time_ms": 7539.9299999990035,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12346,
+      "winner": "IA_B",
+      "turns": 21,
+      "time_ms": 7099.252500018338,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12347,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 6186.343700013822,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12348,
+      "winner": "IA_B",
+      "turns": 28,
+      "time_ms": 7730.501800018828,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12349,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 6733.557600004133,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12350,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 6807.2312000149395,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12351,
+      "winner": "IA_A",
+      "turns": 22,
+      "time_ms": 6921.9446000061,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12352,
+      "winner": "IA_A",
+      "turns": 27,
+      "time_ms": 8020.879999996396,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12353,
+      "winner": "IA_B",
+      "turns": 24,
+      "time_ms": 7151.669000013499,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12354,
+      "winner": "IA_B",
+      "turns": 27,
+      "time_ms": 7419.183299993165,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12355,
+      "winner": "IA_B",
+      "turns": 23,
+      "time_ms": 5712.900099984836,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12356,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 6340.173800010234,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12357,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 6165.030999982264,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12358,
+      "winner": "IA_B",
+      "turns": 27,
+      "time_ms": 7177.484999992885,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12359,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 7129.72109997645,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12360,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 7600.507800001651,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12361,
+      "winner": "IA_A",
+      "turns": 22,
+      "time_ms": 6716.599999985192,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12362,
+      "winner": "IA_B",
+      "turns": 22,
+      "time_ms": 6739.763999998104,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12363,
+      "winner": "IA_A",
+      "turns": 21,
+      "time_ms": 6420.144800009439,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12364,
+      "winner": "IA_B",
+      "turns": 23,
+      "time_ms": 6883.550400001695,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12365,
+      "winner": "IA_B",
+      "turns": 21,
+      "time_ms": 6615.4872000042815,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12366,
+      "winner": "IA_B",
+      "turns": 23,
+      "time_ms": 6578.324900008738,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12367,
+      "winner": "IA_B",
+      "turns": 24,
+      "time_ms": 6894.835599989165,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12368,
+      "winner": "IA_B",
+      "turns": 23,
+      "time_ms": 6858.901100000367,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12369,
+      "winner": "IA_A",
+      "turns": 25,
+      "time_ms": 8463.865700003225,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12370,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 7111.567299987655,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12371,
+      "winner": "IA_B",
+      "turns": 24,
+      "time_ms": 6897.28639999521,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12372,
+      "winner": "IA_A",
+      "turns": 25,
+      "time_ms": 8914.078400004655,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12373,
+      "winner": "IA_B",
+      "turns": 21,
+      "time_ms": 6468.156499991892,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12374,
+      "winner": "IA_B",
+      "turns": 23,
+      "time_ms": 7001.165199995739,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12375,
+      "winner": "IA_A",
+      "turns": 25,
+      "time_ms": 7580.811299994821,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12376,
+      "winner": "IA_B",
+      "turns": 26,
+      "time_ms": 8221.168899995973,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12377,
+      "winner": "IA_A",
+      "turns": 22,
+      "time_ms": 7004.626300011296,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12378,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 7173.292400024366,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12379,
+      "winner": "IA_B",
+      "turns": 22,
+      "time_ms": 9194.729599985294,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12380,
+      "winner": "IA_B",
+      "turns": 26,
+      "time_ms": 7761.416499997722,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12381,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 7715.574399975594,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12382,
+      "winner": "IA_A",
+      "turns": 28,
+      "time_ms": 9635.867099976167,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12383,
+      "winner": "IA_B",
+      "turns": 20,
+      "time_ms": 6196.758600010071,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12384,
+      "winner": "IA_B",
+      "turns": 24,
+      "time_ms": 6779.433300020173,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12385,
+      "winner": "IA_A",
+      "turns": 25,
+      "time_ms": 7567.295699991519,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12386,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 7040.182099997764,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12387,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 7278.455499996198,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12388,
+      "winner": "IA_B",
+      "turns": 26,
+      "time_ms": 7978.732499992475,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12389,
+      "winner": "IA_B",
+      "turns": 26,
+      "time_ms": 8028.316599986283,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12390,
+      "winner": "IA_B",
+      "turns": 26,
+      "time_ms": 7808.063799981028,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12391,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 7259.529100003419,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12392,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 7861.488199996529,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12393,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 6841.4559999946505,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12394,
+      "winner": "IA_B",
+      "turns": 24,
+      "time_ms": 6340.478800004348,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12395,
+      "winner": "IA_B",
+      "turns": 26,
+      "time_ms": 6980.044800002361,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12396,
+      "winner": "IA_B",
+      "turns": 23,
+      "time_ms": 7075.246299995342,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12397,
+      "winner": "IA_B",
+      "turns": 28,
+      "time_ms": 7783.53800001787,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12398,
+      "winner": "IA_B",
+      "turns": 27,
+      "time_ms": 8463.112400000682,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12399,
+      "winner": "IA_A",
+      "turns": 25,
+      "time_ms": 7349.736300006043,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12400,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 5557.0790999918245,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12401,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 7190.669799980242,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12402,
+      "winner": "IA_A",
+      "turns": 18,
+      "time_ms": 5126.430200005416,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12403,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 14965.484500018647,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12404,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 7755.8837000106,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12405,
+      "winner": "IA_B",
+      "turns": 24,
+      "time_ms": 7571.540699980687,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12406,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 7901.052900007926,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12407,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 7778.850400005467,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12408,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 8805.255400016904,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12409,
+      "winner": "IA_A",
+      "turns": 21,
+      "time_ms": 5537.821300007636,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12410,
+      "winner": "IA_B",
+      "turns": 23,
+      "time_ms": 7016.949899989413,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12411,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 7584.424400003627,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12412,
+      "winner": "IA_B",
+      "turns": 24,
+      "time_ms": 7665.114400006132,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12413,
+      "winner": "IA_A",
+      "turns": 27,
+      "time_ms": 8262.703099986538,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12414,
+      "winner": "IA_A",
+      "turns": 25,
+      "time_ms": 8380.095300002722,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12415,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 6681.624099990586,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12416,
+      "winner": "IA_B",
+      "turns": 23,
+      "time_ms": 7788.586100010434,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12417,
+      "winner": "IA_B",
+      "turns": 20,
+      "time_ms": 6065.592899976764,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12418,
+      "winner": "IA_B",
+      "turns": 24,
+      "time_ms": 6321.982699999353,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12419,
+      "winner": "IA_A",
+      "turns": 26,
+      "time_ms": 8388.322599988896,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12420,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 7353.835200017784,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12421,
+      "winner": "IA_A",
+      "turns": 20,
+      "time_ms": 5048.160700011067,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12422,
+      "winner": "IA_B",
+      "turns": 28,
+      "time_ms": 7676.386500010267,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12423,
+      "winner": "IA_B",
+      "turns": 30,
+      "time_ms": 8233.381799975177,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12424,
+      "winner": "IA_B",
+      "turns": 24,
+      "time_ms": 6418.069400009699,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12425,
+      "winner": "IA_A",
+      "turns": 22,
+      "time_ms": 6326.08510000864,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12426,
+      "winner": "IA_B",
+      "turns": 19,
+      "time_ms": 5000.257199979387,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12427,
+      "winner": "IA_B",
+      "turns": 23,
+      "time_ms": 7511.56230000197,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12428,
+      "winner": "IA_A",
+      "turns": 25,
+      "time_ms": 7265.293800010113,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12429,
+      "winner": "IA_A",
+      "turns": 21,
+      "time_ms": 5772.4932999990415,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12430,
+      "winner": "IA_B",
+      "turns": 26,
+      "time_ms": 7235.695100011071,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12431,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 6396.131899993634,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12432,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 6292.477000009967,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12433,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 6975.125199998729,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12434,
+      "winner": "IA_B",
+      "turns": 27,
+      "time_ms": 6983.391100016888,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12435,
+      "winner": "IA_A",
+      "turns": 25,
+      "time_ms": 6659.320700011449,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12436,
+      "winner": "IA_A",
+      "turns": 27,
+      "time_ms": 8299.65080000693,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12437,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 7608.6751999973785,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12438,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 7032.528000010643,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12439,
+      "winner": "IA_A",
+      "turns": 23,
+      "time_ms": 6732.594200002495,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12440,
+      "winner": "IA_B",
+      "turns": 24,
+      "time_ms": 7126.66189999436,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12441,
+      "winner": "IA_A",
+      "turns": 24,
+      "time_ms": 6544.767299987143,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12442,
+      "winner": "IA_B",
+      "turns": 25,
+      "time_ms": 6495.480099983979,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12443,
+      "winner": "IA_A",
+      "turns": 25,
+      "time_ms": 7376.012900000205,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12444,
+      "winner": "IA_A",
+      "turns": 22,
+      "time_ms": 6411.671899986686,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    }
+  ],
+  "summary": {
+    "n": 100,
+    "wins": {
+      "IA_B": 56,
+      "IA_A": 44
+    },
+    "avg_turns": 24.03,
+    "avg_time_ms": 7223.405665999744
+  },
+  "initial_teams": {
+    "player_a": {
+      "label": "IA_A",
+      "strategy": "best",
+      "team": [
+        {
+          "name": "garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            {
+              "name": "Crunch",
+              "type": "Dark",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Poison Jab",
+              "type": "Poison",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Earthquake",
+              "type": "Ground",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Stone Edge",
+              "type": "Rock",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 80,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "lucario",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Fighting",
+            "Steel"
+          ],
+          "moves": [
+            {
+              "name": "Dark Pulse",
+              "type": "Dark",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Extreme Speed",
+              "type": "Normal",
+              "power": 80,
+              "priority": 2,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Bullet Punch",
+              "type": "Steel",
+              "power": 40,
+              "priority": 1,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Flash Cannon",
+              "type": "Steel",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "gengar",
+          "hp": 120,
+          "max_hp": 120,
+          "types": [
+            "Ghost",
+            "Poison"
+          ],
+          "moves": [
+            {
+              "name": "Energy Ball",
+              "type": "Grass",
+              "power": 90,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Sludge Bomb",
+              "type": "Poison",
+              "power": 90,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Focus Blast",
+              "type": "Fighting",
+              "power": 120,
+              "priority": 0,
+              "accuracy": 70,
+              "available": true
+            },
+            {
+              "name": "Shadow Ball",
+              "type": "Ghost",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "swampert",
+          "hp": 160,
+          "max_hp": 160,
+          "types": [
+            "Water",
+            "Ground"
+          ],
+          "moves": [
+            {
+              "name": "Rock Slide",
+              "type": "Rock",
+              "power": 75,
+              "priority": 0,
+              "accuracy": 90,
+              "available": true
+            },
+            {
+              "name": "Ice Punch",
+              "type": "Ice",
+              "power": 75,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Scald",
+              "type": "Water",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Waterfall",
+              "type": "Water",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        }
+      ]
+    },
+    "player_b": {
+      "label": "IA_B",
+      "strategy": "minimax3",
+      "team": [
+        {
+          "name": "zeraora",
+          "hp": 148,
+          "max_hp": 148,
+          "types": [
+            "Electric"
+          ],
+          "moves": [
+            {
+              "name": "Knock Off",
+              "type": "Dark",
+              "power": 65,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Wild Charge",
+              "type": "Electric",
+              "power": 90,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Thunderbolt",
+              "type": "Electric",
+              "power": 90,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Plasma Fists",
+              "type": "Electric",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "baxcalibur",
+          "hp": 175,
+          "max_hp": 175,
+          "types": [
+            "Dragon",
+            "Ice"
+          ],
+          "moves": [
+            {
+              "name": "Outrage",
+              "type": "Dragon",
+              "power": 120,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Crunch",
+              "type": "Dark",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Iron Head",
+              "type": "Steel",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Ice Shard",
+              "type": "Ice",
+              "power": 40,
+              "priority": 1,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "snorlax",
+          "hp": 220,
+          "max_hp": 220,
+          "types": [
+            "Normal"
+          ],
+          "moves": [
+            {
+              "name": "Crunch",
+              "type": "Dark",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Earthquake",
+              "type": "Ground",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Ice Punch",
+              "type": "Ice",
+              "power": 75,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Body Slam",
+              "type": "Normal",
+              "power": 85,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "metagross",
+          "hp": 140,
+          "max_hp": 140,
+          "types": [
+            "Steel",
+            "Psychic"
+          ],
+          "moves": [
+            {
+              "name": "Bullet Punch",
+              "type": "Steel",
+              "power": 40,
+              "priority": 1,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Hammer Arm",
+              "type": "Fighting",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 90,
+              "available": true
+            },
+            {
+              "name": "Earthquake",
+              "type": "Ground",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Thunder Punch",
+              "type": "Electric",
+              "power": 75,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
