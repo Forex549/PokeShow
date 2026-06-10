@@ -1,47 +1,73 @@
 import { useNavigate } from "react-router-dom";
+import RetroPanel from "../components/RetroPanel";
+import RetroButton from "../components/RetroButton";
 
 function Home() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    return (
-        <div className="min-h-screen bg-slate-100 flex flex-col justify-center items-center px-6">
+  return (
+    <div
+      className="min-h-screen flex flex-col justify-center items-center px-6 py-12"
+      style={{ background: "var(--color-poke-arena)" }}
+    >
+      <RetroPanel className="p-12 flex flex-col items-center w-full max-w-xl gap-8">
 
-            {/* Card principal */}
-            <div className="bg-white shadow-2xl rounded-[40px] p-16 flex flex-col items-center w-full max-w-2xl">
-
-                {/* Logo / título */}
-                <h1 className="text-7xl font-black text-slate-800 tracking-tight mb-4">
-                    PokeGen.ai
-                </h1>
-
-                <p className="text-slate-500 text-xl mb-12 text-center">
-                    Simulador de Combates Pokémon con Inteligencia Artificial
-                </p>
-
-                {/* Botón */}
-                <button
-                    onClick={() => navigate("/mode")}
-                    className="
-                        bg-sky-500
-                        hover:bg-sky-600
-                        transition-all
-                        duration-300
-                        text-white
-                        px-12
-                        py-5
-                        rounded-2xl
-                        text-2xl
-                        font-bold
-                        shadow-lg
-                        hover:scale-105
-                    "
-                >
-                    Iniciar Batalla
-                </button>
-
-            </div>
+        {/* Brand */}
+        <div className="text-center">
+          <h1
+            className="retro-title text-3xl mb-3"
+            style={{ color: "var(--color-poke-red)" }}
+          >
+            PokeShow
+          </h1>
+          <div
+            className="text-[0.55rem] font-bold uppercase tracking-widest mt-1"
+            style={{
+              fontFamily: "var(--font-pixel)",
+              color: "var(--color-poke-text-muted)",
+            }}
+          >
+            Battle Simulator
+          </div>
         </div>
-    );
+
+        {/* Pixel divider */}
+        <div
+          className="w-full h-[3px]"
+          style={{ background: "var(--color-poke-panel-edge)" }}
+        />
+
+        {/* Tagline */}
+        <p
+          className="text-center text-sm leading-relaxed"
+          style={{ color: "var(--color-poke-text-muted)" }}
+        >
+          Simulador de combates Pokémon con Inteligencia Artificial
+        </p>
+
+        {/* CTA */}
+        <RetroButton
+          size="lg"
+          onClick={() => navigate("/mode")}
+          className="w-full justify-center mt-2"
+        >
+          ► Iniciar Batalla
+        </RetroButton>
+
+      </RetroPanel>
+
+      {/* Footer label */}
+      <p
+        className="mt-6 text-[0.4rem]"
+        style={{
+          fontFamily: "var(--font-pixel)",
+          color: "var(--color-poke-text-muted)",
+        }}
+      >
+        © 2004 PokeShow — Powered by AI
+      </p>
+    </div>
+  );
 }
 
 export default Home;

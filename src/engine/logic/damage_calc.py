@@ -118,11 +118,7 @@ def calculate_damage(attacker: Pokemon, defender: Pokemon, move: Movimiento) -> 
     base_dmg = (((2 * 50 / 5 + 2) * move.power * (atk_val / def_val)) / 50 + 2) * 0.35
 
     stab = 1.5 if move.type in attacker.types else 1.0
-    print("-----")
-    print("MOVIMIENTO ANALIZADO", move)
     eff = get_effectiveness(move.type, defender.types)
-    print("MULTIPLICADOR:", eff)
-    print("STAB:", stab)
 
     if eff == 0:
         return 0, False
@@ -131,10 +127,6 @@ def calculate_damage(attacker: Pokemon, defender: Pokemon, move: Movimiento) -> 
     is_crit = random.random() < 0.10
     crit_multiplier = (2 * attacker.level + 5) / (attacker.level + 5) if is_crit else 1.0
 
-    print("CRIT MULTIPLIER:", crit_multiplier)
-
     final_damage = base_dmg * stab * eff * crit_multiplier
-    print("FINAL DAMAGE:", final_damage)
-    print("-----")
 
     return max(1, int(final_damage)), is_crit
