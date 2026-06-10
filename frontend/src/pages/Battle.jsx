@@ -14,6 +14,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const BACKGROUNDS = [
   "/backgrounds/fisi.png",
   "/backgrounds/comedor.png",
+  "/backgrounds/fray.png",
 ];
 
 // ──────────────────────────────────────────────────────────────
