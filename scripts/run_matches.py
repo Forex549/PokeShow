@@ -159,8 +159,8 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Run matches between AI strategies.")
     parser.add_argument("-n", "--num", type=int, default=100, help="Number of matches to run")
-    parser.add_argument("--a", type=str, default="best", choices=["best", "random", "minimax2", "minimax3"], help="Strategy for player A")
-    parser.add_argument("--b", type=str, default="minimax2", choices=["best", "random", "minimax2", "minimax3"], help="Strategy for player B")
+    parser.add_argument("--a", type=str, default="best", choices=["best", "random", "minimax2", "minimax3", "minimax4"], help="Strategy for player A")
+    parser.add_argument("--b", type=str, default="minimax2", choices=["best", "random", "minimax2", "minimax3", "minimax4"], help="Strategy for player B")
     parser.add_argument("--out", type=str, default="results/ai_matches.json", help="Output JSON file")
     args = parser.parse_args()
 
@@ -169,6 +169,7 @@ if __name__ == "__main__":
         "random": rs.estrategia_ia_random,
         "minimax2": rs.estrategia_ia_minimax_nivel2,
         "minimax3": rs.estrategia_ia_minimax_nivel3,
+        "minimax4": rs.estrategia_ia_minimax_nivel4,
     }
 
     strat_a = strat_map[args.a]
