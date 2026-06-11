@@ -1,1 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import "tailwindcss";
+
+@theme {
+  /* ── Retro fonts ─────────────────────────────────────────── */
+  --font-pixel: "Press Start 2P", monospace;
+  --font-body: system-ui, sans-serif;
+
+  /* ── PokeShow palette (Gen-3 / Showdown-2004 retro) ─────── */
+  --color-poke-red:        oklch(55% 0.21 25);
+  --color-poke-red-dark:   oklch(42% 0.20 25);
+  --color-poke-red-light:  oklch(72% 0.14 25);
+  --color-poke-blue:       oklch(52% 0.16 250);
+  --color-poke-blue-dark:  oklch(40% 0.14 250);
+  --color-poke-yellow:     oklch(85% 0.17 95);
+  --color-poke-yellow-dark:oklch(70% 0.15 90);
+  --color-poke-green:      oklch(62% 0.15 150);
+  --color-poke-amber:      oklch(75% 0.15 70);
+  --color-poke-panel:      oklch(97% 0.01 250);
+  --color-poke-panel-dark: oklch(90% 0.02 250);
+  --color-poke-panel-edge: oklch(28% 0.02 250);
+  --color-poke-arena:      oklch(88% 0.03 150);
+  --color-poke-text:       oklch(18% 0.02 250);
+  --color-poke-text-muted: oklch(48% 0.02 250);
+  --color-poke-log-bg:     oklch(14% 0.01 250);
+  --color-poke-log-text:   oklch(80% 0.12 150);
+
+  /* ── HGSS battle scene palette (HP boxes + dialog) ───────── */
+  --color-hgss-cream:         #f8f8e0;
+  --color-hgss-edge:          #4a5242;
+  --color-hgss-shadow:        rgba(44, 52, 44, 0.45);
+  --color-hgss-hp-label:      #f8a030;
+  --color-hgss-bar-track:     #50584a;
+  --color-hgss-dialog-outer:  #3d3d52;
+  --color-hgss-dialog-inner:  #4d8a8b;
+  --color-hgss-dialog-border: #c2554a;
+
+  /* ── Retro radius (square-ish) ───────────────────────────── */
+  --radius-retro-sm: 2px;
+  --radius-retro:    4px;
+  --radius-retro-lg: 6px;
+
+  /* ── Animations ──────────────────────────────────────────── */
+  --animate-press: press 0.12s ease-out;
+  --animate-shake: shake 0.35s ease-in-out;
+
+  @keyframes press {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(3px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%      { transform: translateX(-6px); }
+    40%      { transform: translateX(6px); }
+    60%      { transform: translateX(-4px); }
+    80%      { transform: translateX(4px); }
+  }
+}
+
+/* ── Base reset ────────────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-poke-panel);
+    color: var(--color-poke-text);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* ── Retro component utilities ─────────────────────────────── */
+@layer components {
+  /* RetroPanel: thick 3px border + hard offset shadow (no blur) */
+  .retro-panel {
+    background-color: var(--color-poke-panel);
+    border: 3px solid var(--color-poke-panel-edge);
+    border-radius: var(--radius-retro-lg);
+    box-shadow: 4px 4px 0 var(--color-poke-panel-edge);
+  }
+
+  /* Inset variant for battle arena */
+  .retro-panel-inset {
+    background-color: var(--color-poke-arena);
+    border: 3px solid var(--color-poke-panel-edge);
+    border-radius: var(--radius-retro-lg);
+    box-shadow: inset 2px 2px 0 rgba(0,0,0,0.12);
+  }
+
+  /* RetroButton base */
+  .retro-btn {
+    font-family: var(--font-pixel);
+    font-size: 0.55rem;
+    letter-spacing: 0.03em;
+    border: 3px solid var(--color-poke-panel-edge);
+    border-radius: var(--radius-retro);
+    box-shadow: 3px 3px 0 var(--color-poke-panel-edge);
+    cursor: pointer;
+    transition: box-shadow 0.08s, transform 0.08s;
+    padding: 0.6rem 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    line-height: 1.4;
+  }
+
+  .retro-btn:active:not(:disabled) {
+    box-shadow: 1px 1px 0 var(--color-poke-panel-edge);
+    transform: translate(2px, 2px);
+  }
+
+  .retro-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    box-shadow: 2px 2px 0 var(--color-poke-panel-edge);
+  }
+
+  /* Primary (poke-red) */
+  .retro-btn-primary {
+    background-color: var(--color-poke-red);
+    color: #fff;
+  }
+  .retro-btn-primary:hover:not(:disabled) {
+    background-color: var(--color-poke-red-dark);
+  }
+
+  /* Secondary (poke-blue) */
+  .retro-btn-secondary {
+    background-color: var(--color-poke-blue);
+    color: #fff;
+  }
+  .retro-btn-secondary:hover:not(:disabled) {
+    background-color: var(--color-poke-blue-dark);
+  }
+
+  /* Neutral (panel bg) */
+  .retro-btn-neutral {
+    background-color: var(--color-poke-panel-dark);
+    color: var(--color-poke-text);
+  }
+  .retro-btn-neutral:hover:not(:disabled) {
+    background-color: var(--color-poke-panel);
+    border-color: var(--color-poke-blue);
+  }
+
+  /* Danger (switch / amber warning) */
+  .retro-btn-danger {
+    background-color: var(--color-poke-yellow);
+    color: var(--color-poke-text);
+  }
+  .retro-btn-danger:hover:not(:disabled) {
+    background-color: var(--color-poke-yellow-dark);
+  }
+
+  /* Pixel heading class */
+  .retro-title {
+    font-family: var(--font-pixel);
+    color: var(--color-poke-text);
+    line-height: 1.6;
+  }
+
+  /* PP badge */
+  .pp-badge {
+    font-family: var(--font-pixel);
+    font-size: 0.45rem;
+    border: 2px solid var(--color-poke-panel-edge);
+    border-radius: var(--radius-retro-sm);
+    padding: 1px 4px;
+    background-color: var(--color-poke-panel-dark);
+  }
+
+  /* HP bar colors */
+  .hp-bar-healthy { background-color: var(--color-poke-green); }
+  .hp-bar-warning { background-color: var(--color-poke-amber); }
+  .hp-bar-critical { background-color: var(--color-poke-red); }
+
+  /* Crisp scaling for pixel-art sprites and backgrounds */
+  .pixelated {
+    image-rendering: pixelated;
+  }
+}

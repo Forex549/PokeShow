@@ -1,152 +1,138 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import RetroPanel from "../components/RetroPanel";
+import RetroButton from "../components/RetroButton";
 
 function Result() {
-    const navigate = useNavigate();
-    const location = useLocation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
-    const winner = location.state?.winner;
-    const turns = location.state?.turns;
-    const mode = location.state?.mode;
+  const winner      = location.state?.winner;
+  const turns       = location.state?.turns;
+  const battleConfig = location.state?.battleConfig;
 
-    return (
-        <div className="min-h-screen bg-slate-100 flex justify-center items-center p-8">
-            <div className="
-                w-full
-                max-w-2xl
-                bg-white
-                rounded-[40px]
-                shadow-2xl
-                border
-                border-slate-200
-                overflow-hidden
-            ">
-                {/* HEADER */}
-                <div className="
-                    bg-gradient-to-r
-                    from-sky-500
-                    to-indigo-500
-                    p-8
-                    text-center
-                ">
-                    <h1 className="text-5xl font-black text-white mb-3">
-                        Battle Result
-                    </h1>
+  // Friendly label for the battle mode
+  const modeLabel = battleConfig
+    ? battleConfig.player_mode === "human"
+      ? `Jugador vs IA (${battleConfig.enemy_mode})`
+      : `IA (${battleConfig.player_mode}) vs IA (${battleConfig.enemy_mode})`
+    : "—";
 
-                    <p className="text-sky-100 text-lg">
-                        La batalla ha terminado
-                    </p>
-                </div>
+  return (
+    <div
+      className="min-h-screen flex justify-center items-center p-8"
+      style={{ background: "var(--color-poke-arena)" }}
+    >
+      <RetroPanel className="w-full max-w-2xl overflow-hidden flex flex-col">
 
-                {/* CONTENT */}
-                <div className="p-10">
-                    {/* WINNER */}
-                    <div className="text-center mb-10">
-                        <p className="text-slate-500 text-xl mb-3">
-                            Ganador
-                        </p>
-
-                        <h2 className="
-                            text-6xl
-                            font-black
-                            text-slate-800
-                            capitalize
-                            tracking-wide
-                        ">
-                            {winner}
-                        </h2>
-                    </div>
-
-                    {/* MODE */}
-                    <div className="
-                        bg-slate-100
-                        rounded-3xl
-                        p-5
-                        mb-8
-                        flex
-                        justify-between
-                        items-center
-                    ">
-                        <span className="text-slate-500 text-lg">
-                            Modo de batalla
-                        </span>
-
-                        <span className="
-                            bg-sky-500
-                            text-white
-                            px-4
-                            py-2
-                            rounded-xl
-                            font-bold
-                            capitalize
-                        ">
-                            {mode}
-                        </span>
-                    </div>
-
-                    {/* LOGS */}
-                    <div className="mb-10">
-                        <h3 className="
-                            text-2xl
-                            font-bold
-                            text-slate-700
-                            mb-4
-                        ">
-                            Historial de batalla
-                        </h3>
-
-                        <div className="
-                            bg-slate-900
-                            rounded-3xl
-                            p-5
-                            h-64
-                            overflow-y-auto
-                            space-y-3
-                            shadow-inner
-                        ">
-                            {turns?.map((turn, index) => (
-                                <div
-                                    key={index}
-                                    className="
-                                        text-slate-200
-                                        bg-slate-800
-                                        px-4
-                                        py-3
-                                        rounded-2xl
-                                        text-left
-                                    "
-                                >
-                                    {turn}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* BUTTON */}
-                    <div className="flex justify-center">
-                        <button
-                            onClick={() => navigate("/")}
-                            className="
-                                bg-sky-500
-                                hover:bg-sky-600
-                                transition-all
-                                duration-300
-                                text-white
-                                px-10
-                                py-4
-                                rounded-2xl
-                                text-2xl
-                                font-bold
-                                shadow-lg
-                                hover:scale-105
-                            "
-                        >
-                            Volver al Inicio
-                        </button>
-                    </div>
-                </div>
-            </div>
+        {/* Header */}
+        <div
+          className="p-8 text-center"
+          style={{ background: "var(--color-poke-red)", borderBottom: "3px solid var(--color-poke-panel-edge)" }}
+        >
+          <h1
+            className="retro-title text-xl mb-2"
+            style={{ color: "#fff" }}
+          >
+            PokeShow
+          </h1>
+          <p
+            className="text-[0.45rem] uppercase tracking-widest"
+            style={{ fontFamily: "var(--font-pixel)", color: "rgba(255,255,255,0.75)" }}
+          >
+            Resultado de batalla
+          </p>
         </div>
-    );
+
+        {/* Content */}
+        <div className="p-8 flex flex-col gap-6">
+
+          {/* Winner */}
+          <div className="text-center">
+            <p
+              className="text-[0.45rem] uppercase mb-2"
+              style={{ fontFamily: "var(--font-pixel)", color: "var(--color-poke-text-muted)" }}
+            >
+              Ganador
+            </p>
+            <h2
+              className="retro-title text-2xl capitalize"
+              style={{ color: "var(--color-poke-red)" }}
+            >
+              {winner}
+            </h2>
+          </div>
+
+          {/* Pixel divider */}
+          <div className="w-full h-[3px]" style={{ background: "var(--color-poke-panel-edge)" }} />
+
+          {/* Mode badge */}
+          <div
+            className="flex justify-between items-center px-4 py-3"
+            style={{
+              border: "2px solid var(--color-poke-panel-edge)",
+              borderRadius: "var(--radius-retro)",
+              background: "var(--color-poke-panel-dark)",
+            }}
+          >
+            <span
+              className="text-[0.4rem]"
+              style={{ fontFamily: "var(--font-pixel)", color: "var(--color-poke-text-muted)" }}
+            >
+              Modo de batalla
+            </span>
+            <span
+              className="text-[0.4rem] font-bold px-3 py-1"
+              style={{
+                fontFamily: "var(--font-pixel)",
+                background: "var(--color-poke-blue)",
+                color: "#fff",
+                borderRadius: "var(--radius-retro-sm)",
+                border: "2px solid var(--color-poke-panel-edge)",
+              }}
+            >
+              {modeLabel}
+            </span>
+          </div>
+
+          {/* Battle log */}
+          <div>
+            <p
+              className="text-[0.45rem] font-bold uppercase mb-3"
+              style={{ fontFamily: "var(--font-pixel)", color: "var(--color-poke-text-muted)" }}
+            >
+              Historial de batalla
+            </p>
+            <div
+              className="p-4 h-56 overflow-y-auto"
+              style={{
+                background: "var(--color-poke-log-bg)",
+                border: "3px solid var(--color-poke-panel-edge)",
+                borderRadius: "var(--radius-retro)",
+                boxShadow: "inset 2px 2px 0 rgba(0,0,0,0.4)",
+                fontFamily: "var(--font-pixel)",
+                fontSize: "0.4rem",
+                lineHeight: "1.8",
+                color: "var(--color-poke-log-text)",
+              }}
+            >
+              {turns?.map((turn, index) => (
+                <p key={index} className="mb-1">&gt; {turn}</p>
+              ))}
+            </div>
+          </div>
+
+          {/* Back button */}
+          <RetroButton
+            size="lg"
+            onClick={() => navigate("/")}
+            className="w-full justify-center"
+          >
+            ◄ Volver al Inicio
+          </RetroButton>
+        </div>
+      </RetroPanel>
+    </div>
+  );
 }
 
 export default Result;

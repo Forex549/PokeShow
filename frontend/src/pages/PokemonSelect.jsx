@@ -1,158 +1,222 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-
 import pokemonList from "../data/pokemonList";
 import { getPokemonSprite } from "../utils/sprites";
+import RetroPanel from "../components/RetroPanel";
+import RetroButton from "../components/RetroButton";
 
 const TEAM_SIZE = 4;
 const EMPTY = "";
 
-function SlotCard({ slot, index, team, onChange, isPlayer }) {
-    const others = team.filter((_, i) => i !== index);
-    const accent = isPlayer
-        ? { ring: "focus:ring-sky-200", badge: "bg-sky-100 text-sky-800" }
-        : { ring: "focus:ring-rose-200", badge: "bg-rose-100 text-rose-800" };
-
-    return (
-        <div className={`bg-white rounded-3xl p-4 border shadow-sm transition-all duration-200
-            ${slot ? "border-slate-200" : "border-dashed border-slate-300"}`}>
-
-            <div className="flex justify-between items-center mb-3">
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">
-                    Slot {index + 1}
-                </span>
-                {slot && (
-                    <span className={`${accent.badge} px-2 py-1 rounded-full text-xs font-bold capitalize`}>
-                        {slot}
-                    </span>
-                )}
-            </div>
-
-            <select
-                className={`w-full p-2 rounded-xl border border-slate-300 bg-slate-50
-                    text-sm mb-3 outline-none focus:ring-4 ${accent.ring}`}
-                value={slot}
-                onChange={(e) => onChange(index, e.target.value)}
-            >
-                <option value="">— Elegir —</option>
-                {pokemonList.map((p) => (
-                    <option key={p} value={p} disabled={others.includes(p)}>
-                        {p}
-                    </option>
-                ))}
-            </select>
-
-            <div className="bg-slate-50 rounded-2xl flex justify-center items-center h-24">
-                {slot ? (
-                    <img
-                        src={getPokemonSprite(slot, false)}
-                        alt={slot}
-                        className="h-20 hover:scale-110 transition-all duration-300"
-                    />
-                ) : (
-                    <span className="text-slate-300 text-3xl">?</span>
-                )}
-            </div>
-        </div>
-    );
+/** Fisher-Yates sample — picks k unique items from an array. */
+function sampleWithoutReplacement(arr, k) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy.slice(0, k);
 }
 
-function TeamPanel({ label, team, onChange, isPlayer }) {
-    const badgeClass = isPlayer
-        ? "bg-sky-100 text-sky-700"
-        : "bg-rose-100 text-rose-700";
+function SlotCard({ slot, index, team, onChange }) {
+  const others = team.filter((_, i) => i !== index);
 
-    const filled = team.filter((p) => p !== EMPTY).length;
+  return (
+    <div
+      className="flex flex-col gap-2 p-3"
+      style={{
+        border: `3px solid ${slot ? "var(--color-poke-blue)" : "var(--color-poke-panel-edge)"}`,
+        borderRadius: "var(--radius-retro)",
+        background: "var(--color-poke-panel-dark)",
+        boxShadow: "2px 2px 0 var(--color-poke-panel-edge)",
+        borderStyle: slot ? "solid" : "dashed",
+      }}
+    >
+      <div className="flex justify-between items-center">
+        <span
+          className="text-[0.45rem] font-bold uppercase tracking-widest"
+          style={{ fontFamily: "var(--font-pixel)", color: "var(--color-poke-text-muted)" }}
+        >
+          Slot {index + 1}
+        </span>
+        {slot && (
+          <span
+            className="text-[0.4rem] px-2 py-1 font-bold capitalize"
+            style={{
+              fontFamily: "var(--font-pixel)",
+              background: "var(--color-poke-blue)",
+              color: "#fff",
+              borderRadius: "var(--radius-retro-sm)",
+            }}
+          >
+            {slot}
+          </span>
+        )}
+      </div>
 
-    return (
-        <div className="bg-white rounded-[32px] p-6 shadow-xl border border-slate-200">
-            <div className="flex items-center justify-between mb-4">
-                <h2 className="text-2xl font-black text-slate-800">{label}</h2>
-                <div className="flex items-center gap-2">
-                    <span className="text-slate-400 text-sm">{filled}/{TEAM_SIZE}</span>
-                    <span className={`${badgeClass} px-3 py-1 rounded-full text-xs font-bold`}>
-                        {isPlayer ? "USUARIO" : "IA"}
-                    </span>
-                </div>
-            </div>
+      <select
+        className="w-full p-2 text-sm outline-none"
+        style={{
+          border: "2px solid var(--color-poke-panel-edge)",
+          borderRadius: "var(--radius-retro-sm)",
+          background: "var(--color-poke-panel)",
+          color: "var(--color-poke-text)",
+          fontFamily: "var(--font-body)",
+        }}
+        value={slot}
+        onChange={(e) => onChange(index, e.target.value)}
+      >
+        <option value="">— Elegir —</option>
+        {pokemonList.map((p) => (
+          <option key={p} value={p} disabled={others.includes(p)}>
+            {p}
+          </option>
+        ))}
+      </select>
 
-            <div className="grid grid-cols-2 gap-3">
-                {team.map((slot, i) => (
-                    <SlotCard
-                        key={i}
-                        slot={slot}
-                        index={i}
-                        team={team}
-                        onChange={onChange}
-                        isPlayer={isPlayer}
-                    />
-                ))}
-            </div>
-        </div>
-    );
+      <div
+        className="flex justify-center items-center h-24"
+        style={{
+          background: "var(--color-poke-arena)",
+          borderRadius: "var(--radius-retro-sm)",
+        }}
+      >
+        {slot ? (
+          <img
+            src={getPokemonSprite(slot, false)}
+            alt={slot}
+            className="h-20 hover:scale-110 transition-all duration-300"
+          />
+        ) : (
+          <span className="text-3xl" style={{ color: "var(--color-poke-panel-edge)" }}>?</span>
+        )}
+      </div>
+    </div>
+  );
 }
 
 function PokemonSelect() {
-    const navigate = useNavigate();
-    const location = useLocation();
-    const mode = location.state?.mode;
+  const navigate = useNavigate();
+  const location = useLocation();
+  const battleConfig = location.state?.battleConfig;
 
-    const [playerTeam, setPlayerTeam] = useState(Array(TEAM_SIZE).fill(EMPTY));
+  const [playerTeam, setPlayerTeam] = useState(Array(TEAM_SIZE).fill(EMPTY));
 
-    const teamComplete = (team) => team.every((p) => p !== EMPTY);
-    const canStart = teamComplete(playerTeam);
+  const teamComplete = playerTeam.every((p) => p !== EMPTY);
 
-    const startBattle = () => {
-        if (!canStart) return;
-        navigate("/battle", {
-            state: { mode, playerTeam },
-        });
-    };
+  const handleChange = (i, v) => {
+    setPlayerTeam((prev) => {
+      const next = [...prev];
+      next[i] = v;
+      return next;
+    });
+  };
 
-    return (
-        <div className="min-h-screen bg-slate-100 px-6 py-10">
-            <div className="text-center mb-10">
-                <h1 className="text-5xl font-black text-slate-800 mb-3">
-                    Seleccionar Equipo
-                </h1>
-                <p className="text-slate-500 text-lg">
-                    Elige tus 4 Pokémon
-                </p>
+  const randomTeam = () => {
+    setPlayerTeam(sampleWithoutReplacement(pokemonList, TEAM_SIZE));
+  };
+
+  const startBattle = () => {
+    if (!teamComplete) return;
+    navigate("/battle", { state: { battleConfig, playerTeam } });
+  };
+
+  return (
+    <div
+      className="min-h-screen px-6 py-10"
+      style={{ background: "var(--color-poke-arena)" }}
+    >
+      {/* Header */}
+      <div className="text-center mb-8">
+        <h1
+          className="retro-title text-xl mb-2"
+          style={{ color: "var(--color-poke-red)" }}
+        >
+          PokeShow
+        </h1>
+        <p
+          className="text-[0.45rem] uppercase tracking-widest"
+          style={{ fontFamily: "var(--font-pixel)", color: "var(--color-poke-text-muted)" }}
+        >
+          Seleccionar equipo
+        </p>
+      </div>
+
+      <div className="max-w-2xl mx-auto flex flex-col gap-6">
+
+        {/* Team panel */}
+        <RetroPanel className="p-6">
+          <div className="flex items-center justify-between mb-4">
+            <p
+              className="text-[0.5rem] font-bold uppercase tracking-widest"
+              style={{ fontFamily: "var(--font-pixel)", color: "var(--color-poke-text-muted)" }}
+            >
+              Tu equipo
+            </p>
+            <div className="flex items-center gap-3">
+              <span
+                className="text-[0.45rem]"
+                style={{ fontFamily: "var(--font-pixel)", color: "var(--color-poke-text-muted)" }}
+              >
+                {playerTeam.filter((p) => p !== EMPTY).length}/{TEAM_SIZE}
+              </span>
+              {/* Random team button */}
+              <RetroButton
+                variant="danger"
+                size="sm"
+                onClick={randomTeam}
+              >
+                ★ Equipo aleatorio
+              </RetroButton>
             </div>
+          </div>
 
-            <div className="max-w-2xl mx-auto">
-                <TeamPanel
-                    label="Tu equipo"
-                    team={playerTeam}
-                    onChange={(i, v) => setPlayerTeam(prev => {
-                        const next = [...prev];
-                        next[i] = v;
-                        return next;
-                    })}
-                    isPlayer={true}
-                />
-            </div>
+          <div className="grid grid-cols-2 gap-3">
+            {playerTeam.map((slot, i) => (
+              <SlotCard
+                key={i}
+                slot={slot}
+                index={i}
+                team={playerTeam}
+                onChange={handleChange}
+              />
+            ))}
+          </div>
+        </RetroPanel>
 
-            <div className="flex flex-col items-center mt-10 gap-3">
-                {!canStart && (
-                    <p className="text-slate-400 text-sm">
-                        Completa los 4 slots para continuar
-                    </p>
-                )}
-                <button
-                    onClick={startBattle}
-                    disabled={!canStart}
-                    className={`text-white text-xl font-bold px-12 py-4 rounded-2xl shadow-xl
-                        transition-all duration-300
-                        ${canStart
-                            ? "bg-sky-500 hover:bg-sky-600 hover:scale-105"
-                            : "bg-slate-300 cursor-not-allowed"}`}
-                >
-                    ¡Iniciar Batalla!
-                </button>
-            </div>
+        {/* Actions */}
+        <div className="flex flex-col items-center gap-3">
+          {!teamComplete && (
+            <p
+              className="text-[0.45rem]"
+              style={{ fontFamily: "var(--font-pixel)", color: "var(--color-poke-text-muted)" }}
+            >
+              Completa los {TEAM_SIZE} slots para continuar
+            </p>
+          )}
+
+          <RetroButton
+            size="lg"
+            disabled={!teamComplete}
+            onClick={startBattle}
+            className="w-full max-w-xs justify-center"
+          >
+            ► ¡Iniciar Batalla!
+          </RetroButton>
+
+          <RetroButton
+            variant="neutral"
+            size="sm"
+            onClick={() => navigate("/mode")}
+            className="w-full max-w-xs justify-center"
+          >
+            ◄ Volver
+          </RetroButton>
         </div>
-    );
+
+      </div>
+    </div>
+  );
 }
 
 export default PokemonSelect;
