@@ -1,0 +1,393 @@
+{
+  "results": [
+    {
+      "seed": 12345,
+      "winner": "IA_B",
+      "turns": 13,
+      "time_ms": 7140.589300019201,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12346,
+      "winner": "IA_A",
+      "turns": 21,
+      "time_ms": 5870.599499990931,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    },
+    {
+      "seed": 12347,
+      "winner": "IA_B",
+      "turns": 15,
+      "time_ms": 6054.430899996078,
+      "player_a": "IA_A",
+      "player_b": "IA_B"
+    }
+  ],
+  "summary": {
+    "n": 3,
+    "wins": {
+      "IA_B": 2,
+      "IA_A": 1
+    },
+    "avg_turns": 16.333333333333332,
+    "avg_time_ms": 6355.206566668737
+  },
+  "initial_teams": {
+    "player_a": {
+      "label": "IA_A",
+      "strategy": "random",
+      "team": [
+        {
+          "name": "garchomp",
+          "hp": 168,
+          "max_hp": 168,
+          "types": [
+            "Dragon",
+            "Ground"
+          ],
+          "moves": [
+            {
+              "name": "Earthquake",
+              "type": "Ground",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Dragon Claw",
+              "type": "Dragon",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Stone Edge",
+              "type": "Rock",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 80,
+              "available": true
+            },
+            {
+              "name": "Poison Jab",
+              "type": "Poison",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "gengar",
+          "hp": 120,
+          "max_hp": 120,
+          "types": [
+            "Ghost",
+            "Poison"
+          ],
+          "moves": [
+            {
+              "name": "Shadow Ball",
+              "type": "Ghost",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Sludge Bomb",
+              "type": "Poison",
+              "power": 90,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Focus Blast",
+              "type": "Fighting",
+              "power": 120,
+              "priority": 0,
+              "accuracy": 70,
+              "available": true
+            },
+            {
+              "name": "Thunderbolt",
+              "type": "Electric",
+              "power": 90,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "swampert",
+          "hp": 160,
+          "max_hp": 160,
+          "types": [
+            "Water",
+            "Ground"
+          ],
+          "moves": [
+            {
+              "name": "Earthquake",
+              "type": "Ground",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Scald",
+              "type": "Water",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Ice Punch",
+              "type": "Ice",
+              "power": 75,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Waterfall",
+              "type": "Water",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "lucario",
+          "hp": 130,
+          "max_hp": 130,
+          "types": [
+            "Fighting",
+            "Steel"
+          ],
+          "moves": [
+            {
+              "name": "Close Combat",
+              "type": "Fighting",
+              "power": 120,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Bullet Punch",
+              "type": "Steel",
+              "power": 40,
+              "priority": 1,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Dark Pulse",
+              "type": "Dark",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Flash Cannon",
+              "type": "Steel",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        }
+      ]
+    },
+    "player_b": {
+      "label": "IA_B",
+      "strategy": "minimax4",
+      "team": [
+        {
+          "name": "metagross",
+          "hp": 140,
+          "max_hp": 140,
+          "types": [
+            "Steel",
+            "Psychic"
+          ],
+          "moves": [
+            {
+              "name": "Meteor Mash",
+              "type": "Steel",
+              "power": 90,
+              "priority": 0,
+              "accuracy": 90,
+              "available": true
+            },
+            {
+              "name": "Earthquake",
+              "type": "Ground",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Bullet Punch",
+              "type": "Steel",
+              "power": 40,
+              "priority": 1,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Thunder Punch",
+              "type": "Electric",
+              "power": 75,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "sylveon",
+          "hp": 155,
+          "max_hp": 155,
+          "types": [
+            "Fairy"
+          ],
+          "moves": [
+            {
+              "name": "Moonblast",
+              "type": "Fairy",
+              "power": 95,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Mystical Fire",
+              "type": "Fire",
+              "power": 75,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Shadow Ball",
+              "type": "Ghost",
+              "power": 80,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Hyper Voice",
+              "type": "Normal",
+              "power": 90,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "zeraora",
+          "hp": 148,
+          "max_hp": 148,
+          "types": [
+            "Electric"
+          ],
+          "moves": [
+            {
+              "name": "Plasma Fists",
+              "type": "Electric",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Close Combat",
+              "type": "Fighting",
+              "power": 120,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Knock Off",
+              "type": "Dark",
+              "power": 65,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Thunderbolt",
+              "type": "Electric",
+              "power": 90,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        },
+        {
+          "name": "baxcalibur",
+          "hp": 175,
+          "max_hp": 175,
+          "types": [
+            "Dragon",
+            "Ice"
+          ],
+          "moves": [
+            {
+              "name": "Earthquake",
+              "type": "Ground",
+              "power": 100,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Icicle Crash",
+              "type": "Ice",
+              "power": 85,
+              "priority": 0,
+              "accuracy": 90,
+              "available": true
+            },
+            {
+              "name": "Outrage",
+              "type": "Dragon",
+              "power": 120,
+              "priority": 0,
+              "accuracy": 100,
+              "available": true
+            },
+            {
+              "name": "Ice Shard",
+              "type": "Ice",
+              "power": 40,
+              "priority": 1,
+              "accuracy": 100,
+              "available": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
