@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from src.api.api_v1.endpoints import (
+from .endpoints import (
     battle,
     health,
     users,
