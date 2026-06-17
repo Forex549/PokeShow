@@ -9,7 +9,7 @@
  */
 function EnemyTeamBar({ team, activeIndex }) {
   return (
-    <div className="flex gap-3 items-center flex-wrap justify-end">
+    <div className="flex gap-3 items-center w-full justify-between">
       {team.map((p, i) => {
         const isActive  = i === activeIndex;
         const isFainted = p.is_fainted;
@@ -17,15 +17,19 @@ function EnemyTeamBar({ team, activeIndex }) {
         return (
           <div
             key={i}
-            className="flex flex-col items-center gap-1"
-            style={{ opacity: isActive ? 1 : 0.55 }}
+            className="flex flex-col items-center gap-1 transition-all duration-200"
+            style={{ opacity: isActive ? 1 : 0.55, transform: isActive ? 'scale(1.03)' : 'none' }}
           >
             <span
-              className="text-[0.4rem] capitalize truncate w-14 text-center"
+              className="text-[0.45rem] capitalize text-center w-20"
               style={{
                 fontFamily: "var(--font-pixel)",
                 color: "var(--color-poke-text)",
                 fontWeight: isActive ? "bold" : "normal",
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                letterSpacing: 'normal',
               }}
             >
               {p.name}

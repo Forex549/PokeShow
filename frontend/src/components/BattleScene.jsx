@@ -23,6 +23,27 @@ function hpColor(percent) {
   return "var(--color-poke-red)";
 }
 
+const TYPE_COLORS = {
+  Normal: "#A8A878",
+  Fire: "#F08030",
+  Water: "#6890F0",
+  Electric: "#F8D030",
+  Grass: "#78C850",
+  Ice: "#98D8D8",
+  Fighting: "#C03028",
+  Poison: "#A040A0",
+  Ground: "#E0C068",
+  Flying: "#A890F0",
+  Psychic: "#F85888",
+  Bug: "#A8B820",
+  Rock: "#B8A038",
+  Ghost: "#705898",
+  Dragon: "#7038F8",
+  Dark: "#705848",
+  Steel: "#B8B8D0",
+  Fairy: "#EE99AC",
+};
+
 // Status condition badges (engine codes → in-game Spanish labels)
 const STATUS_BADGES = {
   brn:       { label: "QUE", color: "#e07030" },
@@ -53,6 +74,32 @@ function StatusBadge({ code }) {
   );
 }
 
+// Type badges for Pokémon
+function TypeBadges({ types }) {
+  if (!types || types.length === 0) return null;
+  return (
+    <div className="flex gap-1">
+      {types.map((type) => (
+        <span
+          key={type}
+          className="text-[0.35rem] font-bold uppercase px-1.5 py-0.5"
+          style={{
+            background: TYPE_COLORS[type] || "#808080",
+            color: "#fff",
+            border: "1px solid rgba(0,0,0,0.2)",
+            borderRadius: "3px",
+            lineHeight: 1,
+            fontFamily: "var(--font-pixel)",
+            textShadow: "1px 1px 0 rgba(0,0,0,0.3)",
+          }}
+        >
+          {type}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 // ── HP box (cream panel, olive edge, HGSS style) ─────────────
 function HpBox({ pokemon, side }) {
   const isPlayer = side === "player";
@@ -73,13 +120,16 @@ function HpBox({ pokemon, side }) {
       }}
     >
       {/* Name + status + level */}
-      <div className="flex items-center gap-2">
-        <span
-          className="uppercase truncate"
-          style={{ fontSize: "0.55rem", color: "var(--color-hgss-edge)" }}
-        >
-          {pokemon.name}
-        </span>
+      <div className="flex items-center gap-2 flex-wrap">
+        <div className="flex items-center gap-1">
+          <span
+            className="uppercase truncate"
+            style={{ fontSize: "0.55rem", color: "var(--color-hgss-edge)" }}
+          >
+            {pokemon.name}
+          </span>
+          <TypeBadges types={pokemon.types} />
+        </div>
         <StatusBadge code={pokemon.status} />
         <StatusBadge code={pokemon.volatile_status} />
         <span
@@ -200,15 +250,11 @@ function BattleSprite({ pokemon, back, attacking, damaged }) {
 }
 
 // ── Scene ─────────────────────────────────────────────────────
-function BattleScene({ background, player, enemy, attacking, damaged, message }) {
+function BattleScene({ background, player, enemy, attacking, damaged, message, className }) {
   return (
     <div
-      className="relative w-full overflow-hidden select-none"
+      className={`relative w-full flex-1 overflow-hidden select-none ${className || ""}`}
       style={{
-        aspectRatio: "16 / 10",
-        border: "3px solid var(--color-poke-panel-edge)",
-        borderRadius: "var(--radius-retro-lg)",
-        boxShadow: "4px 4px 0 var(--color-poke-panel-edge)",
         background: "var(--color-poke-arena)",
       }}
     >
@@ -248,6 +294,8 @@ function BattleScene({ background, player, enemy, attacking, damaged, message })
         <HpBox pokemon={player} side="player" />
       </div>
 
+      {/* VS badge removed from scene — moved into right panel */}
+
       {/* Dialog bar */}
       <div
         className="absolute bottom-0 left-0 right-0 z-20"
@@ -269,10 +317,11 @@ function BattleScene({ background, player, enemy, attacking, damaged, message })
           <p
             style={{
               fontFamily: "var(--font-pixel)",
-              fontSize: "0.6rem",
-              lineHeight: 1.9,
+              fontSize: "clamp(0.7rem, 2.2vh, 1rem)",
+              lineHeight: 1.5,
               color: "#f8f8f8",
               textShadow: "2px 2px 0 rgba(0,0,0,0.35)",
+              overflowWrap: "break-word",
             }}
           >
             {message}
