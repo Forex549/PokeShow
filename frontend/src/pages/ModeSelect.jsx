@@ -75,10 +75,7 @@ function ModeSelect() {
   const canConfirm = battleType !== null;
 
   return (
-    <div
-      className="min-h-screen flex items-center justify-center px-6 py-12"
-      style={{ background: "var(--color-poke-arena)" }}
-    >
+    <div className="min-h-screen flex items-center justify-center px-6 py-12">
       <RetroPanel className="p-8 w-full max-w-lg flex flex-col gap-6">
 
         {/* Title */}

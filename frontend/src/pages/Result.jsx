@@ -18,10 +18,7 @@ function Result() {
     : "—";
 
   return (
-    <div
-      className="min-h-screen flex justify-center items-center p-8"
-      style={{ background: "var(--color-poke-arena)" }}
-    >
+    <div className="min-h-screen flex justify-center items-center p-8">
       <RetroPanel className="w-full max-w-2xl overflow-hidden flex flex-col">
 
         {/* Header */}

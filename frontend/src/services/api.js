@@ -11,15 +11,20 @@ export const api = axios.create({
  * @param {string[]} params.playerTeam  — exactly 4 names
  * @param {string}   params.playerMode  — "human" | BattleMode value
  * @param {string}   params.enemyMode   — BattleMode value (random|heuristic|minimax2|minimax3|minimax4)
+ * @param {string[]} params.enemyTeam   — optional, exactly 4 names (for AI vs AI or pre-selected enemy team)
  * @returns {Promise<PublicBattleStateResponse>}
  */
-export async function startBattle({ userId, playerTeam, playerMode = "human", enemyMode = "random" }) {
-  const response = await api.post("/battle/start", {
+export async function startBattle({ userId, playerTeam, playerMode = "human", enemyMode = "random", enemyTeam = null }) {
+  const body = {
     user_id: userId,
     player_team: playerTeam,
     player_mode: playerMode,
     enemy_mode: enemyMode,
-  });
+  };
+  if (enemyTeam) {
+    body.enemy_team = enemyTeam;
+  }
+  const response = await api.post("/battle/start", body);
   return response.data;
 }
 

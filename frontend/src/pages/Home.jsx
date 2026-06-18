@@ -6,10 +6,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <div
-      className="min-h-screen flex flex-col justify-center items-center px-6 py-12"
-      style={{ background: "var(--color-poke-arena)" }}
-    >
+    <div className="min-h-screen flex flex-col justify-center items-center px-6 py-12">
       <RetroPanel className="p-12 flex flex-col items-center w-full max-w-xl gap-8">
 
         {/* Brand */}

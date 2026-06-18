@@ -255,7 +255,10 @@ function BattleScene({ background, player, enemy, attacking, damaged, message, c
     <div
       className={`relative w-full flex-1 overflow-hidden select-none ${className || ""}`}
       style={{
-        background: "var(--color-poke-arena)",
+        background: "linear-gradient(135deg, var(--color-poke-arena-darker) 0%, var(--color-poke-arena) 50%, var(--color-poke-arena-darker) 100%)",
+        border: "12px solid",
+        borderColor: "#3d2a1a #6b5d52 #6b5d52 #3d2a1a",
+        boxShadow: "inset 0 0 0 2px #1a1410, 0 8px 16px rgba(0,0,0,0.6)",
       }}
     >
       {/* Battlefield */}

@@ -19,7 +19,8 @@
   --color-poke-panel:      oklch(97% 0.01 250);
   --color-poke-panel-dark: oklch(90% 0.02 250);
   --color-poke-panel-edge: oklch(28% 0.02 250);
-  --color-poke-arena:      oklch(88% 0.03 150);
+  --color-poke-arena:      oklch(42% 0.04 240);
+  --color-poke-arena-darker: oklch(32% 0.02 240);
   --color-poke-text:       oklch(18% 0.02 250);
   --color-poke-text-muted: oklch(48% 0.02 250);
   --color-poke-log-bg:     oklch(14% 0.01 250);
@@ -68,6 +69,12 @@
   body {
     font-family: var(--font-body);
     background-color: var(--color-poke-panel);
+    /* Global UI background image (user-provided) */
+    background-image: url('/backgrounds/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
     color: var(--color-poke-text);
     -webkit-font-smoothing: antialiased;
   }

@@ -59,6 +59,7 @@ export default function Battle() {
 
   const battleConfig = location.state?.battleConfig ?? { player_mode: "human", enemy_mode: "random" };
   const playerTeam = location.state?.playerTeam;
+  const enemyTeam = location.state?.enemyTeam;
   const isAIvsAI = battleConfig.player_mode !== "human";
 
   const [battle, setBattle] = useState(null);
@@ -78,7 +79,7 @@ export default function Battle() {
     try {
       setError(null);
       const user = await getOrCreateUser("Jugador");
-      const data = await startBattle({ userId: user.id, playerTeam, playerMode: battleConfig.player_mode, enemyMode: battleConfig.enemy_mode });
+      const data = await startBattle({ userId: user.id, playerTeam, playerMode: battleConfig.player_mode, enemyMode: battleConfig.enemy_mode, enemyTeam });
       setBattle(data);
       if (data.player_mode !== "human") setBattleMessage("Observando batalla IA vs IA...");
     } catch (e) {
@@ -154,7 +155,7 @@ export default function Battle() {
 
   if (error && !battle) {
     return (
-      <div className="min-h-screen flex flex-col justify-center items-center gap-6 px-6" style={{ background: "var(--color-poke-arena)" }}>
+      <div className="min-h-screen flex flex-col justify-center items-center gap-6 px-6">
         <RetroPanel className="p-8 max-w-md w-full text-center">
           <p className="text-[0.55rem] mb-4" style={{ fontFamily: "var(--font-pixel)", color: "var(--color-poke-red)" }}>
             Error al iniciar
@@ -168,15 +169,15 @@ export default function Battle() {
 
   if (!battle) {
     return (
-      <div className="min-h-screen flex justify-center items-center" style={{ background: "var(--color-poke-arena)" }}>
+      <div className="min-h-screen flex justify-center items-center">
         <p className="text-[0.6rem]" style={{ fontFamily: "var(--font-pixel)", color: "var(--color-poke-text-muted)" }}>Cargando batalla...</p>
       </div>
     );
   }
 
   return (
-    <div className="h-screen w-screen flex overflow-hidden" style={{ background: "var(--color-poke-arena)" }}>
-      <div className="flex-1 p-4 flex flex-col">
+    <div className="h-screen w-screen flex overflow-hidden">
+    <div className="flex-1 p-4 flex flex-col">
         <BattleScene background={background} player={battle.player} enemy={battle.enemy} attacking={attacking} damaged={damaged} message={battleMessage} />
       </div>
 
@@ -258,7 +259,7 @@ export default function Battle() {
         <div className="mt-3">
           {!battle.needs_switch && !isAIvsAI && (
             <div className="flex justify-center">
-              <RetroButton variant="danger" size="sm" disabled={isAnimating} onClick={() => setShowVoluntarySwitch((v) => !v)}>{showVoluntarySwitch ? "✕ Cancelar" : "⇄ Cambiar Pokémon"}</RetroButton>
+              <RetroButton variant="danger" size="lg" className="w-full max-w-sm justify-center" disabled={isAnimating} onClick={() => setShowVoluntarySwitch((v) => !v)}>{showVoluntarySwitch ? "✕ Cancelar" : "⇄ Cambiar Pokémon"}</RetroButton>
             </div>
           )}
         </div>
