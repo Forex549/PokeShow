@@ -4,6 +4,7 @@ import pokemonList from "../data/pokemonList";
 import { getPokemonSprite } from "../utils/sprites";
 import RetroPanel from "../components/RetroPanel";
 import RetroButton from "../components/RetroButton";
+import Logo from "../components/Logo";
 
 const TEAM_SIZE = 4;
 const EMPTY = "";
@@ -150,12 +151,7 @@ function PokemonSelect() {
     <div className="min-h-screen px-4 py-8">
       {/* Header */}
       <div className="text-center mb-10">
-        <h1
-          className="retro-title text-3xl mb-3"
-          style={{ color: "var(--color-poke-red)" }}
-        >
-          PokeShow
-        </h1>
+        <Logo width={220} />
         <p
           className="text-[0.55rem] uppercase tracking-widest"
           style={{ fontFamily: "var(--font-pixel)", color: "#fff" }}

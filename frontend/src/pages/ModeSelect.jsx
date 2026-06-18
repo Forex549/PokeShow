@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import RetroPanel from "../components/RetroPanel";
 import RetroButton from "../components/RetroButton";
+import Logo from "../components/Logo";
 
 // Canonical 5 AI levels (matches backend BattleMode enum)
 const AI_LEVELS = [
@@ -80,12 +81,7 @@ function ModeSelect() {
 
         {/* Title */}
         <div className="text-center">
-          <h1
-            className="retro-title text-lg mb-1"
-            style={{ color: "var(--color-poke-red)" }}
-          >
-            PokeShow
-          </h1>
+          <Logo width={180} />
           <p
             className="text-[0.45rem] uppercase tracking-widest"
             style={{ fontFamily: "var(--font-pixel)", color: "var(--color-poke-text-muted)" }}

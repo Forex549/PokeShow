@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import RetroPanel from "../components/RetroPanel";
 import RetroButton from "../components/RetroButton";
+import Logo from "../components/Logo";
 
 function Result() {
   const navigate = useNavigate();
@@ -26,14 +27,11 @@ function Result() {
           className="p-8 text-center"
           style={{ background: "var(--color-poke-red)", borderBottom: "3px solid var(--color-poke-panel-edge)" }}
         >
-          <h1
-            className="retro-title text-xl mb-2"
-            style={{ color: "#fff" }}
-          >
-            PokeShow
-          </h1>
+          <div className="flex items-center justify-center">
+            <Logo width={200} />
+          </div>
           <p
-            className="text-[0.45rem] uppercase tracking-widest"
+            className="text-[0.45rem] uppercase tracking-widest mt-2"
             style={{ fontFamily: "var(--font-pixel)", color: "rgba(255,255,255,0.75)" }}
           >
             Resultado de batalla

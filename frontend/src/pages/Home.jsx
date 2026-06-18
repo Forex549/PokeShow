@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import RetroPanel from "../components/RetroPanel";
 import RetroButton from "../components/RetroButton";
+import Logo from "../components/Logo";
 
 function Home() {
   const navigate = useNavigate();
@@ -11,12 +12,7 @@ function Home() {
 
         {/* Brand */}
         <div className="text-center">
-          <h1
-            className="retro-title text-3xl mb-3"
-            style={{ color: "var(--color-poke-red)" }}
-          >
-            PokeShow
-          </h1>
+          <Logo width={220} />
           <div
             className="text-[0.55rem] font-bold uppercase tracking-widest mt-1"
             style={{
@@ -54,15 +50,18 @@ function Home() {
       </RetroPanel>
 
       {/* Footer label */}
-      <p
-        className="mt-6 text-[0.4rem]"
-        style={{
-          fontFamily: "var(--font-pixel)",
-          color: "var(--color-poke-text-muted)",
-        }}
-      >
-        © 2004 PokeShow — Powered by AI
-      </p>
+      <div className="mt-6 flex flex-col items-center gap-2">
+        <Logo width={140} />
+        <p
+          className="text-[0.4rem]"
+          style={{
+            fontFamily: "var(--font-pixel)",
+            color: "var(--color-poke-text-muted)",
+          }}
+        >
+          © 2004 — Powered by AI
+        </p>
+      </div>
     </div>
   );
 }
