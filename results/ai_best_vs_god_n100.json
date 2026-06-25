@@ -1,9 +1,9 @@
 {
-  "wins_nivel2": 51,
-  "wins_nivel5": 49,
+  "wins_nivel2": 47,
+  "wins_nivel5": 53,
   "total": 100,
-  "pct_nivel2": 51.0,
-  "pct_nivel5": 49.0,
-  "turnos_promedio": 25.06,
-  "tiempo_promedio_seg": 0.19
+  "pct_nivel2": 47.0,
+  "pct_nivel5": 53.0,
+  "turnos_promedio": 24.81,
+  "tiempo_promedio_seg": 0.18
 }

@@ -363,7 +363,7 @@ def elegir_movimiento_nivel3(
 
         valor_futuro = minimax_alfa_beta_n3(
             battle_clone=batalla_simulada,
-            profundidad=3,
+            profundidad=4,
             alfa=float("-inf"),
             beta=float("inf"),
             es_maximizando=False,
@@ -426,7 +426,15 @@ def evaluar_heuristica_nivel4(
     f3 = _factor_speed(aliado, rival)
     f4 = _factor_type(aliado, rival)
     f5 = _factor_status(aliado, rival)
-    return w1 * f1 + w2 * f2 + w3 * f3 + w4 * f4 + w5 * f5
+    valor = (
+        w1 * f1 +
+        w2 * f2 +
+        w3 * f3 +
+        w4 * f4 +
+        w5 * f5
+    )
+
+    return valor
 
 
 def minimax_alfa_beta_n4(
@@ -476,7 +484,7 @@ def minimax_alfa_beta_n4(
             alfa = max(alfa, evaluacion)
             if beta <= alfa:
                 break
-
+        
         return max_eval
 
     else:
@@ -510,7 +518,7 @@ def minimax_alfa_beta_n4(
             beta = min(beta, evaluacion)
             if beta <= alfa:
                 break
-
+        
         return min_eval
 
 
@@ -528,14 +536,12 @@ def elegir_mejor_sustituto_n4(entrenador: Entrenador, rival: Entrenador, pesos: 
             mejor_idx = i
     return mejor_idx
 
-
 def elegir_accion_nivel4(
     entrenador: Entrenador,
     rival: Entrenador,
     pesos: list,
 ) -> Union[Movimiento, int, None]:
-    # Evalúa ataques Y cambios voluntarios usando la heurística de 5 factores
-    # Retorna Movimiento si la mejor acción es atacar, int (índice) si es cambiar
+
     poke_real = entrenador.get_current_pokemon()
 
     ia_clon = copy.deepcopy(entrenador)
@@ -548,32 +554,76 @@ def elegir_accion_nivel4(
     best_action = None
     best_value = float("-inf")
 
+    print("\n===== EVALUANDO ACCIONES =====")
+
+    # Evaluar movimientos
     for move_clon in poke_ia_clon.available_moves:
-        dmg, _ = calculate_damage(poke_ia_clon, poke_rival_clon, move_clon)
+        dmg, _ = calculate_damage(
+            poke_ia_clon,
+            poke_rival_clon,
+            move_clon
+        )
+
         hp_original = poke_rival_clon.hp
         poke_rival_clon.hp -= dmg
+
         valor = minimax_alfa_beta_n4(
-            batalla_simulada, 3, float("-inf"), float("inf"),
-            False, ia_clon, rival_clon, pesos,
+            batalla_simulada,
+            3,
+            float("-inf"),
+            float("inf"),
+            False,
+            ia_clon,
+            rival_clon,
+            pesos,
         )
+
         poke_rival_clon.hp = hp_original
+
+        print(
+            f"Movimiento {move_clon.name:<20}"
+            f" daño={dmg:<4} valor={valor:.4f}"
+        )
+
         if valor > best_value:
             best_value = valor
             best_action = move_clon.name
 
+    # Evaluar cambios
     idx_original = ia_clon.current_pokemon_index
+
     for i, p in enumerate(ia_clon.pokemones):
+
         if p.hp <= 0 or i == idx_original:
             continue
+
         ia_clon.current_pokemon_index = i
+
         valor = minimax_alfa_beta_n4(
-            batalla_simulada, 3, float("-inf"), float("inf"),
-            False, ia_clon, rival_clon, pesos,
+            batalla_simulada,
+            3,
+            float("-inf"),
+            float("inf"),
+            False,
+            ia_clon,
+            rival_clon,
+            pesos,
         )
+
         ia_clon.current_pokemon_index = idx_original
+
+        print(
+            f"Cambio a {p.name:<20}"
+            f" valor={valor:.4f}"
+        )
+
         if valor > best_value:
             best_value = valor
             best_action = i
+
+    print(f"\nMejor acción encontrada: {best_action}")
+    print(f"Mejor valor: {best_value:.4f}")
+    print("===============================\n")
 
     if best_action is None:
         return None
